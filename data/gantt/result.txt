@@ -1,0 +1,803 @@
+Speaker	Start	End	Sentence	Emotion	DialogueAct
+SPEAKER_03	2.43	14.55	The sissara weekly product marketing meeting and the a first topic of a conversation as one we've chattered about a few times and.	Neutral	Statement-non-opinion
+SPEAKER_03	14.96	15.41	You know.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	16.96	28.76	Probably bears are worth a little conversation, so I recorded a vinuan over the week and a postof, the vidio and the deck ah inactually. I will say this too. I should have this in agenta item and may be even from last week.	Neutral	Statement-opinion
+SPEAKER_03	29.70	30.21	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	31.38	41.87	If you haven't seen this, I think dar is putting together a training am actually t o larger motions. Tat. A kind of idea is in order to promote cross mobility within marketing.	Neutral	Statement-opinion
+SPEAKER_03	43.10	54.71	Ah, the ideais that there would be some kind of training criculum and if you wanted to shift lick latterally into different role. The idea is that you should be able to complete all of this stuff.	Neutral	Statement-opinion
+SPEAKER_03	54.90	57.35	Um now I like this, a lot a.	Positive	Statement-non-opinion
+SPEAKER_03	57.92	72.82	Should heachic marketing in the time I've beenequate lab, has not hired anyone else from any other part of the company a in gets a huge tragedy. So I would love to see folks from other parts of marketing and other parts. Ofthe org moving a streteaty marketing or arcument particular.	Neutral	Statement-non-opinion
+SPEAKER_03	74.19	89.58	And probably I also think of product marketers, a part of our roll is to know a little bit about everything, and so, as other leaders are cut, a putting together like deband gend, one a one or like stiars one, a one like we should consume all that content and to spek familiar with it.	Negative	Statement-opinion
+SPEAKER_03	90.13	95.16	And then we are also tasked with creating a little bit of product marketing, one or ont.	Neutral	Statement-non-opinion
+SPEAKER_03	95.52	105.39	In that spirit, I linked a linked in vidio. Did anybody watch any of that linkthin training that I linked last week in a I've chattered with a few yu folks about it? Anybody checkd that out yet.	Neutral	Statement-non-opinion
+SPEAKER_03	108.00	117.08	No totally go check the soutcayso. I was surprised at how good it was. I didn't expect it. I've had some really good linkon learning.	Positive	Statement-opinion
+SPEAKER_03	117.44	120.12	Content that I've I've access before at other jobs.	Neutral	Statement-non-opinion
+SPEAKER_03	121.03	128.81	And so I's a go I'll just go see whether they have about prod marketing, and I found this one course and it's like b to b sass marketing ano one.	Neutral	Statement-non-opinion
+SPEAKER_03	129.00	141.79	And there's nothing in there that you haven't heard before, but it just so good. It's all like a very compact it it's a highly recommend. If you just watch eyou've just watched the course and n it's an hour.	Very Positive	Statement-non-opinion
+SPEAKER_03	142.36	149.13	One hundred per cent recommend just spending an hour an watching at course. It's a great jusrefresher an'll chear somethings that you didn't hig about before.	Very Positive	Statement-opinion
+SPEAKER_03	149.79	150.23	And.	Neutral	Statement-opinion
+SPEAKER_03	151.26	169.72	Or if you want a take like a day or two and like do all of the home work or whatever and really dig it to it, highly recommended, ah that so in that vein, that course will go intellect the. If you want of your pot of market- or this is stuff, you shol, no, what frock workening I'll so record to this vidio on what is the diftion between a product, service and solution.	Neutral	Statement-opinion
+SPEAKER_03	170.09	179.35	A on that vain city, I think you maybe also had an m r, ah and hows g t, emotions or solutions. If you want to hre your thoughts, there.	Neutral	Statement-opinion
+SPEAKER_04	179.96	181.53	I dislinked it em.	Negative	Statement-non-opinion
+SPEAKER_04	182.79	183.91	Though, we've got.	Neutral	Statement-non-opinion
+SPEAKER_04	184.55	186.12	What I was looking at is.	Neutral	Statement-non-opinion
+SPEAKER_04	186.49	187.10	The.	Neutral	Uninterpretable
+SPEAKER_04	187.54	189.48	What we call a solution, it.	Neutral	Statement-opinion
+SPEAKER_04	190.69	194.40	On we've got a solution's page, it has about thirty different things and.	Neutral	Statement-non-opinion
+SPEAKER_04	194.76	197.58	A mish mash of it's just a giant dumping ground.	Very Negative	Statement-opinion
+SPEAKER_04	198.54	199.05	Em.	Neutral	Backchannel in question form
+SPEAKER_04	199.43	200.33	Those things.	Neutral	Statement-non-opinion
+SPEAKER_04	200.72	204.19	Were not treating solutions strategically, likewe should most.	Neutral	Statement-opinion
+SPEAKER_04	204.60	207.69	Companies have a solution's link on their home page.	Neutral	Statement-non-opinion
+SPEAKER_04	208.55	212.28	Now what we have is, we have a product link and the product link.	Neutral	Statement-non-opinion
+SPEAKER_04	212.92	214.84	Has professional services first.	Neutral	Collaborative Completion
+SPEAKER_04	216.29	216.85	As a.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	217.41	218.33	And then it has.	Neutral	Statement-non-opinion
+SPEAKER_04	219.97	222.08	Most popular or common.	Positive	Collaborative Completion
+SPEAKER_04	222.65	223.53	Use.	Neutral	Collaborative Completion
+SPEAKER_04	224.51	227.50	And underneath that this is still on the product, tab.	Negative	Statement-non-opinion
+SPEAKER_04	227.72	228.24	It has.	Neutral	Statement-non-opinion
+SPEAKER_04	228.68	231.28	Enterprise esm b c I c d.	Neutral	Statement-non-opinion
+SPEAKER_04	232.04	233.20	A c m.	Neutral	Collaborative Completion
+SPEAKER_04	233.45	235.34	Atto devox.	Neutral	No answers
+SPEAKER_04	235.92	239.33	Agile development b a sem and get.	Neutral	Statement-non-opinion
+SPEAKER_04	239.92	241.99	Got this mishmash of.	Negative	Statement-non-opinion
+SPEAKER_04	243.60	244.37	And.	Neutral	Statement-opinion
+SPEAKER_04	245.06	248.12	Product and solution and it's all mess under there.	Very Negative	Statement-opinion
+SPEAKER_04	248.81	250.28	And then we have.	Neutral	Statement-non-opinion
+SPEAKER_04	251.21	252.32	Use case pages.	Neutral	Collaborative Completion
+SPEAKER_04	253.50	253.92	Which.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	254.82	256.29	Don't a line to this.	Negative	Action-directive
+SPEAKER_04	256.66	259.81	To those there's a few that do and there's a few that don't.	Neutral	Statement-opinion
+SPEAKER_04	260.44	261.04	Um.	Neutral	Uninterpretable
+SPEAKER_04	261.25	262.29	And then we have.	Neutral	Statement-non-opinion
+SPEAKER_04	263.74	264.59	When you think about.	Neutral	Statement-opinion
+SPEAKER_04	264.89	270.33	The actual solution page so like there's a sea, I ithere's a sea ice solution, page.	Negative	Statement-non-opinion
+SPEAKER_04	270.92	271.20	Think.	Neutral	Hold before answer/agreement
+SPEAKER_04	271.76	272.77	There's a a.	Neutral	Statement-non-opinion
+SPEAKER_04	273.45	275.29	Whato I have here, there's am.	Neutral	Statement-non-opinion
+SPEAKER_04	276.30	278.61	A devseck opsolution page.	Neutral	Statement-non-opinion
+SPEAKER_04	279.12	281.83	There's aget opsolution page.	Neutral	Statement-non-opinion
+SPEAKER_04	283.15	285.58	We need to rit like rationalize.	Negative	Statement-opinion
+SPEAKER_04	285.83	289.88	Across these things, who'se the audience: how do they map to one another.	Neutral	Rhetorical-Questions
+SPEAKER_04	290.49	293.26	What's the navigation from one a to another.	Neutral	Statement-non-opinion
+SPEAKER_04	293.85	296.75	I'm what's the overlap I did find. We've got.	Neutral	Statement-non-opinion
+SPEAKER_04	298.47	301.70	Some competing things on a v c c.	Neutral	Statement-non-opinion
+SPEAKER_04	301.97	302.59	For.	Neutral	Collaborative Completion
+SPEAKER_04	303.40	303.96	A.	Neutral	Collaborative Completion
+SPEAKER_04	304.63	306.83	B c c us cs page.	Neutral	Statement-non-opinion
+SPEAKER_04	307.32	309.59	And av c c salution.	Neutral	Statement-non-opinion
+SPEAKER_04	310.35	313.07	And I think there was a on stages.	Neutral	Statement-non-opinion
+SPEAKER_04	314.59	315.09	Te men.	Neutral	Collaborative Completion
+SPEAKER_04	315.21	316.92	All insay tatch a.	Neutral	Appreciation
+SPEAKER_03	317.31	321.32	When you say usecase case you mean, like usecase page in the hand book.	Negative	Statement-non-opinion
+SPEAKER_03	323.55	323.94	Oq.	Neutral	Repeat-phrase
+SPEAKER_03	324.41	324.85	A.	Neutral	Statement-non-opinion
+SPEAKER_04	324.85	330.77	Now, in the remember that that we've got the resource paid, the use case, resource.	Neutral	Statement-opinion
+SPEAKER_04	331.77	332.48	That has.	Neutral	Statement-opinion
+SPEAKER_04	334.15	339.50	Um, it's all started because I was looking back for. I was looking at the use case. Resource pages.	Neutral	Statement-non-opinion
+SPEAKER_04	340.37	341.82	To link things into the.	Neutral	Collaborative Completion
+SPEAKER_04	342.36	344.74	Plays that renew vews.	Neutral	Statement-non-opinion
+SPEAKER_04	345.94	351.04	And I'm because they have objection, handling and.	Neutral	Statement-non-opinion
+SPEAKER_04	351.14	353.64	Ows and all that stuff, we we shouldn't be.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	354.30	357.97	Reinventing all this stefors to be reusing. What we already had.	Neutral	Statement-non-opinion
+SPEAKER_03	358.28	368.93	What one hundred per cent saw? Ah dus, ah just make that note ray now to say that ayet in the past we talked about usecase, driven titen.	Neutral	Statement-non-opinion
+SPEAKER_03	369.38	375.12	And we all did this, so I think there's been some debate on what'll. We do with these pages.	Neutral	Statement-opinion
+SPEAKER_03	376.11	376.54	And.	Neutral	Statement-opinion
+SPEAKER_03	377.31	380.06	What iud like to sae an sydney? What it sounds like what you'd like to see as well.	Positive	Rhetorical-Questions
+SPEAKER_03	380.59	389.99	Is we're going to we're going anomally keep these we'regoing to double down on them te we're got t change the name from calling this a page.	Negative	Yes-No-Question
+SPEAKER_03	390.12	393.06	To calling this a godo market strategy.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	393.55	397.68	Though, for your go to market motions ore, actually, not even for you to macomotitions.	Negative	Statement-non-opinion
+SPEAKER_03	398.05	399.86	For the solutions that you own.	Neutral	Collaborative Completion
+SPEAKER_03	401.14	403.50	Of which some of those solutions are use cases right.	Neutral	Statement-opinion
+SPEAKER_03	404.04	406.71	We're going to have a godomarket stratagy document.	Neutral	Statement-non-opinion
+SPEAKER_03	407.22	408.45	Like real marketers.	Neutral	Collaborative Completion
+SPEAKER_03	408.90	411.00	Like re pinocchiall right, I'm a real boy.	Positive	Statement-non-opinion
+SPEAKER_03	411.57	412.50	Ha a a.	Neutral	Appreciation
+SPEAKER_03	412.77	413.32	Sa like.	Positive	Statement-non-opinion
+SPEAKER_03	413.80	438.72	You know just like rofog marketers we well have we'll have solutions that were responsible for and woll create, go tomarket strategies, documents around the sotomarcommotions, an theyll have all the things that you ould expect. They'll have you know: personas and the market, landscape and market requirements, and all these things this is. This is exactly what this document is. So we are to keep those redoubled down on them sarciny. I cannot interrupted your plans. I wanted to make that point.	Neutral	Statement-non-opinion
+SPEAKER_00	439.43	441.49	I have aggression on that om.	Neutral	Statement-non-opinion
+SPEAKER_00	442.16	443.50	The ousecase pages.	Neutral	Collaborative Completion
+SPEAKER_00	444.59	447.02	The uscase reso speeges, actually the.	Neutral	Statement-non-opinion
+SPEAKER_00	447.50	451.29	The consumer of that page was expected to be.	Neutral	Statement-opinion
+SPEAKER_00	452.14	452.46	Ar.	Neutral	Uninterpretable
+SPEAKER_00	452.83	454.28	Internof, the.	Neutral	Statement-non-opinion
+SPEAKER_00	455.02	456.19	Late, a.	Neutral	Statement-non-opinion
+SPEAKER_00	457.77	459.71	Do we expect bact to change.	Neutral	Yes-No-Question
+SPEAKER_00	459.85	460.52	And rov.	Neutral	Statement-non-opinion
+SPEAKER_04	460.34	461.57	It there's an.	Neutral	Statement-non-opinion
+SPEAKER_04	461.81	462.97	Each one of those whi.	Neutral	Statement-non-opinion
+SPEAKER_04	463.38	466.26	Has a corresponding external page too.	Neutral	Statement-non-opinion
+SPEAKER_00	466.87	467.17	Yes,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_04	468.08	469.45	And so you've got the.	Neutral	Statement-opinion
+SPEAKER_04	470.82	471.15	The.	Neutral	Uninterpretable
+SPEAKER_04	471.44	479.42	Outward facing things and the inward facing things, the inward facing things would have things like a link to the sales plays link to their cinpains.	Neutral	Statement-non-opinion
+SPEAKER_00	480.54	481.80	Ye, yes, as azou.	Neutral	Agree/Accept
+SPEAKER_00	482.22	482.49	Shoo.	Negative	Appreciation
+SPEAKER_00	482.92	485.09	What I'm hearing you say: sinde a.	Neutral	Statement-non-opinion
+SPEAKER_00	485.79	487.44	Arit hes, what I understand his.	Neutral	Statement-non-opinion
+SPEAKER_00	488.11	488.81	On the.	Neutral	Collaborative Completion
+SPEAKER_00	489.36	494.59	Mean home page, we would link to the external facing sebutian page.	Neutral	Statement-non-opinion
+SPEAKER_00	495.34	498.96	Ah- and these use case pages would continue to be.	Neutral	Statement-non-opinion
+SPEAKER_00	499.94	500.69	Interniment.	Neutral	Statement-non-opinion
+SPEAKER_00	500.91	501.38	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_00	501.58	507.39	But would be like the landing fage for oursade's prace esrat fore into.	Neutral	Statement-non-opinion
+SPEAKER_05	511.22	511.76	Sales place.	Neutral	Collaborative Completion
+SPEAKER_05	512.30	513.90	Campaigns have landing pages.	Neutral	Statement-opinion
+SPEAKER_05	514.03	514.37	Ray.	Neutral	Repeat-phrase
+SPEAKER_05	514.61	515.32	Sa af.	Neutral	Repeat-phrase
+SPEAKER_04	514.69	515.16	Af.	Neutral	Statement-non-opinion
+SPEAKER_04	515.70	518.66	She doesn't mean like a landing page for a customar ogaa.	Neutral	Statement-non-opinion
+SPEAKER_02	519.59	521.19	We like the home page for the play.	Positive	Statement-non-opinion
+SPEAKER_02	521.68	524.68	So the adits of delivering the play would be done v a.	Neutral	Statement-non-opinion
+SPEAKER_02	525.09	526.86	Is that at th, asiscont, coquet.	Neutral	Yes-No-Question
+SPEAKER_03	525.54	526.10	At th.	Neutral	Statement-non-opinion
+SPEAKER_03	529.90	531.35	This looks really awesome.	Very Positive	Statement-opinion
+SPEAKER_03	532.65	535.04	Put a ton of contint together.	Positive	Statement-non-opinion
+SPEAKER_03	535.25	538.87	Odestly I've been thinking about a lot of the stuff for a while and.	Neutral	Statement-non-opinion
+SPEAKER_03	539.41	541.05	Sin you've written it all down. I love this.	Positive	Statement-non-opinion
+SPEAKER_03	542.00	542.60	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	543.06	545.24	It looks like you havelic steps to accomplish.	Neutral	Statement-opinion
+SPEAKER_04	546.06	550.42	Need to break this, this really needs to be an epich, and I need to break it out into separate assues.	Very Negative	Statement-non-opinion
+SPEAKER_05	551.14	557.67	Andther islere projegogoing on to overhaul the web of the map bar already by the marketiti ta. We wanto cometere.	Neutral	Statement-non-opinion
+SPEAKER_04	551.72	552.93	Projegogoing.	Neutral	Collaborative Completion
+SPEAKER_02	558.01	561.69	And about nine months ago I started a rationalizing all the solutions.	Neutral	Statement-non-opinion
+SPEAKER_02	561.94	573.94	So they would have a similar form at and a john geremia was like actually were about to do that with a different team like because solutions are also owned by people other than p mms. In some cases,.	Neutral	Statement-non-opinion
+SPEAKER_06	563.95	564.20	And.	Neutral	Statement-non-opinion
+SPEAKER_04	574.19	574.41	S.	Neutral	Uninterpretable
+SPEAKER_02	574.41	575.91	Has theyr framed on the webside.	Neutral	Yes-No-Question
+SPEAKER_04	574.53	574.73	Has.	Neutral	Hold before answer/agreement
+SPEAKER_04	576.12	576.93	As they aren.	Neutral	Statement-non-opinion
+SPEAKER_02	576.61	576.98	Aren.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	577.23	577.67	They.	Neutral	Statement-non-opinion
+SPEAKER_02	577.45	579.42	Don't poke the hive right now.	Neutral	Action-directive
+SPEAKER_02	579.78	582.12	We're about to just break it open and redo. It.	Negative	Statement-non-opinion
+SPEAKER_02	582.26	586.43	And I think the redoing is actually kind happening now. The othert of plake eight months ago.	Neutral	Statement-non-opinion
+SPEAKER_04	585.08	585.38	The.	Neutral	Uninterpretable
+SPEAKER_04	587.17	594.02	I don't know where it's going on with the solution's page, but we need to have some ownership because from a strategy standpoint.	Neutral	Statement-opinion
+SPEAKER_04	594.61	598.29	That's what people look for customers? Look for! What is your solution.	Neutral	Open-Question
+SPEAKER_04	598.73	602.32	And right now our solutions are a hodge podge of.	Negative	Statement-opinion
+SPEAKER_04	602.58	602.98	Rap.	Neutral	Repeat-phrase
+SPEAKER_04	603.64	606.68	And in my mind, if you troll to that.	Neutral	Statement-opinion
+SPEAKER_04	607.12	608.52	A list of what.	Neutral	Collaborative Completion
+SPEAKER_04	608.80	611.34	All those different things that are on that solution's page.	Neutral	Statement-opinion
+SPEAKER_04	612.06	616.48	None none no trall in I have it all listed int. While you can go there too, that.	Neutral	Statement-non-opinion
+SPEAKER_02	616.48	624.92	No, but theenterprise is a great example, because that was just a solution that was created essentially ot, a thin air of his arm per o irade thean perlie down as a solution.	Negative	Statement-opinion
+SPEAKER_04	618.41	618.84	Because.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	622.03	624.18	Of his arm per o irade thean perlie down.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	625.31	628.16	So my puting is: we need to take this.	Neutral	Statement-non-opinion
+SPEAKER_04	628.87	631.15	And put those things where they belong.	Positive	Abandoned or Turn-Exit
+SPEAKER_04	631.47	637.17	Whother partner pages in here there's an a w s and a g c p page. Those belong on the partner.	Neutral	Statement-non-opinion
+SPEAKER_04	637.54	639.72	Path and terms of how do you get to it.	Neutral	Statement-non-opinion
+SPEAKER_04	640.38	641.69	The and if you want a.	Neutral	Statement-opinion
+SPEAKER_04	641.96	642.96	A link to.	Neutral	Collaborative Completion
+SPEAKER_04	643.50	644.49	Parter solutions.	Neutral	Statement-non-opinion
+SPEAKER_04	644.80	646.06	Then do that but don't.	Neutral	Statement-non-opinion
+SPEAKER_04	646.54	648.60	The information and mirror also.	Neutral	Statement-non-opinion
+SPEAKER_06	647.87	662.53	Also, some solutions on that solution's page a that shouldn't exist at all thethere' something herthe should burned with fire. So for instanc? U john got a request in saying: why aren't we talking about sub groups.	Negative	Statement-non-opinion
+SPEAKER_06	663.46	677.08	O on te maken pages and and egin it was a fight that was was lost, but a so we weone of the one of these solutions on that page was spun up as a way to talk about subgurbts, so it shouldn't exist.	Negative	Statement-opinion
+SPEAKER_03	677.62	686.13	I I want so. The encouraging thing is that a the wed team is yas already having his conversation I had at on.	Neutral	Statement-non-opinion
+SPEAKER_03	686.78	692.81	One or two meetings with michael and folks on his team to talk about this kind of thing.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	693.77	694.28	Am.	Neutral	Backchannel in question form
+SPEAKER_03	694.66	699.03	So we're or con already heading down that track. So a cant a listed out four things.	Neutral	Statement-non-opinion
+SPEAKER_03	699.74	700.45	In e.	Neutral	Collaborative Completion
+SPEAKER_03	700.81	701.46	One e.	Neutral	Statement-non-opinion
+SPEAKER_03	701.99	720.31	So one is like: yes, please do break this into an epoc, so would say. I think we could spend our tire time just discussing this sink, but I would say, let's take an a sink every one. You know conto review, sidny's content, maybe leve some comments or maybe sidy. If you can break that into an epich or we can help you out like let's one hurt for sent, do that.	Negative	Statement-non-opinion
+SPEAKER_03	720.65	725.14	And this will be a great way for us to collaborate with ha web team on.	Positive	Statement-non-opinion
+SPEAKER_03	726.09	731.52	There there may be some stuff that, like we need to to shift and delay.	Negative	Statement-non-opinion
+SPEAKER_03	732.01	753.76	So the some stuff we might feel ages to go and do and some stuff we might say like. Ah, we need to make this look a cu to o caard ins to joint o kair with the webteen. Let let's do that and we're werely on them to tell us if they're like ya, just go, do that that won't just go, do it and if they're like no, we have this other web thing going on. Muchus mushus claboret with them they're really excited a collaborate with us.	Neutral	Statement-non-opinion
+SPEAKER_03	754.62	755.14	A.	Neutral	Collaborative Completion
+SPEAKER_03	755.48	757.17	Third thing: ah,.	Neutral	Statement-non-opinion
+SPEAKER_03	759.23	760.78	B c c should just be esi m.	Negative	Statement-opinion
+SPEAKER_03	762.05	769.64	Maybe this is the sontopic for another day, but as it relates to the solutions, page lut, just like a solution should be in the language of the customer.	Neutral	Statement-opinion
+SPEAKER_03	770.33	771.73	B c season invented her.	Neutral	Statement-non-opinion
+SPEAKER_03	772.39	772.76	So.	Neutral	Statement-non-opinion
+SPEAKER_03	774.35	783.46	Ah, at any any work we do on the website related to let's use terms, the customers notes, which incluses verging control te verging in trol collaboration is not a thing.	Negative	Statement-non-opinion
+SPEAKER_03	783.76	784.44	It doesn't exist.	Negative	Statement-non-opinion
+SPEAKER_03	785.32	788.81	Iutigua vergincol, you talk about cotereview, but let' talka. Let us see him.	Neutral	Statement-non-opinion
+SPEAKER_03	789.43	793.32	Ah, and in the last one is parter pages, less discussed that moore.	Neutral	Statement-non-opinion
+SPEAKER_03	793.91	804.76	Ah, in lecasing, my personal opinion is that the home for them should be in a partner section of the wepsite, but that we should in fact link them from a solution. Section.	Neutral	Statement-opinion
+SPEAKER_03	805.08	812.65	But maybe not so, let's discuss that asinc in like an issue just about that. That's part of your epic did those sound like good neck steps.	Neutral	Action-directive
+SPEAKER_03	813.97	817.95	I love this, I'm so excited about this.	Very Positive	Statement-non-opinion
+SPEAKER_01	819.15	821.36	Ah is iys this us austin sime.	Neutral	Declarative Yes-No-Question
+SPEAKER_05	821.97	822.76	It is very good.	Very Positive	Statement-non-opinion
+SPEAKER_04	822.75	824.16	To think t we can use.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	824.87	832.82	What this does is it helps us show how old use the usecase resource pages that we put so much effort into and sommers did too.	Neutral	Statement-non-opinion
+SPEAKER_04	833.82	835.99	They've been doin their training around those.	Neutral	Statement-non-opinion
+SPEAKER_04	836.38	841.70	And show how they connect they're, like the bigger picture, an the back story to.	Positive	Statement-non-opinion
+SPEAKER_04	842.34	843.40	A m.	Neutral	Collaborative Completion
+SPEAKER_04	845.54	845.95	Iber.	Neutral	Statement-non-opinion
+SPEAKER_05	846.51	851.75	My ba were doing it now. It's low, fresh runding. We didn't do this from the beginning, but em ye.	Neutral	Statement-non-opinion
+SPEAKER_04	847.01	847.47	My ba were.	Neutral	Statement-non-opinion
+SPEAKER_05	852.28	853.80	I think iave read it didn't. Thank you.	Neutral	Statement-non-opinion
+SPEAKER_03	852.48	853.04	Iave read it.	Neutral	Statement-non-opinion
+SPEAKER_03	855.36	856.17	I think em.	Neutral	Statement-opinion
+SPEAKER_03	857.04	865.66	Yea, I think now wee were were in and we cin'd ha suffered some early misdeps on go to market motions. But now things are ket asolidifying.	Negative	Statement-opinion
+SPEAKER_03	865.98	869.34	And so this is kind of like picking up the pieces and we move forward and.	Positive	Statement-opinion
+SPEAKER_03	870.03	872.71	One of those is um.	Neutral	Statement-non-opinion
+SPEAKER_03	873.51	877.44	Actually, I mit just I might to skip to it, ah, which is.	Negative	Statement-non-opinion
+SPEAKER_03	878.67	879.23	Four or.	Neutral	Collaborative Completion
+SPEAKER_03	880.42	881.59	Four five and six.	Neutral	Statement-non-opinion
+SPEAKER_03	882.23	882.96	For a.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	883.41	883.93	A.	Neutral	Collaborative Completion
+SPEAKER_03	885.47	887.14	I'w mant, I move these other ones down.	Negative	Statement-non-opinion
+SPEAKER_03	888.03	890.35	And four or three they're now.	Neutral	Statement-non-opinion
+SPEAKER_03	890.50	891.97	Three.	Neutral	Statement-non-opinion
+SPEAKER_03	892.12	896.40	Three four and five: maybe so a on tha topic.	Neutral	Statement-opinion
+SPEAKER_03	897.54	900.78	This team, you are the d arrive for sale's.	Neutral	Statement-opinion
+SPEAKER_03	901.82	902.45	Though,.	Neutral	Statement-opinion
+SPEAKER_03	902.60	905.38	Duncan I had a conversation a while back and I thought that I.	Neutral	Statement-non-opinion
+SPEAKER_03	906.24	907.14	This.	Neutral	Collaborative Completion
+SPEAKER_03	907.51	908.42	But I didn't.	Neutral	Statement-non-opinion
+SPEAKER_03	909.01	914.78	And there was jeffly some confusion and a cause, a lot of frustration. I think.	Negative	Statement-opinion
+SPEAKER_03	915.24	930.05	To sub yu folks on the team here in particular that I want to apologize a lot of that frustration is my fault, because if I would have communicated clearly ahead of time, then other folks within barketin would ave just known ogay. These of the perameters.	Negative	Statement-opinion
+SPEAKER_03	930.54	931.44	I didn't do that.	Negative	Statement-non-opinion
+SPEAKER_03	931.94	943.05	So, ah, I wonder ish that all of you understand you are the diarai for sailes play's full stop. This means, like you, determine the content. You determine the foremat. You.	Neutral	Statement-non-opinion
+SPEAKER_03	943.35	952.29	Like you get the imput from all the stake holders, which include sales and sales, enablemen um, but that's an art of fact that you eed to generate and it and you need to.	Neutral	Statement-opinion
+SPEAKER_03	952.95	963.74	Have the the outcomes that you needn't know what outcomes in what results yo're looking to drive and make sure that all the stake holders on board with that os that sound good? Is there any kind of questions on that.	Negative	Yes-No-Question
+SPEAKER_04	964.71	973.46	I think af animportant element of that, though william is understanding that we also broke out the definition of a sales play from a campaign.	Neutral	Statement-opinion
+SPEAKER_04	974.06	979.78	The campaign team owns the campaign, the p mim owns the sales play and they were.	Neutral	Statement-non-opinion
+SPEAKER_04	980.07	980.73	Together.	Neutral	Collaborative Completion
+SPEAKER_04	981.20	982.35	Not the same.	Neutral	Statement-opinion
+SPEAKER_03	982.87	992.27	Yes, a hundered per cent. There was a lot of confusion on treating a sales play like a campagn in their two different things and that's the next item, which is.	Negative	Statement-opinion
+SPEAKER_03	993.45	994.84	Oh, I made it a.	Positive	Statement-non-opinion
+SPEAKER_03	995.70	996.57	Yet to a.	Neutral	Collaborative Completion
+SPEAKER_03	997.13	1004.81	Now is this m r leseny maid, which was beautiful, and I know that some of you think parker you wait in there if you have not seen the amar.	Neutral	Yes-No-Question
+SPEAKER_03	1004.98	1009.21	Go and look at the amar go. Look at some of the comments. That'll give you even the background.	Neutral	Action-directive
+SPEAKER_03	1009.50	1009.97	Am.	Neutral	Statement-non-opinion
+SPEAKER_03	1010.68	1015.32	By yad, this is very now beautifully broken out like this is what a campaign is. This is what a sal's play is.	Positive	Statement-opinion
+SPEAKER_03	1016.10	1020.13	And there's even one little part about the semar that I'll 'll point out.	Neutral	Statement-non-opinion
+SPEAKER_03	1022.53	1023.46	Which is.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1025.23	1025.55	This.	Neutral	Collaborative Completion
+SPEAKER_03	1026.11	1027.59	Line about.	Neutral	Statement-non-opinion
+SPEAKER_03	1028.03	1029.94	What a geti emotion is.	Neutral	Collaborative Completion
+SPEAKER_03	1031.10	1031.39	M.	Neutral	Uninterpretable
+SPEAKER_03	1031.66	1032.33	Which I think.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1034.56	1036.13	That make it ano the final thing.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	1038.54	1039.96	So ya should be in there.	Neutral	Statement-opinion
+SPEAKER_03	1041.19	1042.51	Tay, be this ge ta motion.	Neutral	Repeat-phrase
+SPEAKER_03	1044.15	1046.22	Ye so here's what he used to say.	Neutral	Statement-non-opinion
+SPEAKER_03	1046.86	1055.11	They used to say a perpetual overarching topic. That's part of a go to mark a strategy that is not what it go to market motion is.	Negative	Statement-non-opinion
+SPEAKER_03	1056.19	1056.55	Right.	Positive	Acknowledge (Backchannel)
+SPEAKER_03	1057.43	1063.84	Like that confuses, this is why we had confusion. Like was a difference between a goto market motion, an a use.	Neutral	Statement-opinion
+SPEAKER_03	1064.50	1066.89	We've been using these use cases, which is like.	Neutral	Statement-non-opinion
+SPEAKER_03	1067.35	1074.49	A perpetual long lived topic, it's a solution, it's a use case. Wav yous can get lab and we build a getam shategy around it.	Neutral	Statement-opinion
+SPEAKER_03	1075.50	1079.48	And then we have geta motions and so there's confusion but they're two different things.	Neutral	Statement-non-opinion
+SPEAKER_03	1080.16	1086.47	The solution is the perpetual long lived thing. This is what we mark et. We mark et solutions.	Neutral	Statement-opinion
+SPEAKER_03	1087.13	1088.90	A gotomarket motion is.	Neutral	Statement-opinion
+SPEAKER_03	1090.37	1093.71	A a set of sailes en barkaining activities and assets.	Neutral	Statement-non-opinion
+SPEAKER_03	1094.48	1096.12	Centred around a solution.	Neutral	Collaborative Completion
+SPEAKER_03	1097.45	1105.76	Satat one clarity there. This was just like a subclarity of this whole emar, thiss, holemar's, brilliant in it. That is wanted to point out that one little part of it.	Positive	Statement-non-opinion
+SPEAKER_03	1106.92	1107.48	H does.	Neutral	Backchannel in question form
+SPEAKER_02	1107.21	1114.26	H, does it finally replace the term use case with the term solution? Orthou saying use cases are examples of solutions.	Neutral	Yes-No-Question
+SPEAKER_02	1114.58	1114.83	And.	Neutral	Statement-non-opinion
+SPEAKER_03	1115.12	1120.23	Use cases are a type of solution, but watch the vidio that I posted I made this week and.	Neutral	Statement-opinion
+SPEAKER_03	1120.69	1122.58	It will clarify that point. Ah,.	Neutral	Statement-opinion
+SPEAKER_03	1123.20	1124.62	How we categori.	Neutral	Statement-non-opinion
+SPEAKER_03	1125.96	1126.34	Uh.	Neutral	Uninterpretable
+SPEAKER_03	1128.01	1128.77	And then.	Neutral	Statement-non-opinion
+SPEAKER_03	1129.09	1129.57	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	1130.92	1134.66	What else about sals playing metrics senhe on if youon talk about this comment here.	Neutral	Wh-Question
+SPEAKER_04	1135.22	1136.79	Yes at this is I'm.	Neutral	Agree/Accept
+SPEAKER_04	1137.18	1137.55	The.	Neutral	Statement-non-opinion
+SPEAKER_04	1138.97	1141.72	It would I'd like to compare notes with.	Neutral	Statement-non-opinion
+SPEAKER_04	1142.32	1145.72	The rest of yall and the other gt motions about.	Neutral	Statement-non-opinion
+SPEAKER_04	1146.64	1147.29	The.	Neutral	Uninterpretable
+SPEAKER_04	1147.72	1148.25	Him.	Neutral	Collaborative Completion
+SPEAKER_04	1149.07	1150.05	To ultimate.	Neutral	Appreciation
+SPEAKER_04	1150.96	1154.56	Was going down the path of using pathfactory for.	Negative	Statement-non-opinion
+SPEAKER_04	1155.17	1156.53	To measure how.	Neutral	Collaborative Completion
+SPEAKER_04	1156.87	1159.91	Each sales person engaged with.	Neutral	Statement-non-opinion
+SPEAKER_04	1160.36	1162.91	The sales play itself and the.	Neutral	Statement-opinion
+SPEAKER_04	1163.87	1165.34	I think that's.	Neutral	Statement-opinion
+SPEAKER_04	1166.24	1166.62	I think.	Neutral	Statement-opinion
+SPEAKER_04	1167.05	1167.75	If we.	Neutral	Statement-non-opinion
+SPEAKER_04	1168.23	1169.27	I.	Neutral	Statement-non-opinion
+SPEAKER_04	1170.54	1172.90	And a nell for feed back in tarms of.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	1173.56	1176.65	Youall mentioned in the the meeting friday before last.	Neutral	Statement-non-opinion
+SPEAKER_04	1177.39	1179.50	That metrics were important to you. Can you.	Neutral	Yes-No-Question
+SPEAKER_04	1180.26	1181.44	Me a little bit about that.	Neutral	Affirmative non-yes answers
+SPEAKER_04	1182.08	1182.99	And an.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	1184.02	1184.49	How.	Neutral	Statement-non-opinion
+SPEAKER_04	1185.30	1186.11	I prut his.	Neutral	Statement-non-opinion
+SPEAKER_04	1186.50	1189.03	Quot in that tod n that issued.	Neutral	Statement-non-opinion
+SPEAKER_04	1189.66	1191.26	He wants to see like.	Neutral	Statement-non-opinion
+SPEAKER_04	1192.43	1198.82	Is there a particular title that we're not calling on when we get suck in premium that we do with t he ultimate and.	Neutral	Yes-No-Question
+SPEAKER_04	1199.23	1200.36	The difference of what makes.	Neutral	Collaborative Completion
+SPEAKER_04	1200.68	1201.88	Is there.	Neutral	Backchannel in question form
+SPEAKER_04	1202.37	1205.47	Am you know what what are the differences that are driving.	Neutral	Yes-No-Question
+SPEAKER_04	1206.26	1209.89	Were were were successful in getting to ultimate and were were not.	Neutral	Statement-non-opinion
+SPEAKER_04	1210.99	1212.79	Path, factories not now tell us that.	Neutral	Statement-opinion
+SPEAKER_04	1213.06	1215.43	I think that that's all sails corse.	Neutral	Statement-opinion
+SPEAKER_04	1215.97	1216.41	Data.	Neutral	Collaborative Completion
+SPEAKER_04	1216.96	1218.21	An understanding.	Neutral	Collaborative Completion
+SPEAKER_04	1219.39	1219.80	E.	Neutral	Statement-non-opinion
+SPEAKER_04	1220.98	1223.29	We can understand that we can understand.	Neutral	Statement-opinion
+SPEAKER_04	1223.81	1230.51	From pathfactory, which customer is engaged with us, and if the asset is tagged with a tracker.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	1230.93	1231.32	That's.	Neutral	Uninterpretable
+SPEAKER_04	1231.49	1233.03	Associated with the campaign.	Neutral	Statement-non-opinion
+SPEAKER_04	1233.45	1235.14	Then you know which campaign it came from.	Neutral	Declarative Yes-No-Question
+SPEAKER_04	1235.63	1237.99	If we know which customers came from.	Neutral	Statement-opinion
+SPEAKER_04	1238.56	1241.53	The premium dultimate campaign: why do we care.	Negative	Collaborative Completion
+SPEAKER_04	1242.07	1246.02	Whether niko or larry, or whatever, picked on a particular.	Neutral	Statement-opinion
+SPEAKER_04	1246.73	1247.37	Asset.	Positive	Collaborative Completion
+SPEAKER_05	1247.67	1252.97	O only know that so the paffectories e measare internal adoption bates on talking with tenusa and that's why.	Neutral	Statement-non-opinion
+SPEAKER_05	1253.43	1264.40	Ye am, she was mor supat actory wu be hay, are they are they using the sales play right on which I don't think is a bad thing and then thei there's the external measurement, so she was looking at it from two different english.	Neutral	Statement-non-opinion
+SPEAKER_04	1266.00	1267.52	Don't measure what you're not going to.	Negative	Collaborative Completion
+SPEAKER_04	1268.33	1271.32	And so my question to pile and o nall was are youn.	Neutral	Statement-non-opinion
+SPEAKER_04	1271.79	1273.44	Really going to use the data of.	Neutral	Collaborative Completion
+SPEAKER_04	1273.98	1279.35	Who engaged with what assets and who engage with it? The sall's play? I don't think they care, I think they care about the.	Negative	Rhetorical-Questions
+SPEAKER_04	1280.28	1280.80	And and.	Neutral	Statement-non-opinion
+SPEAKER_04	1281.12	1284.77	What they care more about is the data inside on how to get there.	Negative	Statement-opinion
+SPEAKER_05	1285.17	1285.39	No.	Neutral	Agree/Accept
+SPEAKER_04	1285.78	1286.17	Im.	Neutral	Uninterpretable
+SPEAKER_04	1286.66	1288.70	Tenuja apparently had talked with.	Neutral	Statement-non-opinion
+SPEAKER_04	1289.32	1294.25	Summers about she was not comfortable about using pathfactory, but she was not speaking up in the group.	Negative	Abandoned or Turn-Exit
+SPEAKER_04	1295.38	1295.80	Um.	Neutral	Uninterpretable
+SPEAKER_04	1296.02	1298.01	And so I think a lot of.	Neutral	Statement-opinion
+SPEAKER_04	1298.35	1299.57	Comes back to.	Neutral	Collaborative Completion
+SPEAKER_04	1300.38	1300.83	Um.	Neutral	Uninterpretable
+SPEAKER_04	1301.56	1304.32	And I never being recorded, but on is mosaias. I think that.	Neutral	Statement-non-opinion
+SPEAKER_04	1304.59	1310.82	Dunk means well, but he is a v p and when he says we should do something, everybody says.	Neutral	Statement-non-opinion
+SPEAKER_04	1311.16	1312.34	Oquay, we should do it that way.	Neutral	Statement-opinion
+SPEAKER_04	1312.76	1315.24	And people are not being vocal about.	Neutral	Statement-opinion
+SPEAKER_04	1315.98	1316.58	Their.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	1317.66	1319.26	Ye I eam to disagreet that.	Neutral	Statement-non-opinion
+SPEAKER_05	1319.58	1324.24	I'll be honest with you and is sam thankful that you jumped on an tat had bryan because, like it's now april, fifth,.	Neutral	Statement-non-opinion
+SPEAKER_05	1324.62	1325.55	And we are still.	Neutral	Statement-non-opinion
+SPEAKER_05	1325.86	1329.05	Talking about this stuff and we have to deliver some about the end of the week.	Neutral	Statement-non-opinion
+SPEAKER_05	1329.42	1331.51	So we might need to get down to brass tax here and.	Negative	Statement-opinion
+SPEAKER_05	1331.86	1333.97	Like get there as well I'man like.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	1334.34	1336.57	How many is don't know wherd? Where do we just like.	Neutral	Wh-Question
+SPEAKER_05	1337.37	1338.97	Tie it up, you know, there's.	Neutral	Statement-non-opinion
+SPEAKER_02	1338.53	1339.51	There's also a.	Neutral	Statement-non-opinion
+SPEAKER_02	1339.71	1343.46	There's a fragility to pathfactory and we want something that we can iterate on.	Neutral	Statement-non-opinion
+SPEAKER_02	1343.78	1345.18	Which is why we were going handbook.	Neutral	Abandoned or Turn-Exit
+SPEAKER_02	1345.53	1346.01	Reon.	Neutral	Statement-non-opinion
+SPEAKER_02	1346.55	1356.70	And we get guglan litics on handbook pages, like we get data on how often a thing is hit and on how much time people spend on it, and if we just want to know are the plays getting looked at.	Negative	Statement-non-opinion
+SPEAKER_02	1357.19	1362.26	No, we won't be able to distinguish internal from external hypees or anything like that. But we'll noted it's getting looked.	Neutral	Statement-non-opinion
+SPEAKER_04	1360.74	1361.01	But.	Neutral	Statement-opinion
+SPEAKER_04	1362.73	1366.54	I wonl re hat on that I' on that issue.	Neutral	Statement-non-opinion
+SPEAKER_04	1366.88	1368.01	A brilliant thought.	Very Positive	Appreciation
+SPEAKER_03	1368.48	1368.87	So.	Neutral	Statement-non-opinion
+SPEAKER_03	1369.31	1369.73	Nom.	Neutral	Conventional-closing
+SPEAKER_03	1370.88	1371.50	Let's do this.	Neutral	Action-directive
+SPEAKER_03	1371.86	1374.86	You, you are the diari for your sales play.	Neutral	Statement-opinion
+SPEAKER_03	1375.69	1381.22	So you you get to deside if you want a use paffactory and there's reasons that you think it would be valuable.	Negative	Statement-non-opinion
+SPEAKER_03	1381.46	1383.00	You've heard why to use it.	Neutral	Statement-opinion
+SPEAKER_04	1383.42	1390.89	I I isn't strouly added, be consistent across all three motions because we're going to drive sals nuts, if everybody has a different way of do in it,.	Negative	Statement-opinion
+SPEAKER_03	1391.23	1402.74	Uh, that's at dilly recall. So actually this is thissis relgetimecist. So for the sake of that consistency, sindy you are the dear ri. So it's your call. Are we using pafactory or.	Neutral	Statement-non-opinion
+SPEAKER_04	1391.82	1392.51	That's at dilly.	Neutral	Appreciation
+SPEAKER_04	1404.26	1407.68	I would say: no, unless pile and onowll come back with a.	Neutral	Statement-opinion
+SPEAKER_04	1407.95	1409.57	Response that I don't expect.	Neutral	Statement-opinion
+SPEAKER_03	1410.59	1416.10	It so less so moving forward were not using pafactory, at least for the siteration.	Negative	Statement-opinion
+SPEAKER_04	1416.42	1418.23	Not for but be careful.	Neutral	Collaborative Completion
+SPEAKER_04	1418.43	1420.39	Because there's still mongh people that think.	Negative	Statement-opinion
+SPEAKER_04	1420.68	1423.80	That te sales play is that everything- and it's not.	Neutral	Statement-opinion
+SPEAKER_04	1424.73	1427.68	We would use pathfactory for the campaign.	Neutral	Statement-non-opinion
+SPEAKER_04	1428.20	1432.66	To see the customer engagement, but we would not use it for the sales play.	Neutral	Statement-non-opinion
+SPEAKER_04	1433.11	1436.47	Internally to understand the sales team's engagement.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1437.05	1444.40	Ya, tis parker. Does that gev you enough clarity for you to deliver the thing that you need to deliver with a very tight time line.	Positive	Yes-No-Question
+SPEAKER_05	1444.83	1454.12	Well, may we have, we have a good page, upright now um, I think so. Ight I mean just I clare. It's either, there's always a little something more as we're movin along you know. I mean at sajes.	Neutral	Statement-opinion
+SPEAKER_05	1454.56	1455.07	Um.	Neutral	Uninterpretable
+SPEAKER_05	1455.90	1460.23	It's like the a it's like the vidio game or the movy that never ends kind of think so psyke. I don't know when.	Neutral	Statement-opinion
+SPEAKER_05	1461.16	1465.33	Ye it know where that the breaking point is or that the half life o.	Neutral	Collaborative Completion
+SPEAKER_04	1465.33	1471.61	Ow ard, rather howar, cormac and somya. How we all do in the sales play. Is it a hanbuck page? Is it.	Neutral	Yes-No-Question
+SPEAKER_06	1471.94	1476.06	Were we we're just getting there on on the davaps waye.	Neutral	Yes-No-Question
+SPEAKER_02	1475.50	1485.54	And in our last call last week we just agreed to go hand book, but it looks like simultaneously. This issue. Conversation was going on about a pathractory tract.	Neutral	Statement-non-opinion
+SPEAKER_03	1485.75	1486.29	I.	Neutral	Statement-non-opinion
+SPEAKER_02	1485.87	1489.98	I good we have to make sure and william make sure as well. Please.	Neutral	Statement-non-opinion
+SPEAKER_02	1490.22	1497.21	We have culture clash gone on here where, for example, we want to open a question about metrics. It starts with a slack thread with zac and me and.	Neutral	Statement-non-opinion
+SPEAKER_02	1497.39	1500.31	Agnes cracks open n issue because she gets our culture.	Neutral	Statement-opinion
+SPEAKER_02	1501.20	1505.05	And then a different faction says I'll schedule a meeting for this date.	Neutral	Statement-non-opinion
+SPEAKER_02	1505.52	1509.44	And these three or four people are in that call and we're going to decide in that call we're doing.	Neutral	Statement-non-opinion
+SPEAKER_04	1509.91	1510.98	Yer out about.	Neutral	Backchannel in question form
+SPEAKER_02	1510.27	1519.50	Out about metrics and that's a culture clashere, we we need to reconcile because it ultimately ties back to which format we're going to use to deliver the play it tiesback to all these other things.	Negative	Statement-opinion
+SPEAKER_02	1520.02	1521.76	So there's a call happening to day were.	Neutral	Statement-non-opinion
+SPEAKER_02	1522.18	1524.32	Revers in that call thinks they're deciding.	Neutral	Statement-non-opinion
+SPEAKER_02	1524.59	1528.02	What metrics we're going to get and what form out we're going to use for sales plays.	Neutral	Statement-non-opinion
+SPEAKER_07	1528.31	1528.86	O away.	Neutral	Collaborative Completion
+SPEAKER_02	1528.37	1532.20	O away the all we think we're deciding, we have to make surely reconcide as.	Neutral	Statement-opinion
+SPEAKER_03	1531.93	1538.11	As to you sayn a you say, for example, there's a call to day, or you literally saying no tens a carol to day.	Neutral	Statement-opinion
+SPEAKER_02	1536.56	1538.03	No tens a carol to day.	Neutral	Statement-opinion
+SPEAKER_04	1538.03	1541.89	I'll see that there's a sut brought up to you, william, in ar lounge.	Neutral	Statement-non-opinion
+SPEAKER_02	1538.63	1538.97	A.	Neutral	Collaborative Completion
+SPEAKER_02	1540.81	1541.11	In.	Neutral	Collaborative Completion
+SPEAKER_04	1542.40	1542.82	Dunk.	Neutral	Statement-non-opinion
+SPEAKER_04	1543.39	1545.27	Up a meeting this afternoon.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	1545.74	1550.21	With dor dara and some other folks to talk about.	Neutral	Statement-non-opinion
+SPEAKER_04	1551.31	1551.73	He was.	Neutral	Agree/Accept
+SPEAKER_04	1552.42	1555.85	He was transparent about it in that it's in the meeting.	Neutral	Statement-non-opinion
+SPEAKER_04	1556.32	1559.95	Agenda for to day for the go to market team.	Neutral	Collaborative Completion
+SPEAKER_04	1560.49	1561.97	But he's not being he's not.	Neutral	Statement-non-opinion
+SPEAKER_04	1562.31	1563.29	To bryan's point.	Neutral	Collaborative Completion
+SPEAKER_04	1563.79	1565.38	That's not how we get work done here.	Negative	Statement-opinion
+SPEAKER_03	1566.29	1566.56	So.	Neutral	Uninterpretable
+SPEAKER_02	1566.56	1571.84	Ye I eond to reconcile what it means to be the dea raposile youletas. It also man, the former.	Neutral	Statement-opinion
+SPEAKER_03	1567.29	1568.23	I eond to.	Neutral	Statement-non-opinion
+SPEAKER_04	1569.90	1570.71	Youletas.	Neutral	Collaborative Completion
+SPEAKER_04	1572.30	1576.52	He invited me that's my point. He invited me and somya at no other p.	Neutral	Statement-non-opinion
+SPEAKER_03	1579.17	1579.40	I.	Neutral	Statement-non-opinion
+SPEAKER_03	1579.96	1582.10	I I'm good with this then so.	Neutral	Statement-non-opinion
+SPEAKER_03	1583.17	1583.55	I.	Neutral	Statement-non-opinion
+SPEAKER_03	1583.82	1587.01	I'm locaded not be invited cindy if you are invited.	Negative	Statement-non-opinion
+SPEAKER_03	1587.98	1588.33	And.	Neutral	Statement-non-opinion
+SPEAKER_03	1588.77	1594.68	So this is this, I my thought on it cindy. You are the diarai for the definition of sails place across.	Neutral	Statement-non-opinion
+SPEAKER_03	1594.96	1603.10	Bak bets it, this team is dearise for sails place, full stop for the metrics for the forement, for everything like. If there's any confusion about that.	Neutral	Statement-opinion
+SPEAKER_03	1603.23	1603.62	Like.	Neutral	Collaborative Completion
+SPEAKER_03	1604.01	1611.99	Let me know, I'm pretty sure that I have like agreement from dunk and tod and a whole bunch of people that that is the case. There should be no confusion. There.	Neutral	Statement-opinion
+SPEAKER_03	1612.46	1618.49	And that oll this team city, if there's any, call to be made in there's confusion, just make the call.	Negative	Statement-non-opinion
+SPEAKER_03	1619.19	1620.04	Which includes.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1620.53	1621.42	If there's a meeting.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1622.57	1623.35	Just say like.	Neutral	Statement-non-opinion
+SPEAKER_03	1623.92	1626.52	No, where no cat a do meeting we'll decide this in an issue.	Neutral	Statement-opinion
+SPEAKER_03	1627.04	1634.23	I'm good with that too or whatever. If you want to go to themeeting, that's fine like whatever year the d'ar I like run it how you was.	Neutral	Statement-non-opinion
+SPEAKER_05	1634.87	1654.35	I must feeling a meeting would be good but a meeting where every one is there, like all hands boom red alarmd this afternoon, we're all meeting listen to sindy. This is the definition as everyone clear. Do you have questions any questions right now boom like that's. What I think would be a good idea cause otherwise can take more days for every one to come on board and ther could still be back. Alleys uf, I think, like ut,.	Neutral	Statement-opinion
+SPEAKER_04	1654.08	1654.65	Ut all.	Neutral	Repeat-phrase
+SPEAKER_05	1654.48	1657.18	I don't know how the phrase I can't use the phrase ot the arents.	Negative	Statement-non-opinion
+SPEAKER_04	1656.22	1658.92	Phrase ot the arents paternanis atress on.	Neutral	Collaborative Completion
+SPEAKER_04	1659.59	1660.71	Bagoriablthing is.	Neutral	Statement-non-opinion
+SPEAKER_04	1662.70	1665.20	Sales people, no one from sales, is invited.	Neutral	Statement-non-opinion
+SPEAKER_04	1665.52	1665.90	En.	Neutral	Repeat-phrase
+SPEAKER_04	1666.43	1673.14	And yet sales was the one that said: thathey wantedmetric, so I' just feel like. We've got a lot of disconnacs and a lot of fragment of things to bryan's point.	Negative	Statement-non-opinion
+SPEAKER_04	1673.97	1674.78	Nowing o think.	Neutral	Backchannel in question form
+SPEAKER_05	1674.27	1685.65	O think may not solve it. In my pennycause we've been doing it a sint kind of whole time or different, like a jespilaky, a having a one, the that come to the promise land moment. That was the the phrase on one to use that wasn't.	Negative	Statement-opinion
+SPEAKER_05	1685.85	1688.92	Friendly but haven't one of those would be, I think, beneficial.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	1690.32	1691.47	Even though it's not typical.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1691.47	1694.96	Well, we have, we have a venue for that. Parker.	Neutral	Statement-non-opinion
+SPEAKER_03	1695.40	1699.06	Which is the thursday stratege an tactics, all hands.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	1700.95	1703.16	Right or do we kind o.	Neutral	Declarative Yes-No-Question
+SPEAKER_03	1703.43	1707.82	We hear a discussion of people or do we just't need a distribution chantel.	Neutral	Statement-non-opinion
+SPEAKER_05	1711.20	1714.23	A I meau, that's a good question, I'm not sure an imot how anywhere everyone's.	Negative	Statement-non-opinion
+SPEAKER_05	1715.03	1715.84	Wherever one's a.	Neutral	Collaborative Completion
+SPEAKER_03	1716.02	1726.15	In my opinion, we don't need any discussion, there's no need for discussion, there's zeronee. The reason. Why is because we have a dar e and at git lab the d ary makes the decision.	Negative	Statement-opinion
+SPEAKER_03	1726.71	1731.40	So anybody can provide whatever imput they want. If we're not taking him put, I fe're not listening, we're not doing it right.	Negative	Statement-opinion
+SPEAKER_03	1731.97	1738.18	But people can provide and put and then a dearri makes a decision. There's no need for cincensis we're, not a consensus, driven ork.	Neutral	Statement-opinion
+SPEAKER_05	1738.48	1748.51	When I colieve y foundat ifalumtilism awareness so that like if anyone has concerns a pilactic ky, we keep having these disconnects come back and bite us right. So I hi com we just.	Negative	Statement-non-opinion
+SPEAKER_06	1748.51	1752.96	Nip it, I don't link the issue. No, I I think I found the issue that.	Neutral	Statement-non-opinion
+SPEAKER_06	1753.06	1766.09	Tries to the meeting, which I also found by looking on on a sindy's calendar ah- and I like that issue at three f. So if we have fee back beforehand, we shuld probably pop it in there. If that's the correct issue.	Negative	Statement-non-opinion
+SPEAKER_04	1767.41	1769.43	So here's the deal, though william.	Neutral	Action-directive
+SPEAKER_04	1769.79	1773.08	You say I culd just say: we're not go, have a meeting on this cause. I'm de yari.	Neutral	Statement-non-opinion
+SPEAKER_04	1774.60	1775.63	Dunks v p.	Neutral	Collaborative Completion
+SPEAKER_04	1776.13	1777.04	Am I going to say.	Neutral	Backchannel in question form
+SPEAKER_04	1777.41	1777.80	Dunk.	Neutral	Statement-non-opinion
+SPEAKER_04	1779.12	1781.90	We're we're not what I'm cancelling you are meeting.	Negative	Statement-non-opinion
+SPEAKER_04	1782.65	1783.64	That's a little awkward.	Negative	Statement-opinion
+SPEAKER_03	1784.22	1798.90	Ohe, that's that's fair. I would say that un I've conn even become aware of this. Like un, I've started a notice that, like conversations I had a week before being a manager and a week after being a manager are different because.	Neutral	Statement-non-opinion
+SPEAKER_03	1799.08	1810.98	You know tht have different contact so of your v p. Then it has your words. Have diferent contacts for you. You might think you're making a suggestion or you're trying to be helpful. But you know because of your title and in place nit an order.	Neutral	Statement-opinion
+SPEAKER_03	1811.10	1814.07	It sounds like its. We have to do this.	Neutral	Statement-opinion
+SPEAKER_03	1814.30	1830.69	In so ii would say this as cent of my general notion on git lab perd, o briane's point about et lap. Culture like gitlab is a communicate, direct culture. That's so anybody in here should feel free to talk directly to anybody all the way of toour exectin.	Neutral	Statement-opinion
+SPEAKER_03	1831.58	1839.45	If you, if, if that's not the case, I would say I'm happy, I'm happy for you to esculate to me and say likay. I wanted and make this communication.	Positive	Statement-non-opinion
+SPEAKER_03	1840.04	1841.62	To such and such a person.	Neutral	Collaborative Completion
+SPEAKER_03	1842.38	1843.36	It seems awkward.	Negative	Statement-opinion
+SPEAKER_03	1844.34	1847.28	I'm happy to like help out in that case as well.	Positive	Statement-non-opinion
+SPEAKER_03	1847.68	1848.19	Um.	Neutral	Uninterpretable
+SPEAKER_04	1848.61	1852.63	I' figured I'll go to the meeting that he set up to day and see hat, be.	Neutral	Statement-non-opinion
+SPEAKER_04	1854.52	1855.61	What the issues.	Neutral	Backchannel in question form
+SPEAKER_04	1856.41	1857.57	If the concerns are.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	1858.72	1859.26	Em.	Neutral	Repeat-phrase
+SPEAKER_04	1861.32	1864.93	Ibut, I don't think it's appropriate for me to say to him.	Negative	Statement-opinion
+SPEAKER_04	1866.14	1866.48	M.	Neutral	Uninterpretable
+SPEAKER_04	1867.07	1868.64	You know we don't need to have this meeting.	Negative	Statement-opinion
+SPEAKER_03	1869.23	1869.57	Oge.	Neutral	Statement-non-opinion
+SPEAKER_03	1870.58	1896.75	In that that's cool, see, I think, that's like you should be able to do that and l we should take him put, and so clearly he scudgle the meeting, because he thinks that there's some challenge to be had or something to communicate. So, like yes, like oqey, let's go and listen. I think that that's fine, a I'll so think it's fine for the sake of diversity, for the sake of, like all the other things to say, li can we push to say sink, but t's. Also, fine a go, I'm not even seeing it. What time is it at.	Negative	Statement-opinion
+SPEAKER_03	1900.26	1903.91	I was like looking at yoi as lookin at your calendar syndy, but I don't see thee.	Negative	Statement-non-opinion
+SPEAKER_07	1905.04	1905.38	Meading.	Neutral	Collaborative Completion
+SPEAKER_07	1906.37	1909.87	Its at elevena, pacific.	Neutral	Statement-non-opinion
+SPEAKER_07	1911.54	1913.51	James kalanger and.	Neutral	Statement-non-opinion
+SPEAKER_03	1913.65	1916.85	Oh okets calle chabes calling to hear dunc sinc.	Neutral	Collaborative Completion
+SPEAKER_04	1917.49	1917.81	Ya.	Neutral	Appreciation
+SPEAKER_03	1918.19	1918.51	Noge.	Neutral	Repeat-phrase
+SPEAKER_04	1918.78	1922.76	Funny, because that was inciteful into who he thought needed to sink up on.	Neutral	Statement-opinion
+SPEAKER_03	1923.64	1924.04	At.	Neutral	Collaborative Completion
+SPEAKER_03	1924.55	1925.04	Um.	Neutral	Uninterpretable
+SPEAKER_00	1927.67	1929.24	E so before we mon.	Neutral	Abandoned or Turn-Exit
+SPEAKER_00	1929.41	1930.42	To the next fine.	Neutral	Collaborative Completion
+SPEAKER_00	1930.71	1931.16	Catlo.	Neutral	Statement-non-opinion
+SPEAKER_00	1931.55	1932.28	Great.	Very Positive	Appreciation
+SPEAKER_00	1932.77	1933.26	Am.	Neutral	Uninterpretable
+SPEAKER_00	1933.88	1935.97	Are we agried tet, we one o yous.	Neutral	Yes-No-Question
+SPEAKER_00	1936.58	1938.91	The handbook for the sailors play.	Neutral	Statement-non-opinion
+SPEAKER_00	1939.35	1940.12	Laybo or.	Neutral	Collaborative Completion
+SPEAKER_00	1940.49	1942.25	A be stillconuse different.	Neutral	Collaborative Completion
+SPEAKER_00	1942.55	1943.08	Autions.	Neutral	Statement-non-opinion
+SPEAKER_00	1943.85	1945.24	Because theyre so.	Neutral	Statement-opinion
+SPEAKER_00	1945.54	1948.29	Let me let me articulate my question: a littlble.	Neutral	Hold before answer/agreement
+SPEAKER_00	1948.54	1953.35	Are a couple of aspects of the sane pable plates wor? There are a few.	Neutral	Yes-No-Question
+SPEAKER_00	1953.93	1961.64	Things like the elevator, pich or r, you know the diffrenciations objection, handing and so on, which will be part of.	Neutral	Statement-non-opinion
+SPEAKER_00	1961.74	1963.44	Same sple boocatserf, so that.	Negative	Statement-opinion
+SPEAKER_00	1963.78	1965.13	Will be pardof the hand book.	Neutral	Collaborative Completion
+SPEAKER_00	1965.76	1966.52	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_00	1967.06	1975.09	The rest of the essets, which bear redirecting to sails to look at, for example, the customo dic, or it could be.	Neutral	Statement-non-opinion
+SPEAKER_00	1975.49	1978.09	You know some form of collateral that wear creating.	Neutral	Statement-non-opinion
+SPEAKER_00	1978.56	1980.66	Ah parently, it.	Neutral	Collaborative Completion
+SPEAKER_00	1980.89	1986.73	Eiger ipedier, if for a presedition or a word document, I think.	Neutral	Statement-non-opinion
+SPEAKER_00	1986.85	1988.54	My understanding from what.	Neutral	Statement-non-opinion
+SPEAKER_00	1989.04	1992.40	Blunk and the deam wanted was at those.	Neutral	Statement-opinion
+SPEAKER_00	1993.04	1994.97	Reside in park factory.	Neutral	Statement-non-opinion
+SPEAKER_00	1995.46	2001.43	So that sales have a single place to go for a poticlogitia motion for the esses.	Negative	Statement-non-opinion
+SPEAKER_00	2002.00	2004.00	And the seals pleaboot percy.	Neutral	Statement-non-opinion
+SPEAKER_00	2004.52	2004.84	Good.	Positive	Appreciation
+SPEAKER_00	2005.04	2006.29	Good recide, any wit,.	Positive	Statement-opinion
+SPEAKER_00	2006.59	2010.00	Rat, so that could be a handbook that could be a word document whatever.	Negative	Statement-non-opinion
+SPEAKER_00	2010.83	2011.35	So.	Neutral	Statement-non-opinion
+SPEAKER_00	2012.37	2012.94	Om.	Neutral	Acknowledge (Backchannel)
+SPEAKER_00	2013.95	2018.76	Are we saying that we don't want to put the other assets, this frien and bot.	Negative	Yes-No-Question
+SPEAKER_04	2019.17	2021.71	The assits that are custom are facing.	Neutral	Statement-opinion
+SPEAKER_04	2022.54	2024.84	A that a sale's person would.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	2024.94	2026.59	Send to the customer.	Neutral	Collaborative Completion
+SPEAKER_04	2027.11	2032.02	Belong in pathfactory, because we want to track the customer's engagement with those.	Neutral	Statement-non-opinion
+SPEAKER_04	2032.60	2033.46	So if you've got.	Neutral	Statement-opinion
+SPEAKER_04	2034.25	2034.81	Im.	Neutral	Uninterpretable
+SPEAKER_04	2036.23	2038.05	I don't know about a customer deck.	Negative	Statement-non-opinion
+SPEAKER_04	2038.34	2043.04	They shouldn't really just be sending the deck. They should be having a conversation using the deck.	Neutral	Statement-opinion
+SPEAKER_04	2043.53	2045.05	That may be a new onts, but.	Neutral	Statement-opinion
+SPEAKER_04	2045.37	2046.17	If you've got.	Neutral	Statement-opinion
+SPEAKER_04	2046.71	2051.21	A piece of calateral and e book, a a customer story.	Negative	Statement-non-opinion
+SPEAKER_04	2051.68	2054.08	All of those customer facing.	Neutral	Statement-opinion
+SPEAKER_04	2054.57	2058.11	Are already in pathfactory, all they need to do is.	Negative	Statement-opinion
+SPEAKER_04	2058.96	2064.76	Give a tracking link to the campaign and that tracking lnk is what the sails person.	Neutral	Statement-opinion
+SPEAKER_04	2065.35	2066.96	Should use to sand.	Neutral	Collaborative Completion
+SPEAKER_04	2067.41	2068.64	And that should be in.	Neutral	Statement-opinion
+SPEAKER_04	2069.49	2070.16	The play book.	Neutral	Collaborative Completion
+SPEAKER_04	2071.06	2072.37	And it should and.	Neutral	Statement-opinion
+SPEAKER_04	2072.63	2074.40	In my mind, wit, the way we.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	2075.26	2077.55	Iil never forget when I first came here.	Neutral	Statement-non-opinion
+SPEAKER_04	2078.09	2078.36	And.	Neutral	Statement-non-opinion
+SPEAKER_04	2078.82	2080.07	Was here for a couple weeks.	Neutral	Statement-non-opinion
+SPEAKER_04	2080.91	2085.74	And and was told to do a and sale's ennablement around security.	Neutral	Statement-non-opinion
+SPEAKER_04	2086.19	2088.42	And I put together this wonderful set of slides.	Very Positive	Statement-non-opinion
+SPEAKER_04	2088.93	2097.60	And the shee went over, he said the night before he said. Show me what you, what you're going to do for those cells enablement and I pulled out the slides and he just about- had a hard attack and he's like.	Neutral	Statement-non-opinion
+SPEAKER_04	2098.02	2102.26	You can't do this simill fire, you, you cannot show slides.	Very Negative	Statement-non-opinion
+SPEAKER_04	2103.00	2105.09	That is not how we do it at gitlab.	Negative	Statement-non-opinion
+SPEAKER_04	2106.02	2108.05	So I had to completely redue it.	Very Negative	Statement-non-opinion
+SPEAKER_04	2108.38	2110.43	The night before and come up with.	Neutral	Collaborative Completion
+SPEAKER_04	2110.81	2117.61	A a gugledoc that had lynxs to things in the hand book of where to find the different pieces of information.	Neutral	Statement-non-opinion
+SPEAKER_04	2118.14	2120.79	In my mind, that's what a sailes place should be.	Neutral	Statement-opinion
+SPEAKER_04	2121.14	2122.78	It should be lynx to.	Neutral	Statement-opinion
+SPEAKER_04	2123.20	2124.48	The thecononical.	Neutral	Collaborative Completion
+SPEAKER_04	2125.23	2127.57	Information, so that you don't have to.	Neutral	Statement-non-opinion
+SPEAKER_04	2127.91	2130.47	Copy things and then the sales play gets out a sink.	Very Negative	Statement-opinion
+SPEAKER_04	2131.72	2132.60	Wit should be one.	Positive	Statement-opinion
+SPEAKER_03	2133.75	2138.74	To be fair to sit, I don't I don't think sin would ever do that and those may have been ashecios exact words. We.	Neutral	Statement-opinion
+SPEAKER_03	2139.32	2140.55	Surely he was exaggerating.	Negative	Statement-opinion
+SPEAKER_04	2140.90	2141.16	You.	Neutral	Yes-No-Question
+SPEAKER_04	2141.71	2143.15	Is aproach to.	Neutral	Yes-No-Question
+SPEAKER_03	2143.32	2144.29	All us us say is.	Neutral	Affirmative non-yes answers
+SPEAKER_03	2144.94	2147.31	Yet like to be superclear on it,.	Positive	Abandoned or Turn-Exit
+SPEAKER_03	2147.80	2150.34	Your sale's play should be a page in the hand book.	Neutral	Statement-opinion
+SPEAKER_03	2150.61	2154.23	It should be a short, pithy, concise.	Neutral	Statement-opinion
+SPEAKER_03	2155.18	2159.92	You know set of info. That's, like only has the info that only the sale's person needs.	Negative	Abandoned or Turn-Exit
+SPEAKER_03	2160.22	2166.16	And that it should link out to your what I man to call your goto market strategy page.	Neutral	Statement-opinion
+SPEAKER_03	2166.74	2169.47	So that use case solution, resource.	Neutral	Statement-opinion
+SPEAKER_03	2169.91	2172.64	G t m usecase page that we've been using all along.	Neutral	Statement-non-opinion
+SPEAKER_03	2174.04	2181.79	That should be your single source of truth that put everything else, your posonas, your message house, all of you other stuff.	Neutral	Statement-opinion
+SPEAKER_03	2182.62	2184.76	So there's two different handbook pages at.	Neutral	Statement-non-opinion
+SPEAKER_03	2186.04	2188.52	Oes that formad, whatever you salya.	Neutral	Collaborative Completion
+SPEAKER_00	2189.40	2192.79	That seems a little betripitititright I mean ah.	Neutral	Statement-opinion
+SPEAKER_00	2193.54	2195.51	Pretty much everything that we have.	Neutral	Statement-non-opinion
+SPEAKER_00	2195.75	2197.20	On the saless play book.	Neutral	Statement-non-opinion
+SPEAKER_00	2197.64	2201.01	So to say are things that we have on the use case page.	Neutral	Statement-non-opinion
+SPEAKER_00	2201.48	2203.36	We could create another page.	Neutral	Statement-non-opinion
+SPEAKER_00	2203.74	2205.42	Which kind of summerises.	Positive	Wh-Question
+SPEAKER_00	2206.04	2206.65	Am.	Neutral	Uninterpretable
+SPEAKER_00	2207.05	2209.72	You know what on the? U scage pa the uecase page.	Negative	Statement-non-opinion
+SPEAKER_00	2210.11	2211.46	Rather than having it.	Neutral	Collaborative Completion
+SPEAKER_00	2211.74	2214.33	Am o ion only no. I.	Neutral	Statement-non-opinion
+SPEAKER_04	2212.99	2215.59	Ion only no, I wouldn't copy things. What I.	Neutral	Statement-non-opinion
+SPEAKER_04	2215.95	2218.65	To me, the difference is, what's in a sales play.	Neutral	Statement-opinion
+SPEAKER_04	2219.47	2219.91	Ez.	Neutral	Collaborative Completion
+SPEAKER_04	2220.27	2220.79	Im.	Neutral	Uninterpretable
+SPEAKER_04	2222.10	2231.15	A little bit more specific than what's in the the use case, resource page, so it sails, plays going to take a subset of that and so for.	Neutral	Statement-opinion
+SPEAKER_04	2231.81	2233.50	We've got the s I.	Neutral	Statement-non-opinion
+SPEAKER_04	2233.75	2234.91	Resource page.	Neutral	Statement-non-opinion
+SPEAKER_04	2235.54	2237.02	Uscase resource pageright.	Neutral	Statement-non-opinion
+SPEAKER_04	2238.17	2241.02	And it talks about all kind anything you'd wanto know about see. I.	Neutral	Statement-non-opinion
+SPEAKER_04	2241.76	2242.41	How do.	Neutral	Hold before answer/agreement
+SPEAKER_04	2242.73	2244.65	Who's the pursona for see I everything.	Neutral	Wh-Question
+SPEAKER_04	2245.63	2251.48	In the go to market motion, we're doing premium to ultimate for customers that already have sea e.	Neutral	Statement-non-opinion
+SPEAKER_04	2253.07	2253.56	So.	Neutral	Statement-non-opinion
+SPEAKER_04	2254.30	2255.40	We need to think about.	Neutral	Action-directive
+SPEAKER_04	2255.85	2258.42	What is it that's going to drive them from.	Neutral	Statement-non-opinion
+SPEAKER_04	2258.89	2263.33	If they're already using sea, I from premium to ultimate its security, so.	Neutral	Statement-non-opinion
+SPEAKER_04	2263.65	2267.18	The path has to be a little but different, so fir. This sails pla.	Neutral	Statement-non-opinion
+SPEAKER_04	2267.52	2267.85	You.	Neutral	Yes-No-Question
+SPEAKER_04	2268.17	2272.21	You might link to some of the sea eye stuff, but you're, probably more likely to link to the.	Neutral	Statement-opinion
+SPEAKER_04	2272.59	2273.40	Defsecops.	Neutral	Collaborative Completion
+SPEAKER_04	2274.08	2277.61	Material and you'regoing to say these are the things that you need to pay attention to.	Neutral	Statement-opinion
+SPEAKER_04	2277.99	2280.42	The other piece that's going to be in there is those lynks.	Neutral	Statement-non-opinion
+SPEAKER_04	2281.56	2283.87	Those pathfactory lynks that say.	Neutral	Statement-non-opinion
+SPEAKER_04	2284.15	2288.24	If you want a sand, the sizemac shift white paper.	Negative	Statement-non-opinion
+SPEAKER_04	2289.03	2296.25	Use this link because it's gon attract o that to this use case camer. This go to market motion campaign.	Neutral	Action-directive
+SPEAKER_04	2297.57	2298.04	So.	Neutral	Statement-non-opinion
+SPEAKER_04	2298.92	2300.15	There is a little bit.	Neutral	Statement-non-opinion
+SPEAKER_04	2301.45	2305.96	I'll, be it small of information that I think is very unique to the sales play.	Neutral	Declarative Yes-No-Question
+SPEAKER_04	2306.65	2308.29	Thats separate from.	Neutral	Collaborative Completion
+SPEAKER_04	2309.04	2310.50	Think of it more like a.	Neutral	Statement-opinion
+SPEAKER_04	2311.36	2312.45	A navigation.	Neutral	Statement-non-opinion
+SPEAKER_04	2312.71	2313.31	A mab.	Neutral	Collaborative Completion
+SPEAKER_04	2313.75	2317.26	There's all this content out there. If you want to sell this.	Neutral	Statement-opinion
+SPEAKER_04	2318.53	2319.30	Here's the.	Neutral	Collaborative Completion
+SPEAKER_04	2319.73	2320.28	Pieces.	Neutral	Collaborative Completion
+SPEAKER_04	2320.60	2323.30	That we recommend and just amout to a.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	2323.64	2324.16	Lynx.	Neutral	Statement-non-opinion
+SPEAKER_04	2324.64	2325.08	To them.	Neutral	Collaborative Completion
+SPEAKER_04	2325.26	2327.05	Not recopying it just.	Neutral	Statement-non-opinion
+SPEAKER_03	2327.96	2328.48	Ya.	Neutral	Appreciation
+SPEAKER_03	2328.81	2334.17	And and samme, I think that you, you have a gugle dockright, where you started to draugt o sail's poy.	Neutral	Statement-opinion
+SPEAKER_00	2334.78	2335.32	Ya.	Neutral	Appreciation
+SPEAKER_00	2336.11	2339.79	And most of that lynx to the uscatescate at.	Neutral	Statement-non-opinion
+SPEAKER_03	2339.69	2343.30	That's surfict, can you take that gibbledock and just make it a handle page.	Negative	Yes-No-Question
+SPEAKER_00	2344.65	2344.99	Oh cam.	Neutral	Appreciation
+SPEAKER_00	2345.51	2346.47	I can do that.	Neutral	Statement-non-opinion
+SPEAKER_00	2348.63	2353.07	O kag, I get it so it's just the subset of what we already have on the.	Neutral	Statement-non-opinion
+SPEAKER_00	2353.44	2354.62	Ah usecase.	Negative	Collaborative Completion
+SPEAKER_00	2355.00	2357.83	Resor page or whatever we one of gollet going forward.	Neutral	Statement-opinion
+SPEAKER_04	2358.49	2360.88	Ah, don't copy any it's o. It's.	Neutral	Action-directive
+SPEAKER_03	2360.38	2361.44	It's anso that.	Neutral	Statement-opinion
+SPEAKER_03	2361.71	2366.40	Somue, the one thing we did, which is why again at bran's point about these having his dunb meetings.	Neutral	Statement-non-opinion
+SPEAKER_03	2366.81	2369.78	As we had some meaning, that was like three a m. Your time.	Negative	Statement-non-opinion
+SPEAKER_03	2370.42	2376.43	And we got feed back from sail's leadership, and the sails of the feebaccomsell's leadership is like. Can you curate this more.	Neutral	Statement-non-opinion
+SPEAKER_03	2376.98	2384.71	We love all the inpo, but can we just get like one page? That just has the view the sawl needs and nothing else.	Positive	Statement-non-opinion
+SPEAKER_03	2385.54	2389.99	And I think you've already done that. I think your gugledoc is perfect. It's like de curated view.	Positive	Statement-opinion
+SPEAKER_03	2390.57	2394.57	Im and so, and the holy reason to make it a ha ot pages is, were all consisted.	Neutral	Statement-non-opinion
+SPEAKER_00	2395.33	2396.41	Look at conidel.	Neutral	Action-directive
+SPEAKER_00	2398.70	2402.43	And from this page we will only link to essets that are.	Neutral	Statement-non-opinion
+SPEAKER_00	2402.75	2405.13	In bartfactory, which sails can actually.	Neutral	Statement-non-opinion
+SPEAKER_00	2405.52	2407.78	Used to send a to their.	Neutral	Statement-non-opinion
+SPEAKER_00	2408.19	2414.24	Now, on the uscase page, we do have lings to sojoun essays, which all actually not lart factory pages.	Negative	Statement-non-opinion
+SPEAKER_00	2414.65	2417.03	Do we honor aba those as well do.	Neutral	Yes-No-Question
+SPEAKER_00	2417.40	2419.47	Have but factory links instead.	Negative	Statement-non-opinion
+SPEAKER_00	2419.76	2421.89	That we jist consistent and ons of.	Neutral	Statement-opinion
+SPEAKER_00	2422.23	2423.69	Rarviat winking sein.	Neutral	Statement-non-opinion
+SPEAKER_03	2424.44	2424.91	Stool.	Neutral	Collaborative Completion
+SPEAKER_03	2425.72	2429.75	That's ot a bad idea if, if there is a pafactory for an asset.	Negative	Statement-opinion
+SPEAKER_03	2430.63	2437.02	Linking that, as like the you know, this is the link do gochare. This is how to gook get this asset. It's a great idea.	Positive	Statement-opinion
+SPEAKER_00	2440.77	2446.47	Yr fok forgidos. We are actually creating bat factory lings for pretty much all the er. It.	Neutral	Statement-non-opinion
+SPEAKER_00	2446.91	2451.06	That behalv, a including you, two bidios and a.	Neutral	Statement-non-opinion
+SPEAKER_00	2451.39	2453.95	Pages and an so and so.	Neutral	Statement-non-opinion
+SPEAKER_00	2454.69	2455.06	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_00	2455.33	2459.47	Ye, I think we re jus link to that fron bord te usele sweet hand.	Neutral	Statement-opinion
+SPEAKER_00	2460.18	2460.58	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_00	2460.95	2461.85	And te.	Neutral	Statement-non-opinion
+SPEAKER_04	2465.48	2465.63	W.	Neutral	Uninterpretable
+SPEAKER_03	2466.89	2467.30	Cool.	Positive	Appreciation
+SPEAKER_03	2468.19	2471.72	Then, ah, we're a little bit overtime.	Neutral	Statement-non-opinion
+SPEAKER_03	2472.11	2472.66	Um.	Neutral	Uninterpretable
+SPEAKER_03	2474.25	2481.29	I really wanted just chat about itam four quickly and maybe I'll open an issue about it.	Neutral	Statement-non-opinion
+SPEAKER_03	2481.68	2482.28	And.	Neutral	Statement-non-opinion
+SPEAKER_03	2482.94	2484.27	Maybe that's all we get through.	Negative	Statement-opinion
+SPEAKER_03	2484.85	2485.57	So.	Neutral	Uninterpretable
+SPEAKER_03	2486.74	2491.89	Actually well yad just what a chad about this, the team just for a second to say that um.	Neutral	Statement-non-opinion
+SPEAKER_03	2492.86	2493.81	It be great the hept.	Positive	Statement-opinion
+SPEAKER_03	2494.77	2522.70	A deepen our knowledge of these secnands right fee back we get a lot is haall of your messaging. Is enterprise messaging. We are leaving out a smb right. I think we've all talked about this little bit or for that matter like we used to have a a deep, pob, seck specialist, on the team, and we don't any more- and this is the current team- you know for the next short term- there's no more racks. So how does this team cover semb and pubseck?.	Negative	Statement-non-opinion
+SPEAKER_03	2523.34	2529.70	Actually is consay. My idea for this is not my idea, somya's idea, which is a brilliant fricant idea, no want us to do it.	Negative	Statement-non-opinion
+SPEAKER_03	2530.58	2531.15	Which is.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	2531.64	2538.81	We should all know a little bit about this, so we all learnd a little bit more about us to be a lubet more about memarket, an a littlebet more about pubsack.	Neutral	Action-directive
+SPEAKER_03	2539.56	2543.67	And then I'd love to see like one person on the team.	Positive	Statement-non-opinion
+SPEAKER_03	2543.78	2549.09	Cont of pick up each of these areas, soso, like everyone, would learn a little bit more about pubsack.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	2549.28	2561.95	And that one person would say amino in vestel even more time, amana tro to specialize a little bit in becoming a little bit deeper in pubseck ouknoch, an a get like tracys level of knowledge, but it jus would be like a focus area for you.	Neutral	Statement-non-opinion
+SPEAKER_03	2563.74	2574.76	It I'll all open an issue on that, but t just any kind of questions on having that kind of format of we all dig in a little deeper and then each person signs up to cound o have a focus aria on a segmet.	Neutral	Statement-non-opinion
+SPEAKER_04	2579.87	2582.93	I'd like te focus on enterprise, just because that's where.	Neutral	Statement-non-opinion
+SPEAKER_04	2583.52	2585.56	The vast majority of the security to.	Neutral	Abandoned or Turn-Exit
+SPEAKER_04	2585.73	2585.98	Are.	Neutral	Abandoned or Turn-Exit
+SPEAKER_06	2587.36	2588.90	I'd take a sand, be.	Neutral	Statement-non-opinion
+SPEAKER_06	2589.30	2598.42	Tha sinsor or iranonough brianotsa, it sounds. It looks like a the devps platform's going essan b midmarket first anyway, sou.	Negative	Statement-opinion
+SPEAKER_06	2599.78	2600.09	Might.	Neutral	Repeat-phrase
+SPEAKER_03	2600.09	2601.08	Make sense for one of.	Neutral	Statement-opinion
+SPEAKER_03	2601.72	2605.35	There could be some alliement with did han o current go to marketmotions as well.	Neutral	Statement-opinion
+SPEAKER_06	2603.51	2603.80	Han.	Neutral	Backchannel in question form
+SPEAKER_06	2605.66	2606.08	Ye.	Neutral	Appreciation
+SPEAKER_06	2606.40	2608.04	I rom to do that. Research anuine.	Neutral	Statement-non-opinion
+SPEAKER_03	2606.48	2607.04	Rom to.	Neutral	Backchannel in question form
+SPEAKER_03	2608.46	2608.85	And I.	Neutral	Statement-non-opinion
+SPEAKER_03	2610.16	2613.66	Ye I just want there to be- I don't think they like.	Negative	Statement-opinion
+SPEAKER_03	2613.79	2623.66	I, what I don't want this to be is I don't want cormac to you to be like the sum b person on the team when everything as sanbi goes to you and the rest of us are joscuing noressenby.	Neutral	Statement-non-opinion
+SPEAKER_03	2624.44	2625.75	I wanter to be more like.	Neutral	Statement-non-opinion
+SPEAKER_03	2626.21	2634.68	Your task with representing s nb and your task with making sure all of us are have very solidessand, be messaging.	Neutral	Statement-non-opinion
+SPEAKER_03	2635.95	2638.75	If that kind of distinction same thing with enterprise or whatever.	Neutral	Statement-opinion
+SPEAKER_03	2639.85	2644.64	Oke I'll a'll open an issue on that, and then we can let a sinc kinissort that if that sounds good to the team.	Neutral	Statement-non-opinion
+SPEAKER_03	2645.63	2646.21	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	2648.30	2648.67	I hate.	Very Negative	Statement-non-opinion
+SPEAKER_03	2649.09	2650.46	I hate going down to the wire.	Negative	Statement-non-opinion
+SPEAKER_03	2650.76	2653.48	Is there anything bryne that you like to share about.	Neutral	Yes-No-Question
+SPEAKER_02	2655.25	2660.45	A the short version is that we're really forming storming sometimes.	Neutral	Statement-opinion
+SPEAKER_02	2660.89	2661.87	Sometimes we get out a ead.	Negative	Statement-non-opinion
+SPEAKER_02	2662.39	2676.60	But it's just not a great time for us to take on in terns or apprentices, even internal enterance, but we absolutely want to do it so maybe cuthre, I don't know like balpark. Like some time later. We should put the shingleback out there in n, totally recruit people.	Negative	Statement-non-opinion
+SPEAKER_03	2677.54	2692.24	This ad is a great call if anybody races their hand and says hey I'd love to enter in in p m m. Let's talk about that immediately and ah, if that doesn't happen before like next quarter or even if, certainly by cu, three, we should then tryw to recruit people.	Neutral	Statement-opinion
+SPEAKER_02	2677.75	2678.22	Ad.	Neutral	Repeat-phrase
+SPEAKER_03	2692.51	2694.50	I absolutely love hadiincom with agree.	Positive	Statement-non-opinion
+SPEAKER_03	2695.18	2700.29	Ah, the last one- hopefully I can just stay here about corpra vents.	Negative	Statement-non-opinion
+SPEAKER_03	2700.54	2703.01	A little bit of back and forth an I apologized for the back and forth.	Neutral	Statement-non-opinion
+SPEAKER_03	2703.82	2721.44	Ah, there's been a lot of backopors than I apologized for it. So a initially I had a call with emily and we talked about emily sharing. How much hurteam loves artim its great lato, the martine and she would love to have for the big four corp events at that they do a year.	Positive	Statement-non-opinion
+SPEAKER_03	2721.81	2724.27	Which three of them are in the? U s, and one is ane eu.	Neutral	Wh-Question
+SPEAKER_03	2725.18	2725.64	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	2725.94	2728.07	A p amem and a t amem.	Negative	Statement-non-opinion
+SPEAKER_03	2729.49	2733.00	Dedicated to that event to help with lok as a dearry for that event,.	Neutral	Statement-non-opinion
+SPEAKER_03	2734.40	2734.87	On.	Neutral	Backchannel in question form
+SPEAKER_03	2735.37	2744.64	After I had that conversation, then, in a meeting that, like tot, we have a totus tos is in room b pi, so its tod tracy tie- and I.	Neutral	Statement-non-opinion
+SPEAKER_03	2745.25	2745.70	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	2746.55	2752.54	You know tod says: well, I think corporate events, our demand generation. The reason we do those events are to get leads.	Neutral	Statement-non-opinion
+SPEAKER_03	2753.08	2756.92	And so anything ats demand jen should get funneled through argeti emotions.	Negative	Statement-opinion
+SPEAKER_03	2757.60	2764.25	Though the idea that a g t, emotion, team would pick up to like sponsor an event.	Neutral	Statement-opinion
+SPEAKER_03	2764.52	2768.33	And let commit to lek running campaigns and stuff at that.	Negative	Statement-opinion
+SPEAKER_03	2768.94	2773.31	Ah, clearly, on't have time to articulate it all to day or to answer any questions.	Negative	Statement-non-opinion
+SPEAKER_03	2773.75	2775.74	As one a share bit of that context,.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	2776.28	2778.15	I think my original ask goes away.	Negative	Statement-opinion
+SPEAKER_03	2778.63	2782.30	And I think the current state is we to take ut to g tam tes, but.	Neutral	Statement-opinion
+SPEAKER_03	2782.73	2784.48	Maybe we take it e sinker to slack.	Negative	Statement-opinion
+SPEAKER_05	2785.80	2790.37	A g as as about ask when the dates were, and it looks like cromike stonam in there ye.	Neutral	Statement-non-opinion
+SPEAKER_03	2789.91	2791.10	Ye I.	Neutral	Uninterpretable
+SPEAKER_03	2792.11	2794.35	I want to give you all time I hate this like.	Very Negative	Statement-non-opinion
+SPEAKER_03	2794.79	2803.82	Keeping the call open forever, so I'm I'm happing to hang out and talk more if anybody wants to. But I I want to let everyone go and get to work in.	Neutral	Statement-non-opinion
+SPEAKER_03	2804.24	2805.74	Yet il have yoest.	Neutral	Collaborative Completion
+SPEAKER_04	2805.93	2806.69	Mention.	Neutral	Repeat-phrase
+SPEAKER_04	2807.06	2811.33	There was supposed to be an a w s, security, evant and then egat.	Negative	Statement-non-opinion
+SPEAKER_04	2811.85	2813.27	Cabasch with kep coved.	Neutral	Statement-non-opinion
+SPEAKER_04	2814.13	2815.33	But she mention mother or not.	Neutral	Statement-non-opinion
+SPEAKER_04	2815.58	2816.34	Era, ye tat.	Neutral	Backchannel in question form
+SPEAKER_03	2817.76	2818.23	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	2819.26	2819.94	Not.	Neutral	Hold before answer/agreement
+SPEAKER_03	2820.56	2823.34	Not in the conversation I had, as you know, tho h issue for that.	Negative	Statement-non-opinion
+SPEAKER_04	2824.61	2825.22	I'll ask him.	Neutral	Statement-non-opinion
+SPEAKER_06	2825.79	2826.09	Yeh.	Neutral	Acknowledge (Backchannel)
+SPEAKER_06	2827.93	2832.17	Jus nou tis kind of obnoxious of gugle, the fur next rat on top of vacubkan.	Negative	Statement-opinion
+SPEAKER_04	2828.10	2828.58	Nou tis.	Neutral	Appreciation
+SPEAKER_03	2828.58	2828.78	Of.	Neutral	Uninterpretable
+SPEAKER_03	2833.13	2837.06	They do in every year, so every year, cukan.	Neutral	Statement-non-opinion
+SPEAKER_03	2837.69	2844.98	Hug next and eight: u s r lebactive ac! I did all three of them for a while and it was really.	Positive	Statement-non-opinion
+SPEAKER_03	2845.08	2846.21	Painful.	Negative	Statement-opinion
+SPEAKER_03	2846.46	2847.48	Exciting time.	Positive	Statement-opinion
+SPEAKER_03	2849.35	2849.97	Hungs.	Neutral	Statement-non-opinion
+SPEAKER_03	2850.31	2859.02	You know there's jepidally one year, I did I I literally three weeks in a row. I did giggl next in the kucana than at. U asitis flew from city city for three weeks.	Negative	Statement-non-opinion
+SPEAKER_03	2859.41	2859.84	Ah,.	Neutral	Acknowledge (Backchannel)
+SPEAKER_03	2860.84	2864.32	Honest, I don't know that we're going to do that, I'm not I'm not quite sure.	Negative	Statement-non-opinion
+SPEAKER_03	2864.64	2876.25	Basic o, this is like hay. I made him ask a week ago and I'm now lik rescending that ask I'm now saying like well. Actually I don't think I quite understood this and were still figuring out, so I will chalk this up too.	Negative	Statement-non-opinion
+SPEAKER_03	2877.01	2878.74	How does corporat events.	Neutral	Wh-Question
+SPEAKER_03	2879.17	2892.70	Work with all the things, the latest guidance that I've gotten is we final corporate events through the getia emotions, which I think make sense because they are ther demand an opportunity so think of it. Like a campaign.	Neutral	Statement-opinion
+SPEAKER_03	2893.83	2894.19	Um.	Neutral	Uninterpretable
+SPEAKER_05	2894.84	2898.08	Is hat includefield marketing types up to others of these separate things.	Neutral	Yes-No-Question
+SPEAKER_03	2898.79	2902.22	That's a great question, so field marketing, a corporate.	Neutral	Action-directive
+SPEAKER_03	2902.79	2904.97	Field events in corporatevents are two separate.	Neutral	Statement-non-opinion
+SPEAKER_03	2906.32	2911.75	So you know field marketing reports in the lesle doctor n. You know corporatevts reports into emily.	Neutral	Statement-non-opinion
+SPEAKER_03	2912.36	2919.24	Dn duc, you know corporat even is a huge cuge avanus things like eight of u as ere you coupcon like we do a few of these.	Neutral	Statement-non-opinion
+SPEAKER_02	2912.46	2912.92	Dn duc.	Neutral	Collaborative Completion
+SPEAKER_00	2916.71	2917.32	Ere.	Neutral	Agree/Accept
+SPEAKER_03	2919.78	2921.02	With their corporate marketing.	Neutral	Collaborative Completion
+SPEAKER_03	2921.83	2925.07	You know field feld marketing is like small reginal.	Neutral	Statement-opinion
+SPEAKER_05	2925.49	2928.07	The cacts, a sime, is quot different in region in soca.	Neutral	Statement-non-opinion
+SPEAKER_03	2925.83	2926.45	A sime is.	Neutral	Collaborative Completion
+SPEAKER_03	2928.36	2933.13	A so feel, marketing one hundred per cent goes through getia motions. I know that for a fact.	Neutral	Statement-opinion
+SPEAKER_03	2934.01	2936.46	So what do you sa panish? Are you chenerous.	Negative	Wh-Question
+SPEAKER_00	2935.58	2935.73	Are.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	2935.73	2936.24	You chenerous.	Negative	Collaborative Completion
+SPEAKER_03	2936.66	2937.00	Yes,.	Neutral	Yes answers
+SPEAKER_03	2937.62	2940.42	Like we have this struggle right now, where.	Neutral	Statement-opinion
+SPEAKER_05	2938.23	2938.65	Have.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	2941.59	2949.67	We have to w have to keep generating demand right. We can't just pause field marketing. While we go and roll out getimotions.	Negative	Statement-opinion
+SPEAKER_03	2950.87	2954.99	But eventually what should happen is we say, here's a gita motion.	Neutral	Statement-opinion
+SPEAKER_03	2955.26	2977.26	And it has the sails play. Tt has these campaigns associated with it or grandand field marketing would select from amenu and they would say? Oh c, I want to run this see I campaign. I want to run this devash platform campaign and like the content, the weavon are. The the campaign has all been designed and theyrea kind of picking, fom a menue, and they decide what to run in their region.	Neutral	Statement-opinion
+SPEAKER_00	2958.85	2959.29	Or.	Neutral	Uninterpretable
+SPEAKER_03	2977.63	2981.07	Riestrait, so we get rid of these kind of bespoke everything's bespoke.	Negative	Statement-non-opinion
+SPEAKER_03	2981.63	2983.66	Field marketing becomes like a downstream.	Negative	Statement-opinion
+SPEAKER_03	2984.37	2986.12	Our g tm output.	Neutral	Collaborative Completion
+SPEAKER_03	2986.49	2996.23	U the problem sas we're not there yet, so we still needed. We still need to support them. The best that we can with like one offor bespoke stuff.	Neutral	Abandoned or Turn-Exit
+SPEAKER_05	2995.99	2996.36	Gogeu.	Neutral	Statement-non-opinion
+SPEAKER_03	2996.73	2997.14	But.	Neutral	Statement-opinion
+SPEAKER_03	2997.34	2997.85	I'm.	Neutral	Statement-non-opinion
+SPEAKER_03	2998.59	3001.14	That's count of the tension we're at right. Now I w say: let's letis know.	Neutral	Statement-non-opinion
+SPEAKER_05	3000.55	3010.71	Letis know tat was the intent going down the line of cut cool that makes sense em? Are they going to get baked into our motion or they justgin to be expected to keep a finger on the pulse of all these gotomarket motions without being involved directly.	Negative	Yes-No-Question
+SPEAKER_03	3011.99	3013.10	That's a great question.	Positive	Appreciation
+SPEAKER_03	3013.59	3014.35	My.	Neutral	Uninterpretable
+SPEAKER_03	3015.23	3024.90	Impression of it is that the way it should work is the g t m tms should be packaging, their campaigns.	Negative	Statement-opinion
+SPEAKER_03	3025.29	3027.99	In a way such that they are like.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	3028.32	3029.79	In a box.	Neutral	Abandoned or Turn-Exit
+SPEAKER_03	3029.89	3033.89	Are confumable that's my impression of how it should be.	Neutral	Collaborative Completion
+SPEAKER_03	3034.28	3041.07	And so this would be like for a field markenqin to saca. I want ta run this campaign surer for partner.	Neutral	Statement-non-opinion
+SPEAKER_03	3041.28	3045.18	Right so that youre to be translated for like our partner, so thake g, I want to run this staff.	Neutral	Statement-non-opinion
+SPEAKER_05	3041.81	3042.18	Youre to.	Neutral	Appreciation
+SPEAKER_05	3045.62	3047.09	Mixin.	Neutral	Statement-non-opinion
+SPEAKER_05	3049.15	3049.47	Go.	Neutral	Action-directive
+SPEAKER_05	3053.82	3054.08	I.	Neutral	Statement-non-opinion
+SPEAKER_03	3055.49	3055.95	Asson.	Neutral	Statement-non-opinion
+SPEAKER_03	3057.45	3058.19	Echa litra.	Neutral	Statement-non-opinion

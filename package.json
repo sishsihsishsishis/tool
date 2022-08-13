@@ -1,0 +1,23 @@
+{
+  "name": "v-charts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "echarts": "^5.3.3",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/echarts": "^4.9.16",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "csv-parser": "^3.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.4"
+  }
+}
