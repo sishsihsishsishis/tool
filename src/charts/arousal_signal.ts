@@ -24,7 +24,7 @@ for(let k in data){
   })
 }
 let avg = {avg:data.avg}
-delete data.avg;
+// delete data.avg;
 export default async function () {
 
   return LineChart(data)

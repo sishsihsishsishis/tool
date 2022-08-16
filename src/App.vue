@@ -11,18 +11,18 @@ import rppg_signal from './charts/rppg_signal'
 import rppg_power from './charts/rppg_power'
 import gantt from './charts/gantt'
 import { brain, heart, behavior } from './charts/score'
+import raddar from './charts/raddar'
 
 
 import Star from './Star.vue'
 import Echarts from './Echart.vue'
 import { DateFormat } from "./utils";
-import logo from './assets/Logo white.svg'
 
 </script>
 
 <template>
   <div class="top">
-    <img src="./assets/Logo white.svg" class="logo" alt="logo" />
+    <img src="./assets/Logo-white.svg" class="logo" alt="logo" />
     <div class="toptext">
       <div>Section Start Time: {{ DateFormat(new Date(), 'yyyy E ddth HH:MM PP') }}</div>
       <div>Duration: {{ 58 }}min</div>
@@ -41,8 +41,25 @@ import logo from './assets/Logo white.svg'
       <Echarts class="echarts" :opt="behavior" :height="300" :width="300" />
     </div>
     
+    <h3 style="color:#6E974D">
+     <img class="ilogo" src="./assets/hand-with-bg.svg" />
+      2D valence-arousal
+    </h3>
+    <Echarts class="echarts" :opt="heatmap" style="width:40em; aspect-ratio: 1.2/1;" />
+
+    <div class="spline"></div>
+
+    <h3 style="color:#6E974D">
+     <img class="ilogo" src="./assets/hand-with-bg.svg" />
+      RADDAR
+    </h3>
+    <Echarts class="echarts" :opt="raddar" style="width:40em; aspect-ratio: 1/1;" />
+
+    <div class="spline"></div>
+
+
     <h3 style="color:#6B2524">
-      <img class="ilogo" src="./assets/heart with bg.svg" />
+      <img class="ilogo" src="./assets/heart-with-bg.svg" />
       RPPG Signal Synchrony
     </h3>
     <h3>RPPG Signal</h3>
@@ -53,7 +70,7 @@ import logo from './assets/Logo white.svg'
     <div class="spline"></div>
 
     <h3 style="color:#6E974D">
-     <img class="ilogo" src="./assets/hand with bg.svg" />
+     <img class="ilogo" src="./assets/hand-with-bg.svg" />
       Arousal Synchrony
     </h3>
     <Echarts class="echarts" :opt="arousal_signal_avg" style="width:100%; aspect-ratio: 3/1;" />
@@ -62,21 +79,16 @@ import logo from './assets/Logo white.svg'
 
     <div class="spline"></div>
 
-    <h3 style="color:#6E974D">Valence Synchrony</h3>
+    <h3 style="color:#6E974D">
+    <img class="ilogo" src="./assets/hand-with-bg.svg" />
+    Valence Synchrony</h3>
     <Echarts class="echarts" :opt="valence_signal_avg" style="width:100%; aspect-ratio: 3/1;" />
     <h3>Valence signal</h3>
     <Echarts class="echarts" :opt="valence_signal" style="width:100%; aspect-ratio: 3/1;" />
 
     <div class="spline"></div>
 
-    <h3 style="color:#6E974D">
-     <img class="ilogo" src="./assets/hand with bg.svg" />
-      2D valence-arousal
-    </h3>
-    <Echarts class="echarts" :opt="heatmap" style="width:35em; aspect-ratio: 1/1;" />
-
-    <div class="spline"></div>
-
+   
     <h3>Speech overview</h3>
     <Echarts class="echarts" :opt="gantt" style="width:100%; aspect-ratio: 2/1;" />
   </div>
@@ -95,6 +107,7 @@ import logo from './assets/Logo white.svg'
 }
 
 .top {
+  /* font-size: 28px; */
   height: 5em;
   width: 100vw;
   padding: 1.2em 1.5em;
@@ -119,7 +132,8 @@ import logo from './assets/Logo white.svg'
 }
 .toptext {
   font-size: 115%;
-  height: 2em;
+  font-weight: normal;
+  line-height: 1.15em;
   margin: 0 1em;
 }
 
@@ -137,36 +151,52 @@ import logo from './assets/Logo white.svg'
 
 .overall-title {
   font-size: 2em;
-  font-weight: 600;
-  color: #5E5F5C;
+  font-weight: bold;
+  font-size: 42px;
+  color: #656565;
   text-align: left;
   margin: 1em 0;
 }
 
 .overall-head {
   font-size: 2em;
+  font-size: 30px;
   font-weight: 600;
-  color: #6A6A67;
+  color: #525353;
 }
 
 .overall-score {
   margin: 0.5em 0;
-  font-size: 4.5em;
+  font-size: 70px;
+  /* font-size: 4.5em; */
   font-weight: 600;
-  color: #000;
+  color: #242424;
 }
 
 .overall-des {
-  width: 14em;
-  font-size: 1.8em;
-  line-height: 1em;
-  font-weight: 500;
-  color: #6A6A67;
+  width: 15em;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.58;
+  color: #525353;
   margin: 1em auto;
 }
 h3{
   font-size: 125%;
   text-align: left;
   color: #A3A3A0;
+}
+
+@media print {
+
+  .top {
+  width: 100%;
+   position:relative;
+  z-index: 999;
+}
+.con{
+  width:75%
+}
+
 }
 </style>

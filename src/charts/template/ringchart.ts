@@ -56,7 +56,7 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                 },
                 detail: {
                     offsetCenter: [0, -10],
-                    formatter: `{logo|}\n {value|{value}}{a|%}\n{b|${title}}`,
+                    formatter: data==0?`{logo|}\n{valuenone|N/A}\n{b|${title}}`: `{logo|}\n {value|{value}}{a|%}\n{b|${title}}`,
                     rich: {
                         logo: {
                             // 这样设定 backgroundColor 就可以是图片了。
@@ -66,12 +66,29 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                             },
                             // 可以只指定图片的高度，从而图片的宽度根据图片的长宽比自动得到。
                             height: 25,
-                            lineHeight: 60
+                            lineHeight: 60,
+                            fontFamily:'inter'
                         },
                         value: {
                             color: 'black',
                             fontSize: 64,
                             fontWeight: 600,
+                            fontFamily:'inter'
+                        },
+                        valuenone:{
+                            color: '#00000020',
+                            fontSize: 56,
+                            lineHeight:50,
+                            fontWeight: 600,
+                            fontFamily:'inter'
+                        },
+                        anone: {
+                            fontWeight: 600,
+                            lineHeight: 50,
+                            verticalAlign: 'bottom',
+                            color: '#000000ff',
+                            fontSize: 25,
+                            fontFamily:'inter'
                         },
                         a: {
                             fontWeight: 600,
@@ -79,13 +96,14 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                             verticalAlign: 'bottom',
                             color: 'black',
                             fontSize: 25,
+                            fontFamily:'inter'
                         },
                         b: {
                             fontWeight: 600,
                             color: 'black',
                             fontSize: 24,
-                            lineHeight: 40
-    
+                            lineHeight: 40,
+                            fontFamily:'inter'
                         }
                     }
                 },

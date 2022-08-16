@@ -1,7 +1,7 @@
 {
-  "name": "v-charts",
+  "name": "zoom-meeting-analysis-report",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",

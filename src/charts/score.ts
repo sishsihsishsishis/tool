@@ -4,7 +4,7 @@ import Brain from "../assets/Brain.svg";
 
 import { RingChart } from "./template/ringchart";
 export async  function brain() {
-    return RingChart(92,'Brain','#C79459',Brain)
+    return RingChart(0,'Brain','#C79459',Brain)
 }
 export async function heart() {
     return RingChart(83,'Heart','#772927',Heart)

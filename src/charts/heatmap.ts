@@ -72,7 +72,7 @@ export default {
     {
       type: 'custom',
       renderItem: function (params:any, api:any) {
-        let l = 250
+        let l = 200
         const coord = api.coord([L/2, L/2])
         return {
           type: 'group',
@@ -103,157 +103,271 @@ export default {
               y2: -l,
             }
           },
-          {
-            type: 'line',
-            style: {
-              stroke: '#252526',
-              lineWidth: 1
-            },
-            shape: {
-              x1: l/1.414,
-              y1: -l/1.414,
-              x2: -l/1.414,
-              y2: l/1.414,
-            }
-          }, {
-            type: 'line',
-            style: {
-              stroke: '#252526',
-              lineWidth: 1
-            },
-            shape: {
-              x1: l/1.414,
-              y1: l/1.414,
-              x2: -l/1.414,
-              y2: -l/1.414,
-            }
-          },
-          {
-            type: 'path',
-            shape: {
-              d: 'M2,8 L5,2 L8,8 L5,6 L 2,8',
-              x: -10,
-              y: -20 - l,
-              width: 20,
-              height: 40
-            },
+          
+          // {
+          //   type: 'path',
+          //   shape: {
+          //     d: 'M2,8 L5,2 L8,8 L5,6 L 2,8',
+          //     x: -10,
+          //     y: -20 - l,
+          //     width: 20,
+          //     height: 40
+          //   },
 
-          }, {
-            type: 'path',
-            shape: {
-              d: 'M2,2 L8,5 L2,8 L4,5 L 2,2',
-              x: -10 + l,
-              y: -20,
-              width: 20,
-              height: 40
-            },
+          // }, {
+          //   type: 'path',
+          //   shape: {
+          //     d: 'M2,2 L8,5 L2,8 L4,5 L 2,2',
+          //     x: -10 + l,
+          //     y: -20,
+          //     width: 20,
+          //     height: 40
+          //   },
 
-          },
-          {
-            type: 'path',
-            shape: {
-              d: 'M2,2 L5,8 L8,2 L 5,4 L 2,2',
-              x: -10 ,
-              y: -20 + l,
-              width: 20,
-              height: 40
-            },
+          // },
+          // {
+          //   type: 'path',
+          //   shape: {
+          //     d: 'M2,2 L5,8 L8,2 L 5,4 L 2,2',
+          //     x: -10 ,
+          //     y: -20 + l,
+          //     width: 20,
+          //     height: 40
+          //   },
 
-          }, {
-            type: 'path',
-            shape: {
-              d: 'M2,5 L8,2 L6,5 L8,8 L 2,5',
-              x: -10 - l,
-              y: -20 ,
-              width: 20,
-              height: 40
-            },
-
-          },{
+          // }, {
+          //   type: 'path',
+          //   shape: {
+          //     d: 'M2,5 L8,2 L6,5 L8,8 L 2,5',
+          //     x: -10 - l,
+          //     y: -20 ,
+          //     width: 20,
+          //     height: 40
+          //   },
+          // },
+         
+          {
+            type: 'group',
+            x:0,
+            y:-45 - l,
+            children:[
+              {
+                type: 'text',
+                 style:{
+                   text:'Team Arousal',
+                   fontSize:18,
+                   textAlign:'center',
+                   fontFamily:'inter'
+                 }
+              },
+              {
+                type: 'text',
+                y:18,
+                 style:{
+                   text:'High',
+                   fontSize:18,
+                   textAlign:'center',
+                   fill:'red',
+                   fontFamily:'inter'
+                 }
+              },
+            ]
+          },
+          {
+            type: 'group',
+            x: 0,
+            y: 8 + l,
+            children:[
+              {
+                type: 'text',
+                 style:{
+                   text:'Team Arousal',
+                   fontSize:18,
+                   textAlign:'center',
+                   fontFamily:'inter'
+                 }
+              },
+              {
+                type: 'text',
+                y:18,
+                 style:{
+                   text:'Low',
+                   fontSize:18,
+                   textAlign:'center',
+                   fill:'red',
+                   fontFamily:'inter'
+                 }
+              },
+            ]
+          },
+          {
+            type: 'group',
+            x: 54 + l,
+            y: -18,
+            children:[
+              {
+                type: 'text',
+                 style:{
+                   text:'Team Affect',
+                   fontSize:18,
+                   textAlign:'center',
+                   fontFamily:'inter'
+                 }
+              },
+              {
+                type: 'text',
+                y:18,
+                 style:{
+                   text:'Positive',
+                   fontSize:18,
+                   textAlign:'center',
+                   fill:'red',
+                   fontFamily:'inter'
+                 }
+              },
+            ]
+          },
+          {
+            type: 'group',
+            x: -54 - l,
+            y: -18,
+            children:[
+              {
+                type: 'text',
+                 style:{
+                   text:'Team Affect',
+                   fontSize:18,
+                   textAlign:'center',
+                   fontFamily:'inter'
+                 }
+              },
+              {
+                type: 'text',
+                y:18,
+                 style:{
+                   text:'Negative',
+                   fontSize:18,
+                   textAlign:'center',
+                   fill:'red',
+                   fontFamily:'inter'
+                 }
+              },
+            ]
+          },
+          {
             type: 'text',
-            x:-80  + l,
-              y:5,
+            x:48,
+            y:-36,
              style:{
-               text:'Pleasure',
-               fontSize:18
+               text:'Indifference\nApathy',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
+             }
+          },
+          //第一象限
+          {
+            type: 'text',
+            x:l - 56,
+            y:12-l,
+             style:{
+               text:'Active Listening,\ndeep engagement',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
           {
             type: 'text',
-            x:-50  + l,
-              y:-40,
+            x:l ,
+            y: -80,
              style:{
-               text:'Satisfaction'
+               text:'Camaraderie,\nAlignment',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
+             }
+          },
+          //第二象限
+          {
+            type: 'text',
+            x: 108,
+            y: 24,
+             style:{
+               text:'Collective\nInterest/Curiosity',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
           {
             type: 'text',
-            x:-50  + l,
-              y: 40 - l,
+            x: l ,
+            y: 80,
              style:{
-               text:'Exraversion'
+               text:'Empathy',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
           {
             type: 'text',
-            x:-50  + l,
-              y:30,
+            x: l - 72 ,
+            y: l - 24,
              style:{
-               text:'Happiness'
+               text:'Passive Listening,\nIntermittent\nattention',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
+             }
+          },
+          //第三象限
+          {
+            type: 'text',
+            x: 12-l ,
+            y: 60,
+             style:{
+               text:'No Cohesion',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
           {
             type: 'text',
-            x:-50  + l,
-              y: -30 + l,
+            x: 72-l ,
+            y: l - 24,
              style:{
-               text:'Constructive\n thinking'
+               text:'Bored Relations,\nChecked out',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
+             }
+          },
+          //第四象限
+          {
+            type: 'text',
+            x: 56-l ,
+            y: 12-l,
+             style:{
+               text:'Antagonism,\nHostility',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
           {
             type: 'text',
-            x:10  - l,
-              y:30,
+            x: -l ,
+            y: -80,
              style:{
-               text:'Depression'
+               text:'Negative Criticism,\nBlame',
+               fontSize:16,
+               textAlign:'center',
+               fontFamily:'inter'
              }
           },
-          {
-            type: 'text',
-            x:10  - l,
-              y: -30 + l,
-             style:{
-               text:'Introversion'
-             }
-          },
-          {
-            type: 'text',
-            x:10  - l,
-              y:-40,
-             style:{
-               text:'Anxiety'
-             }
-          }, 
-          {
-            type: 'text',
-            x:10  - l,
-              y:40 - l,
-             style:{
-               text:'Neuroticism'
-             }
-          },
-          {
-            type: 'text',
-            rotation:Math.PI/2,
-            // originX:0,
-            // originY:0,
-            x:-20,
-              y:80 - l,
-             style:{
-               text:'Arousal',
-               fontSize:18
-             }
-          }
           ]
         };
       },
