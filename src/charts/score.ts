@@ -7,7 +7,7 @@ export async  function brain() {
     return RingChart(0,'Brain','#C79459',Brain)
 }
 export async function heart() {
-    return RingChart(83,'Heart','#772927',Heart)
+    return RingChart(83,'Body','#772927',Heart)
 }
 export async function behavior() {
     return RingChart(76,'Behavior','#99B571',hand)

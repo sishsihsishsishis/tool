@@ -5,13 +5,14 @@ import * as echarts from 'echarts'
 import { provide } from 'vue'
 
 import heatmap from './charts/heatmap'
-import valence_signal, { valence_signal_avg } from './charts/valence_signal'
-import arousal_signal, { arousal_signal_avg } from './charts/arousal_signal'
+import valence_signal, { valence_signal_syn } from './charts/valence_signal'
+import arousal_signal, { arousal_signal_syn } from './charts/arousal_signal'
 import rppg_signal from './charts/rppg_signal'
-import rppg_power from './charts/rppg_power'
+import rppg_power, { rppg_sync } from './charts/rppg_power'
 import gantt from './charts/gantt'
 import { brain, heart, behavior } from './charts/score'
 import raddar from './charts/raddar'
+import ov from './charts/overview'
 
 
 import Star from './Star.vue'
@@ -24,8 +25,8 @@ import { DateFormat } from "./utils";
   <div class="top">
     <img src="./assets/Logo-white.svg" class="logo" alt="logo" />
     <div class="toptext">
-      <div>Section Start Time: {{ DateFormat(new Date(), 'yyyy E ddth HH:MM PP') }}</div>
-      <div>Duration: {{ 58 }}min</div>
+      <div>Section Start Time: {{ DateFormat(new Date("2020-04-05 08:00:00"), 'yyyy E ddth HH:MM PP') }}</div>
+      <div>Duration: {{ 50 }}min</div>
     </div>
   </div>
   <div class="con">
@@ -40,7 +41,28 @@ import { DateFormat } from "./utils";
       <Echarts class="echarts" :opt="heart" :height="300" :width="300" />
       <Echarts class="echarts" :opt="behavior" :height="300" :width="300" />
     </div>
-    
+
+    <Echarts class="echarts" :opt="ov" style="width:100%; aspect-ratio: 3/1;" />
+    <div class="ovdes">
+      <p>
+        a. Lorem ipsum dolor sit amet, consectetuer adipiscing e, quis nostrud exerci </p>
+        <p>
+        b. dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+
+        </p>
+        c. nostrud exerci tationum zzril delenit augue duis dolore
+        <p></p>
+     
+
+    </div>
+
+    <div class="overall-title">Tips</div>
+    <ol class="tips">
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing e, quis nostrud exerci tationum zzril delenit augue duis dolore</li>
+      <li>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationum zzril delenit augue duis dolore</li>
+      <li>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationum zzril delenit augue duis dolore</li>
+   </ol>
+
     <h3 style="color:#6E974D">
      <img class="ilogo" src="./assets/hand-with-bg.svg" />
       2D valence-arousal
@@ -57,11 +79,19 @@ import { DateFormat } from "./utils";
 
     <div class="spline"></div>
 
-
+<h3 style="color:#6B2524">
+      <img class="ilogo" src="./assets/brain-with-bg.svg" />
+    Brain Frenquency Variance Synchrony
+    </h3>
+    <h3>
+      Brain Frenquency Variance Signal
+    </h3>
+    <div class="spline"></div>
     <h3 style="color:#6B2524">
       <img class="ilogo" src="./assets/heart-with-bg.svg" />
       RPPG Signal Synchrony
     </h3>
+    <Echarts class="echarts" :opt="rppg_sync" style="width:100%; aspect-ratio: 3/1;" />
     <h3>RPPG Signal</h3>
     <Echarts class="echarts" :opt="rppg_signal" style="width:100%; aspect-ratio: 3/1;" />
     <h3>RPPG Power</h3>
@@ -73,7 +103,7 @@ import { DateFormat } from "./utils";
      <img class="ilogo" src="./assets/hand-with-bg.svg" />
       Arousal Synchrony
     </h3>
-    <Echarts class="echarts" :opt="arousal_signal_avg" style="width:100%; aspect-ratio: 3/1;" />
+    <Echarts class="echarts" :opt="arousal_signal_syn" style="width:100%; aspect-ratio: 3/1;" />
     <h3>Arousal signal</h3>
     <Echarts class="echarts" :opt="arousal_signal" style="width:100%; aspect-ratio: 3/1;" />
 
@@ -82,7 +112,7 @@ import { DateFormat } from "./utils";
     <h3 style="color:#6E974D">
     <img class="ilogo" src="./assets/hand-with-bg.svg" />
     Valence Synchrony</h3>
-    <Echarts class="echarts" :opt="valence_signal_avg" style="width:100%; aspect-ratio: 3/1;" />
+    <Echarts class="echarts" :opt="valence_signal_syn" style="width:100%; aspect-ratio: 3/1;" />
     <h3>Valence signal</h3>
     <Echarts class="echarts" :opt="valence_signal" style="width:100%; aspect-ratio: 3/1;" />
 
@@ -102,7 +132,7 @@ import { DateFormat } from "./utils";
 }
 
 .echarts {
-  margin: 3em auto;
+  margin: 1em auto;
   page-break-inside: avoid
 }
 
@@ -186,7 +216,24 @@ h3{
   text-align: left;
   color: #A3A3A0;
 }
-
+.ovdes {
+  /* font-size: 25px; */
+  color: #525353;
+  line-height: 2.4;
+  margin-left: 8em;
+  text-align: left;
+}
+.ovdes p{
+  margin: 0;
+}
+.tips {
+  text-align: left;
+  font-weight: 300;
+  color: #525353;
+}
+.tips li{
+  margin: 2em 0;
+}
 @media print {
 
   .top {

@@ -1,7 +1,7 @@
 import { EChartOption } from 'echarts'
 import color from "./color";
 
-export function LineChart(data:any, customOpt?:EChartOption){
+export function LineChart(data:any, key:string, customOpt?:EChartOption){
     const opt = {
         grid: {
           top: 40,
@@ -21,7 +21,7 @@ export function LineChart(data:any, customOpt?:EChartOption){
           boundaryGap: [0, '100%']
         },
         legend: {
-          data: Object.keys(data).map(e => e == 'avg' ? 'Avg' : `User${e}`)
+          data: Object.keys(data).map(e => e == 'avg' ? 'Avg' : `User${e}`).sort()
         },
         series: Object.keys(data).map(e => {
           return {
@@ -31,11 +31,11 @@ export function LineChart(data:any, customOpt?:EChartOption){
             symbol: 'none',
             data: data[e],
             lineStyle: e == 'avg' ? {
-              width: 3,
-              color: "#00000077",
+              width: 4,
+              color: color[key]+'cc',
             } : {},
             itemStyle: {
-              color: color[e],
+              color: e == 'avg' ? color[key]+'cc' : color[e],
             }
           }
         })

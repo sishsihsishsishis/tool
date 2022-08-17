@@ -1,21 +1,11 @@
 import { EChartOption } from 'echarts'
 import data from '../../data/rppg_signal/mav.json'
+import { chunk, average } from "../utils";
 import { LineChart } from "./template/linechart";
 
 /**
  * rppg_signal
  */
-
-function chunk(arr:Array<any>,len:number){
-  const ArrayList = [] 
-  let index = 0 
-  while (index < arr.length) { 
-      ArrayList.push(arr.slice(index, index += len)) 
-  }
-  return ArrayList;
-}
-
-const average = (arr:Array<any>) => arr.reduce((a, b) => a + b) / arr.length;
 let smoothParam = 100
 for(let k in data){
   let t = data[k];
@@ -28,7 +18,7 @@ delete data.time;
 
 export default async function () {
 
-  return LineChart(data, {
+  return LineChart(data,'rppg', {
     yAxis: {
       max: function (value: any) {
         return Math.floor(value.max * 100 + 1) / 100;

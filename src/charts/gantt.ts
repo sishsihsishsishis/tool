@@ -1,7 +1,8 @@
-import spk from "../../data/gantt/spk.json";
+// import spk from "../../data/gantt/spk.json";
+import spk from "../../data/gantt/new_speak_emotions.json";
 import { graphic } from "echarts";
 let data = [];
-var startTime = +new Date();
+// var startTime = +new Date();
 
 let categories = spk.speakers;
 
@@ -15,10 +16,10 @@ let types = {
 
 data = spk.data.map(e=>{
     return {
-        name: e.Emotion,
-        value: [categories.findIndex(i=>i==e.Speaker), startTime+e.Start, startTime+e.End, e.End - e.Start,e.Sentence],
+        name: e.Resource,
+        value: [categories.findIndex(i=>i==e.Task), e.Start, e.Finish, new Date(e.Finish) - new Date(e.Start),e.Resource],
         itemStyle: {
-            color: types[e.Emotion]
+            color: types[e.Resource]
         }
       }
 })
@@ -44,18 +45,22 @@ export default {
   grid: {
     height: 300
   },
+  legend:{
+    data:Object.keys(types)
+  },
   xAxis: {
-    min: startTime,
-    max:startTime+3000*1000,
+    type:'time',
+    // min: startTime,
+    // max:startTime+3000*1000,
     scale: true,
     axisLabel: {
-      formatter: function (val) {
-        return Math.max(0, val - startTime)/1000 + ' s';
-      }
+      // formatter: function (val) {
+      //   return Math.max(0, val)/1000 + ' s';
+      // }
     }
   },
   yAxis: {
-    data: categories
+    data: categories//.sort((a,b)=>a<b)
   },
   series: [
     {

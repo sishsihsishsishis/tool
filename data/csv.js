@@ -10,7 +10,8 @@ function chunk(arr,len){
 }
 const results = {};
 let index = 0;
-fs.createReadStream('power.csv')
+const args = process.argv.slice(2);
+fs.createReadStream(args[0])
   .pipe(csv())
   .on('data', (data) => {
     for(let k in data)

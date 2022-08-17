@@ -21,7 +21,7 @@ export function DateFormat (date:Date,fmt:string):string {
         "m+": (date.getMonth() + 1).toString(),     // 月
         "d+": date.getDate().toString(),            // 日
         "H+": date.getHours().toString(),           // 时
-        "P+": date.getHours()>12?'am':'pm',           // 时
+        "P+": date.getHours()>12?'pm':'am',           // 时
         "M+": date.getMinutes().toString(),         // 分
         "S+": date.getSeconds().toString(),         // 秒
         "E+": dic[(date.getMonth() + 1).toString()]      // 秒
@@ -35,3 +35,15 @@ export function DateFormat (date:Date,fmt:string):string {
     };
     return fmt;
 }
+
+
+export function chunk(arr: Array<any>, len: number) {
+    const ArrayList = []
+    let index = 0
+    while (index < arr.length) {
+      ArrayList.push(arr.slice(index, index += len))
+    }
+    return ArrayList;
+  }
+  
+export  const average = (arr: Array<any>) => arr.reduce((a, b) => a + b) / arr.length;
