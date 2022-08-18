@@ -1,5 +1,5 @@
 import data from '../../data/rppg_power/power.json'
-import sync from '../../data/rppg_power/rppg_sync.json'
+import sync from '../../data/rppg_power/rppg_sync_smooth.json'
 import { chunk, average,transTime } from "../utils";
 import { LineChart } from "./template/linechart";
 import { startTime } from "./template/time";
@@ -24,7 +24,7 @@ for (let k in data) {
 //   })
 // }
 for(let i in sync.rppg_sync){
-  sync.rppg_sync[i][0] = startTime + sync.rppg_sync[i][0]* 30 * 1000 
+  sync.rppg_sync[i][0] = startTime + sync.rppg_sync[i][0] * 1000 
 }
 let sync_data = {
   Synchrony:sync.rppg_sync
@@ -44,5 +44,11 @@ export default async function () {
 }
 
 export async function rppg_sync () {
-  return LineChart(sync_data,'rppg')
+  return LineChart(sync_data,'rppg',{
+    yAxis: {
+      max: function (value: any) {
+        return Math.floor(value.max * 100 + 1) / 100;
+      }
+    }
+  })
 }
