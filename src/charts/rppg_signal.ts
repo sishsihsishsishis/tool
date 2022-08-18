@@ -1,7 +1,8 @@
 import { EChartOption } from 'echarts'
 import data from '../../data/rppg_signal/mav.json'
-import { chunk, average } from "../utils";
+import { chunk, average,transTime } from "../utils";
 import { LineChart } from "./template/linechart";
+import { startTime } from "./template/time";
 
 /**
  * rppg_signal
@@ -10,7 +11,7 @@ let smoothParam = 100
 for(let k in data){
   let t = data[k];
   data[k] = chunk(t,smoothParam*25).map((e,index)=>{
-    return [index*smoothParam,average(e.map(x=>parseFloat(x[1])))]
+    return transTime(startTime,[index*smoothParam,average(e.map(x=>parseFloat(x[1])))])
   })
 }
 //---------

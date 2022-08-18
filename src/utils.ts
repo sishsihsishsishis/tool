@@ -47,3 +47,8 @@ export function chunk(arr: Array<any>, len: number) {
   }
   
 export  const average = (arr: Array<any>) => arr.reduce((a, b) => a + b) / arr.length;
+
+
+export function transTime(time:any,e:Array<any>){
+    return [e[0]*1000 + time, e[1]]
+}

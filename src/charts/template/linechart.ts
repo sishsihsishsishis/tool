@@ -11,7 +11,7 @@ export function LineChart(data:any, key:string, customOpt?:EChartOption){
         },
         tooltip: {},
         xAxis: {
-          type: 'value',
+          type: 'time',
         },
         yAxis: {
           type: 'value',
@@ -21,21 +21,21 @@ export function LineChart(data:any, key:string, customOpt?:EChartOption){
           boundaryGap: [0, '100%']
         },
         legend: {
-          data: Object.keys(data).map(e => e == 'avg' ? 'Avg' : `User${e}`).sort()
+          data: Object.keys(data).map(e => e =='Synchrony'? 'Synchrony' :e == 'avg' ? 'Avg' : `User${e}`).sort()
         },
         series: Object.keys(data).map(e => {
           return {
-            name: e == 'avg' ? 'Avg' : `User${e}`,
+            name: e =='Synchrony'? 'Synchrony' : e == 'avg' ? 'Avg' : `User${e}`,
             type: 'line',
             smooth: true,
             symbol: 'none',
             data: data[e],
-            lineStyle: e == 'avg' ? {
+            lineStyle: e == 'avg' || e == 'Synchrony' ? {
               width: 4,
               color: color[key]+'cc',
             } : {},
             itemStyle: {
-              color: e == 'avg' ? color[key]+'cc' : color[e],
+              color: e == 'avg' || e == 'Synchrony' ? color[key]+'cc' : color[e],
             }
           }
         })

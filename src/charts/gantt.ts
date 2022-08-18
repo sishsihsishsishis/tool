@@ -11,10 +11,16 @@ export let types = {
     'Neutral' : '#FF7410',
     'Positive' : '#2B9529',
     'Negative' : '#226BA9',
-    'Very Negative' : '#D02226',
-    'Very Positive' : '#8A5BB2',
 }
 
+const per = {
+  'user00':24.3,
+  'user01': 53.5,
+  'user02': 6.1,
+  'user10': 3.1,
+  'user11': 7.0,
+  'user12': 6.0
+}
 data = spk.data.map(e=>{
     return {
         name: e.Resource,
@@ -61,7 +67,10 @@ export default {
     }
   },
   yAxis: {
-    data: categories//.sort((a,b)=>a<b)
+    data: categories,
+    axisLabel: {
+      formatter: (y:string) => `${y} (${per[y]}%)`
+    }
   },
   series: [
     {
@@ -168,7 +177,10 @@ export const dialog = {
     }
   },
   yAxis: {
-    data: categories2//.sort((a,b)=>a<b)
+    data: categories2,
+    axisLabel: {
+      formatter: (y:string) => `${y} (${per[y]}%)`
+    }
   },
   series: [
     {

@@ -1,7 +1,9 @@
 import data from '../../data/rppg_power/power.json'
 import sync from '../../data/rppg_power/rppg_sync.json'
-import { chunk, average } from "../utils";
+import { chunk, average,transTime } from "../utils";
 import { LineChart } from "./template/linechart";
+import { startTime } from "./template/time";
+
 /**
  * rppg_power
  */
@@ -11,7 +13,7 @@ let smoothParam = 100
 for (let k in data) {
   let t = data[k];
   data[k] = chunk(t, smoothParam * 25).map((e, index) => {
-    return [index * smoothParam, average(e.map(x => parseFloat(x[1])))]
+    return transTime(startTime,[index * smoothParam, average(e.map(x => parseFloat(x[1])))])
   })
 }
 
@@ -22,10 +24,10 @@ for (let k in data) {
 //   })
 // }
 for(let i in sync.rppg_sync){
-  sync.rppg_sync[i][0] = sync.rppg_sync[i][0]*30
+  sync.rppg_sync[i][0] = startTime + sync.rppg_sync[i][0]* 30 * 1000 
 }
 let sync_data = {
-  avg:sync.rppg_sync
+  Synchrony:sync.rppg_sync
 }
 //---------
 delete data.time;

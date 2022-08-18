@@ -1,9 +1,9 @@
 import { EChartOption } from 'echarts'
 import data from '../../data/valence_signal/v2.json'
 import sync from '../../data/valence_signal/valence_sync.json'
-import { chunk, average } from "../utils";
+import { chunk, average,transTime } from "../utils";
 import { LineChart } from "./template/linechart";
-
+import { startTime } from "./template/time";
 /**
  * valence_signal
  */
@@ -12,14 +12,14 @@ let smoothParam = 100
 for (let k in data) {
   let t = data[k];
   data[k] = chunk(t, smoothParam).map((e, index) => {
-    return [index * smoothParam, average(e.map(x => parseFloat(x[1])))]
+    return transTime(startTime,[index * smoothParam, average(e.map(x => parseFloat(x[1])))])
   })
 }
 for(let i in sync.valence_sync){
-  sync.valence_sync[i][0] = sync.valence_sync[i][0]*30
+  sync.valence_sync[i][0] = startTime + sync.valence_sync[i][0]*30 * 1000
 }
 let sync_data = {
-  avg:sync.valence_sync
+  Synchrony:sync.valence_sync
 }
 export default async function () {
   return LineChart(data,'behavior')

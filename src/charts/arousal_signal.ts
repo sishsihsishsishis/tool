@@ -1,9 +1,9 @@
 import { EChartOption } from 'echarts'
 import data from '../../data/arousal_signal/a2.json'
 import sync from '../../data/arousal_signal/arousal_sync.json'
-import { chunk, average } from "../utils";
+import { chunk, average, transTime } from "../utils";
 import { LineChart } from "./template/linechart";
-
+import { startTime } from "./template/time";
 /**
  * arousal_signal
  */
@@ -11,14 +11,14 @@ let smoothParam = 100
 for(let k in data){
   let t = data[k];
   data[k] = chunk(t,smoothParam).map((e,index)=>{
-    return [index*smoothParam,average(e.map(x=>parseFloat(x[1])))]
+    return transTime(startTime,[index*smoothParam,average(e.map(x=>parseFloat(x[1])))])
   })
 }
 for(let i in sync.arousal_sync){
-  sync.arousal_sync[i][0] = sync.arousal_sync[i][0]*30
+  sync.arousal_sync[i][0] = startTime + sync.arousal_sync[i][0]*30 * 1000
 }
 let sync_data = {
-  avg:sync.arousal_sync
+  Synchrony:sync.arousal_sync
 }
 export default async function () {
 
