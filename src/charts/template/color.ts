@@ -8,4 +8,4 @@ export default {
     'avg':'#00000077',
     'rppg':'#7F2421',
     'behavior':'#739F4F'
-}
+} as {[T:string]:string}

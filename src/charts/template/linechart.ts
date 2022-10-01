@@ -1,13 +1,14 @@
 import { EChartOption } from 'echarts'
 import color from "./color";
+import merge from "deepmerge";
 
 export function LineChart(data:any, key:string, customOpt?:EChartOption){
-    const opt = {
+    const opt: EChartOption = {
         grid: {
-          top: 40,
-          left: 40,
-          right: 40,
-          bottom: 40
+          top: 60,
+          left: 100,
+          right: 100,
+          bottom: 60
         },
         tooltip: {},
         xAxis: {
@@ -40,5 +41,6 @@ export function LineChart(data:any, key:string, customOpt?:EChartOption){
           }
         })
       }
-    return Object.assign(opt,customOpt) as EChartOption
+      return customOpt ? merge<EChartOption>(opt,customOpt) as EChartOption : opt;
+      // return Object.assign(opt,customOpt) as EChartOption
 }

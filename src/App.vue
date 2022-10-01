@@ -17,22 +17,26 @@ import ov from './charts/overview'
 
 import Star from './Star.vue'
 import Echarts from './Echart.vue'
+import Video from './Video.vue'
 import { DateFormat } from "./utils";
 
 </script>
 
 <template>
   <div class="top">
+      <div style="display: flex;">
     <img src="./assets/Logo-white.svg" class="logo" alt="logo" />
-    <div class="toptext">
-      <div><strong>Syneurgy Team Performance Report</strong></div>
+        <strong>Syneurgy Team Performance Report</strong></div>
+        <span>Total Score: <strong>{{ 87 }}</strong></span>
       <div>Section Start Time: {{ DateFormat(new Date("2020-04-05 08:00:00"), 'yyyy E ddth HH:MM PP') }} | Duration: {{
           50
       }}min</div>
-    </div>
   </div>
   <div class="con">
-    <img src="./assets/team_members.jpg" alt="" style="margin-top:2em">
+    <Video></Video>
+</div>
+<div style="display: none">
+    <!-- <img src="./assets/team_members.jpg" alt="" style="margin-top:2em"> -->
     <div class="overall-title">Overall Performance</div>
     <div class="overall-head">total score</div>
     <div class="overall-score">{{ 87 }}</div>
@@ -298,21 +302,24 @@ import { DateFormat } from "./utils";
 
 .top {
   /* font-size: 28px; */
-  height: 5em;
+  height: 2.4em;
+  line-height: 2em;
   width: 100vw;
-  padding: 1.2em 1.5em;
+  padding: 0.2em 1.5em;
   box-sizing: border-box;
   text-align: left;
   display: flex;
+  justify-content: space-between;
   background-color: #D39D5E;
   color: white;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 999;
 }
 
 .logo {
-  height: 100%;
+  height: 1.6em;
+  margin: 0.2em 1em 0.2em 0;
 }
 
 .ilogo {
@@ -329,9 +336,9 @@ import { DateFormat } from "./utils";
 }
 
 .con {
-  width: 75vw;
-  padding: 1em;
-  margin: auto;
+  /* width: 75vw; */
+  /* padding: 1em; */
+  /* margin: auto; */
 }
 
 .thr {
