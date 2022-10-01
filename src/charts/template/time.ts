@@ -1,1 +1,2 @@
-export const startTime = new Date("2020-04-05 08:00:00").getTime()
+export const startTime = new Date(1586044800000).getTime()
+export const startDate = new Date(1586044800000)

@@ -19,7 +19,7 @@ import Star from './Star.vue'
 import Echarts from './Echart.vue'
 import Video from './Video.vue'
 import { DateFormat } from "./utils";
-
+import { startDate } from "./charts/template/time"
 </script>
 
 <template>
@@ -27,9 +27,9 @@ import { DateFormat } from "./utils";
       <div style="display: flex;">
     <img src="./assets/Logo-white.svg" class="logo" alt="logo" />
         <strong>Syneurgy Team Performance Report</strong></div>
-        <span>Total Score: <strong>{{ 87 }}</strong></span>
-      <div>Section Start Time: {{ DateFormat(new Date("2020-04-05 08:00:00"), 'yyyy E ddth HH:MM PP') }} | Duration: {{
-          51
+        <span>Total Score: <strong>{{ 63 }}</strong></span>
+      <div>Section Start Time: {{ DateFormat(startDate, 'yyyy E ddth HH:MM PP') }} | Duration: {{
+          50
       }}min</div>
   </div>
   <div class="con">
@@ -37,12 +37,12 @@ import { DateFormat } from "./utils";
 </div>
 <div style="display: none">
     <!-- <img src="./assets/team_members.jpg" alt="" style="margin-top:2em"> -->
-    <div class="overall-title">Overall Team Performance</div>
-    <div class="overall-head">Total Team Score</div>
+    <div class="overall-title">Overall Performance</div>
+    <div class="overall-head">total score</div>
     <div class="overall-score">{{ 63 }}</div>
     <!-- <Star class="stars" :score="4" /> -->
 
-    <div class="overall-des">Cool! Your team meeting score is 63 out of 100.</div>
+    <div class="overall-des">Cool! Your team meeting scores 63 out of 100.</div>
     <div class="thr">
       <Echarts class="echarts" :opt="brain" :height="300" :width="300" />
       <Echarts class="echarts" :opt="heart" :height="300" :width="300" />
@@ -69,7 +69,7 @@ import { DateFormat } from "./utils";
         </ul>
       </div>
     </div>
-    <!-- <Echarts class="echarts" :opt="ov" style="width:100%; aspect-ratio: 3/1;" />
+    <Echarts class="echarts" :opt="ov" style="width:100%; aspect-ratio: 3/1;" />
     <div class="ovdes">
       <p>
         a. Lorem ipsum dolor sit amet, consectetuer adipiscing e, quis nostrud exerci </p>
@@ -91,28 +91,22 @@ import { DateFormat } from "./utils";
         volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationum zzril delenit augue duis dolore</li>
       <li>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
         quis nostrud exerci tationum zzril delenit augue duis dolore</li>
-    </ol> -->
+    </ol>
 
 
 
-    <!-- <h3 style="color:#6E974D">
+    <h3 style="color:#6E974D">
       <img class="ilogo" src="./assets/hand-with-bg.svg" />
-      Raddar Chart
-    </h3> -->
-    <h3>
-      Raddar Chart
+      RADDAR
     </h3>
     <Echarts class="echarts" :opt="raddar" style="width:40em; aspect-ratio: 1/1;" />
 
-    <!-- <div class="spline"></div> -->
+    <div class="spline"></div>
 
 
-    <!-- <h3 style="color:#6E974D">
+    <h3 style="color:#6E974D">
       <img class="ilogo" src="./assets/hand-with-bg.svg" />
-      Valence-Arousal Heat Map
-    </h3> -->
-    <h3>
-      Valence-Arousal Heat Map
+      2D valence-arousal
     </h3>
     <Echarts class="echarts" :opt="heatmap" style="width:40em; aspect-ratio: 1.2/1;" />
 
@@ -128,44 +122,36 @@ import { DateFormat } from "./utils";
 
     <h3 style="color:#DEA45E">
       <img class="ilogo" src="./assets/brain-with-bg.svg" />
-      Brain Frenquency Variance
+      Brain Frenquency Variance Synchrony
     </h3>
     <br/>
     <br/>
 
-    <!-- <h3>
+    <h3>
       Brain Frenquency Variance Signal
     </h3>
     <br/>
-    <br/> -->
+    <br/>
 
     <div class="spline"></div>
     <h3 style="color:#6B2524">
       <img class="ilogo" src="./assets/heart-with-bg.svg" />
-      rPPG
+      Heart Rate Synchrony
     </h3>
-    <h3>rPPG Synchrony</h3>
     <Echarts class="echarts" :opt="rppg_sync" style="width:100%; aspect-ratio: 3/1;" />
-    <h3>rPPG Signal</h3>
+    <h3>Heart Rate Signal</h3>
     <Echarts class="echarts" :opt="rppg_signal" style="width:100%; aspect-ratio: 3/1;" />
-    <h3>rPPG Power</h3>
+    <h3>Power of Heart Rate Signal</h3>
     <Echarts class="echarts" :opt="rppg_power" style="width:100%; aspect-ratio: 3/1;" />
 
     <div class="spline"></div>
 
     <h3 style="color:#6E974D">
       <img class="ilogo" src="./assets/hand-with-bg.svg" />
-      Valence and Arousal
+      Emotional Synchrony (Positive or Negative)
     </h3>
-    <h3>Valence Synchrony</h3>
-    <Echarts class="echarts" :opt="valence_signal_syn" style="width:100%; aspect-ratio: 3/1;" />
-    <h3>Valence Signal</h3>
-    <Echarts class="echarts" :opt="valence_signal" style="width:100%; aspect-ratio: 3/1;" />
-
-    <div class="spline"></div>
-    <h3>Arousal Synchrony</h3>
     <Echarts class="echarts" :opt="arousal_signal_syn" style="width:100%; aspect-ratio: 3/1;" />
-    <h3>Arousal Signal</h3>
+    <h3>Emotional Signal (Positive or Negative)</h3>
     <Echarts class="echarts" :opt="arousal_signal" style="width:100%; aspect-ratio: 3/1;" />
     <div class="overall-title">Tips:</div>
     <ul class="tips">
@@ -175,8 +161,15 @@ import { DateFormat } from "./utils";
 
     <h3 style="color:#6E974D">
       <img class="ilogo" src="./assets/hand-with-bg.svg" />
-      Speech
+      Attentiveness Synchrony
     </h3>
+    <Echarts class="echarts" :opt="valence_signal_syn" style="width:100%; aspect-ratio: 3/1;" />
+    <h3>Attentiveness Signal</h3>
+    <Echarts class="echarts" :opt="valence_signal" style="width:100%; aspect-ratio: 3/1;" />
+
+    <div class="spline"></div>
+
+
     <h3>Sentiment Overview</h3>
     <div class="legend">
       <div class="legend-item" v-for="v, k in types" :key="k">
@@ -185,7 +178,7 @@ import { DateFormat } from "./utils";
     </div>
     <Echarts class="echarts" :opt="gantt" style="width:100%; aspect-ratio: 2.5/1;" />
 
-    <!-- <div class="spline"></div> -->
+    <div class="spline"></div>
 
     <h3>Language Use Overview</h3>
     <div class="legend">
@@ -221,7 +214,7 @@ import { DateFormat } from "./utils";
       <li>Team Lead took responsibility for some shortcomings and some missed objectives, setting the other members at
         better ease</li>
       <li>Seemed relatively new, but well formed team with a good communication style </li>
-      <li>Good acknowledgement from team for work put in by Sydney / User00</li>
+      <li>Good acknowledgement from team for work put in by Sydney / P1</li>
       <li>The team communicated thoughts and eventually aligned well</li>
     </ul>
     <div class="ultitle">What the team can improve:</div>
@@ -246,13 +239,13 @@ import { DateFormat } from "./utils";
     </ul>
     <div class="ultitle">Individual tips</div>
     <br/>
-    <div class="ultitle">User00 / Sydney DRI - directly responsible individual - the buck stops here</div>
+    <div class="ultitle">P1 / Sydney DRI - directly responsible individual - the buck stops here</div>
     <ul class="tips">
       <li>Headline then ask questions</li>
       <li>Be less exasperated</li>
       <li>Be more patient in explaining your work</li>
       <li>Be more patient with your team members</li>
-      <li>Be more self aware </li>
+      <li>Be more self aware -</li>
       <li>Ask more open ended questions of the entire team</li>
       <li>Take more time to uncover other obstacles to accomplishing the goal</li>
       <li>Clearly define the goal</li>
@@ -260,7 +253,7 @@ import { DateFormat } from "./utils";
       <li>Ask more questions</li>
     </ul>
 
-    <div class="ultitle">User01 / PMM Lead - most senior person on the team</div>
+    <div class="ultitle">P2 / PMM Lead - most senior person on the team</div>
     <ul class="tips">
       <li>Give opinions last</li>
       <li>Survey team first</li>
@@ -272,7 +265,7 @@ import { DateFormat } from "./utils";
     </ul>
 
 
-    <div class="ultitle">User02</div>
+    <div class="ultitle">P3 /</div>
     <ul class="tips">
       <li>Listen more actively</li>
       <li>Interrupt less at this stage of the teams development</li>
@@ -282,7 +275,7 @@ import { DateFormat } from "./utils";
       <li>Keep note of your important points and give them at natural pause in the conversation with P1</li>
     </ul>
 
-    <div class="ultitle">User10</div>
+    <div class="ultitle">P4</div>
     <ul class="tips">
       <li>Face the camera</li>
       <li>Looking sideways makes it seem that there is something more important than the meeting at hand</li>

@@ -26,7 +26,7 @@ onMounted(async () => {
     }
   }
 })
-getEmitter().on('video_time_update', async (i: number) => {
+getEmitter().on('chart_time_update', async (i: number) => {
   let done;
   if (video.value!.paused) {
     video.value!.currentTime = i
@@ -70,25 +70,29 @@ getEmitter().on('video_time_update', async (i: number) => {
       <div class="avatar"><img src="./assets/user11.jpg"><span :style="{color:colors['11']}">User11</span></div>
       <div class="avatar"><img src="./assets/user12.jpg"><span :style="{color:colors['12']}">User12</span></div>
     </div>
-      RPPG Signal Synchrony
+      Heart Synchrony
       <Vchart :opt="rppg_sync" :height="300" :width="950" />
-      RPPG Signal
+      Heart Signal
       <Vchart :opt="rppg_signal" :height="300" :width="950" />
-      RPPG Power
-      <Vchart :opt="rppg_power" :height="300" :width="950" />
+      
 
-      Arousal Synchrony
-      <Vchart :opt="arousal_signal_syn" :height="300" :width="950" />
-      Arousal signal
-      <Vchart :opt="arousal_signal" :height="300" :width="950" />
-      Valence Synchrony
+
+      
+      Emotional Synchrony (Positive or Negative)
       <Vchart :opt="valence_signal_syn" :height="300" :width="950" />
-      Valence signal
+      Emotional Signal (Positive or Negative)
       <Vchart :opt="valence_signal" :height="300" :width="950" />
+      Attentiveness Synchrony
+      <Vchart :opt="arousal_signal_syn" :height="300" :width="950" />
+      Attentiveness Signal
+      <Vchart :opt="arousal_signal" :height="300" :width="950" />
+
+
+      
       Sentiment Overview
-      <Vchart :opt="gantt" :height="500" :width="950" />
+      <Vchart :opt="gantt" :height="500" :width="950" :type="'gantt'" />
       Language Use Overview
-      <Vchart :opt="dialog" :height="500" :width="950" />
+      <Vchart :opt="dialog" :height="500" :width="950" :type="'gantt'"/>
 
     </div>
   </div>

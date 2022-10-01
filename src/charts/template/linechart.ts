@@ -15,6 +15,7 @@ export function LineChart(data:any, key:string, customOpt?:EChartOption){
           type: 'time',
         },
         yAxis: {
+          show:false,
           type: 'value',
           max: function (value: any) {
             return Math.floor(value.max * 10 + 1) / 10;

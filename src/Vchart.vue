@@ -9,7 +9,7 @@ let d = []
 for (let i = 0; i < 50 * 60; i++) {
   d.push(startTime + i * 1000)
 }
-const props = defineProps<{ opt: Object | Function, height?: number, width?: number }>()
+const props = defineProps<{ opt: Object | Function, height?: number, width?: number, type?: string }>()
 
 let chartDiv = ref<HTMLDivElement>();
 let options = props.opt instanceof Function ? props.opt() : ((async () => props.opt)())
@@ -51,11 +51,16 @@ onMounted(async () => {
   // ev.forEach(e=>myChart.on(e, function (params:any) {
   //     console.log(params);
   // }))
-  myChart.on('highlight', async (params: any) => {
-    // console.log(params)
+  if(props.type=='gantt'){
+
+  }else{
+    myChart.on('highlight', async (params: any) => {
+    // console.log(await options)
     let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
-    getEmitter().emit('video_time_update', (t - startTime) / 1000)
+    getEmitter().emit('chart_time_update', (t - startTime) / 1000)
   })
+  }
+  
   getEmitter().on('video_time_update', (i: number) => {
     echartsUpdata(i)
   })

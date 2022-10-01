@@ -154,7 +154,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Team Arousal',
+                   text:'Attentiveness',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
@@ -181,7 +181,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Team Arousal',
+                   text:'Attentiveness',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
@@ -208,7 +208,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Team Affect',
+                   text:'Emotion',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
@@ -235,7 +235,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Team Affect',
+                   text:'Emotion',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
