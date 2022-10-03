@@ -12,15 +12,16 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
           filterMode: 'weakFilter',
           showDataShadow: 'false',
           top: 400,
-          labelFormatter: ''
+          labelFormatter: '',
         },
-        {
-          type: 'inside',
-          filterMode: 'weakFilter'
-        }
+        // {
+        //   type: 'inside',
+        //   filterMode: 'weakFilter'
+        // }
       ],
       grid: {
-        height: 300
+        height: 300,
+        left:120
       },
       legend: {
         data: Object.keys(data).map(e => {

@@ -16,8 +16,10 @@ let options = props.opt instanceof Function ? props.opt() : ((async () => props.
 let myChart: any;
 onMounted(async () => {
   myChart = echarts.init(chartDiv.value!, undefined, { height: props.height!, width: props.width! });
-  myChart.setOption(await options);
-  myChart.setOption({
+  try{
+    myChart.setOption(await options);
+  }catch(e){console.log(e)}
+  if(props.type!='ellipse') myChart.setOption({
     tooltip: {
       trigger: 'axis',
       triggerOn: 'click',
@@ -53,17 +55,58 @@ onMounted(async () => {
   // }))
   if(props.type=='gantt'){
 
-  }else{
+  }else if(props.type == 'ellipse'){
+    getEmitter().on('video_time_update',async (time:number)=>{
+      myChart.dispatchAction({
+      type: 'timelineChange',
+      // 时间点的 index
+      currentIndex: time
+  })
+    })
+  }
+  else{
     myChart.on('highlight', async (params: any) => {
-    // console.log(await options)
-    let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
-    getEmitter().emit('chart_time_update', (t - startTime) / 1000)
+    console.log(params)
+    if(params.escapeConnect == true){
+      let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
+      getEmitter().emit('chart_time_update', (t - startTime) / 1000)
+    }
   })
   }
   
   getEmitter().on('video_time_update', (i: number) => {
     echartsUpdata(i)
   })
+
+  myChart.on('legendselectchanged',async (params:any)=>{
+    console.log(params)
+  })
+  getEmitter().on('legendUnSelect',(user:string|string[])=>{
+    console.log(user)
+    if(user instanceof Array)
+    user.forEach(e=> myChart.dispatchAction({
+      type: 'legendUnSelect',
+      // 图例名称
+      name: e
+    }))
+    else myChart.dispatchAction({
+      type: 'legendUnSelect',
+      // 图例名称
+      name: user
+    })
+  })
+  getEmitter().on('legendHighlight',()=>{
+    
+    myChart.dispatchAction({
+      type: 'legendUnSelect'
+    })
+  })
+  getEmitter().on('legendAllSelect',(user:string)=>{
+    myChart.dispatchAction({
+      type: 'legendAllSelect',
+    })
+  })
+  
 });
 function echartsUpdata(value: number) {
   myChart.setOption({
