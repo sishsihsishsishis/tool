@@ -42,8 +42,9 @@ export default {
     inRange: {
       color: [
         '#ffffff00',
-        '#D73A21ff'
-        // '#EA382500'
+        // '#D73A21ff'
+        // '#D73A21ff'
+        '#96B17Aff'
       ]
     }
   },

@@ -16,95 +16,57 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                     // roundCap: true,
                     clip: false,
                     itemStyle: {
-                        color: color
+                        // color: 'white'
+                        color: color+'dd'
                         // borderWidth: 1,
                         // borderColor: '#464646'
                     }
                 },
                 axisLine: {
                     lineStyle: {
-                        width: 20
+                        width: 5,
+                        color: [[1, '#ffffff40']]
                     }
                 },
                 splitLine: {
                     show: false,
-                    distance: 0,
-                    length: 10
                 },
                 axisTick: {
                     show: false
                 },
                 axisLabel: {
                     show: false,
-                    distance: 50
                 },
                 data: [
                     {
                         value: data,
-                        // name: 'Brain',
                         title: {
-                            // offsetCenter: ['0%', '-30%']
                         },
                         detail: {
                             valueAnimation: true,
-                            // offsetCenter: ['0%', '-20%']
                         }
                     }
                 ],
                 title: {
-                    fontSize: 14
+                    fontSize: 10
                 },
                 detail: {
-                    offsetCenter: [0, -10],
-                    formatter: data==0?`{logo|}\n{valuenone|N/A}\n{b|${title}}`: `{logo|}\n {value|{value}}{a|%}\n{b|${title}}`,
+                    offsetCenter: [0, 0],
+                    formatter: data==0?`{valuenone|N/A}`: `{value|{value}}`,
                     rich: {
-                        logo: {
-                            // 这样设定 backgroundColor 就可以是图片了。
-                            backgroundColor: {
-                                //   image: './assets/Brain.svg'
-                                image: logo
-                            },
-                            // 可以只指定图片的高度，从而图片的宽度根据图片的长宽比自动得到。
-                            height: 25,
-                            lineHeight: 60,
-                            fontFamily:'inter'
-                        },
                         value: {
-                            color: 'black',
-                            fontSize: 64,
+                            color: 'white',
+                            fontSize: 16,
                             fontWeight: 600,
                             fontFamily:'inter'
                         },
                         valuenone:{
-                            color: '#00000020',
-                            fontSize: 56,
-                            lineHeight:50,
+                            color: '#ffffffa0',
+                            fontSize: 10,
+                            lineHeight:12,
                             fontWeight: 600,
                             fontFamily:'inter'
                         },
-                        anone: {
-                            fontWeight: 600,
-                            lineHeight: 50,
-                            verticalAlign: 'bottom',
-                            color: '#000000ff',
-                            fontSize: 25,
-                            fontFamily:'inter'
-                        },
-                        a: {
-                            fontWeight: 600,
-                            lineHeight: 50,
-                            verticalAlign: 'bottom',
-                            color: 'black',
-                            fontSize: 25,
-                            fontFamily:'inter'
-                        },
-                        b: {
-                            fontWeight: 600,
-                            color: 'black',
-                            fontSize: 24,
-                            lineHeight: 40,
-                            fontFamily:'inter'
-                        }
                     }
                 },
             }

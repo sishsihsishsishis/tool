@@ -1,4 +1,5 @@
 import fs from "fs";
+import { startTime } from '../time.js'
 
 function DateFormat (date,fmt) {
     let ret;
@@ -53,12 +54,12 @@ function chunk(arr, len) {
 function transTime(time,e){
     return [e[0]*1000 + time, e[1]]
 }
-const startTime = new Date("2020-04-05 08:00:00").getTime()
-const path = 'rppg_power/rppg_sync_smooth.json'
+// const startTime = new Date("2020-04-05 08:00:00").getTime()
+const path = 'rppg_power/rppg_sync_new.json'
 const sync = JSON.parse(fs.readFileSync(path))
 
 for(let i in sync.rppg_sync){
-    sync.rppg_sync[i][0] = startTime + sync.rppg_sync[i][0] * 1000 
+    sync.rppg_sync[i][0] = startTime + sync.rppg_sync[i][0] * 1000 * 30
   }
   let data = {
     Synchrony:sync.rppg_sync

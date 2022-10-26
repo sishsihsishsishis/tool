@@ -31,7 +31,7 @@ onMounted(async () => {
         label: {
           show: true,
           formatter: function (params: any) {
-            return echarts.format.formatTime('hh:mm:ss', params.value);
+            return echarts.time.format(params.value,'{hh}:{mm}:{ss}');
           },
           backgroundColor: '#7581BD',
           margin: 20
@@ -66,7 +66,7 @@ onMounted(async () => {
   }
   else{
     myChart.on('highlight', async (params: any) => {
-    console.log(params)
+    // console.log(params)
     if(params.escapeConnect == true){
       let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
       getEmitter().emit('chart_time_update', (t - startTime) / 1000)
@@ -79,10 +79,10 @@ onMounted(async () => {
   })
 
   myChart.on('legendselectchanged',async (params:any)=>{
-    console.log(params)
+    // console.log(params)
   })
   getEmitter().on('legendUnSelect',(user:string|string[])=>{
-    console.log(user)
+    // console.log(user)
     if(user instanceof Array)
     user.forEach(e=> myChart.dispatchAction({
       type: 'legendUnSelect',

@@ -17,7 +17,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div ref="chartDiv" class="charts"></div>
+  <div ref="chartDiv" :class="{charts:props.width==undefined}"></div>
 </template>
 
 <style scoped>

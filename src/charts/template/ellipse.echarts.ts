@@ -1,10 +1,12 @@
 import { EChartOption } from 'echarts'
 import sync from '../../../data/do/rppg_power/rppg_sync_smooth.json'
-let data:any = [];
-for(let i in sync.Synchrony)
-{
-    data[i] = [sync.Synchrony[i][0],1.1*Math.random(),1.1*Math.random(),300*(Math.random()-0.5),300*(Math.random()-0.5)]
-}
+import va from '../../../data/do/heatmap/va_h.json'
+import color from "./color";
+let data:any = va;
+// for(let i in sync.Synchrony)
+// {
+//     data[i] = [sync.Synchrony[i][0],1.1*Math.random(),1.1*Math.random(),300*(Math.random()-0.5),300*(Math.random()-0.5)]
+// }
 // let data = [
 //     {x:1.1,y:1.1},
 //     {x:1.1,y:1.1},
@@ -19,10 +21,12 @@ for(let i in sync.Synchrony)
 let L = 300
 let width = 900
 let height = 700
+let user = ['00','01','02','10','11','12']
+
 export default {
     timeline:{
       type:'number',
-      data:data.map(e=>e[0]),
+      data:data.map((e:any)=>e[0]),
       show:false
     },
     xAxis:{
@@ -37,8 +41,8 @@ export default {
         type: 'circle',
     //   left: 'center',
     //   top: 'center',
-    },
-    series:[    {
+    }, 
+    series:[{
         type: 'custom',
         renderItem: function (params:any, api:any) {
           let l = 200
@@ -300,22 +304,35 @@ export default {
         clip: true,
         data: [1]
       }],
-    options:data.map(e=>{
+    options:data.map((e:any)=>{
         return {
-            graphic: {
+            graphic: [{
             type: 'circle',
-            x:width/2 + (e[3] as number),
-            y:height/2 + (e[4] as number),
-            scaleX:e[1],
-            scaleY:e[2],
+            x:width/2 + ((e[1][0] as number) - 0 )* 300,
+            y:height/2 - ((e[1][1] as number) - 0 ) * 300,
+            scaleX:e[1][2]*3,
+            scaleY:e[1][3]*3,
             shape: {
                 
               r: 100,
             },
             style: {
-              fill: '#CB9F68'
+              fill: '#A0BD8075'
             },
-          }
+          },...user.map((u:any,index:number)=> {return {
+            type: 'circle',
+            x:width/2 + ((e[2+index][0] as number) - 0 )* 300,
+            y:height/2 - ((e[2+index][1] as number) - 0 ) * 300,
+            scaleX:1,
+            scaleY:1,
+            shape: {
+                
+              r: 5,
+            },
+            style: {
+              fill: color[u]
+            },
+          }}),]
         }
     })
   } as EChartOption;

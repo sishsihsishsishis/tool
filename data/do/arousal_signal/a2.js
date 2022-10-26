@@ -1,4 +1,5 @@
 import fs from "fs";
+import { startTime } from '../time.js'
 
 function DateFormat (date,fmt) {
     let ret;

@@ -34,7 +34,7 @@ for (let e of spk.data) {
     [categories.findIndex(i => i == e.Task), e.Start, e.Finish, new Date(e.Finish).getTime() - new Date(e.Start).getTime(), e.Resource],
   )
 }
-console.log(datas)
+// console.log(datas)
 
 export default GanttChart(datas,types,categories,{
   yAxis: {
