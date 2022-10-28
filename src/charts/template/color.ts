@@ -7,5 +7,12 @@ export default {
     '12':'#7A5E3F',
     'avg':'#00000077',
     'rppg':'#7F2421',
-    'behavior':'#739F4F'
+    'behavior':'#739F4F',
+    'User00':'#5eb4d2',
+    'User01':'#3F7AC7',
+    'User02':'#D581A6',
+    'User10':'#E07351',
+    'User11':'#D4A072',
+    'User12':'#7A5E3F',
+    'Team':'#A0BD80',
 } as {[T:string]:string}

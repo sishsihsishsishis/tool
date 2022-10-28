@@ -56,7 +56,7 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
                 width: end[0] - start[0],
                 height: height
               },
-              {
+              {// 当前坐标系的包围盒。
                 x: params.coordSys.x,
                 y: params.coordSys.y,
                 width: params.coordSys.width,
