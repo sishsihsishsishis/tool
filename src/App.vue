@@ -88,7 +88,7 @@ function jumpTo(time:number) {
         </div>
       </div>
       </div>
-    
+
       <div class="vcharts">
         <div class="right-top">
           <div class="avatar" :class="{unselected:userSelected!='00'}" :style="{backgroundColor:colors['00']}" @click="select('00')"><img src="./assets/user00.jpg"><span :class="{selected:userSelected=='00'}" :style="{color:colors['00']}">User00</span></div>
@@ -171,7 +171,7 @@ function jumpTo(time:number) {
   font-size: 1.35em;
   font-weight: 500;
 }
- 
+
 .scores {
   /* width: 60em; */
   display: flex;

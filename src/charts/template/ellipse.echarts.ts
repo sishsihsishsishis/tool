@@ -24,8 +24,10 @@ function renderItem(params: any, api: any) {
           cy: y,
           r: r * 0.01
         },
-        style: api.style()
-
+        // style: api.style()
+        style: {
+          fill: api.visual("color")
+        }
         // style: {
         //   fill: '#A0BD80'
         // }
@@ -60,7 +62,7 @@ function TeamRenderItem(params: any, api: any) {
           r: r * 2
         },
         style: {
-          fill: api.style().fill + '75'
+          fill: api.visual("color") + '75'
         }
       },
       {
@@ -72,10 +74,10 @@ function TeamRenderItem(params: any, api: any) {
           cy: y,
           r: r * 0.005
         },
-        style: api.style()
-        // style: {
-        //   fill: '#A0BD80'
-        // }
+        // style: api.style()
+        style: {
+          fill: api.visual("color")
+        }
       },
     ]
   };

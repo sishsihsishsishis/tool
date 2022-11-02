@@ -11,6 +11,7 @@ for (let j = 0; j <= L; j++) {
   xData.push(j - L/2);
   yData.push(j - L/2);
 }
+                 
 let data = img//.map(e=>[e[0],e[1],e[2]])
 export default {
   grid: {
@@ -104,7 +105,7 @@ export default {
               y2: -l,
             }
           },
-          
+
           // {
           //   type: 'path',
           //   shape: {
@@ -146,7 +147,7 @@ export default {
           //     height: 40
           //   },
           // },
-         
+
           {
             type: 'group',
             x:0,
@@ -218,13 +219,13 @@ export default {
               {
                 type: 'text',
                 y:18,
-                 style:{
-                   text:'Positive',
-                   fontSize:18,
-                   textAlign:'center',
-                   fill:'red',
-                   fontFamily:'inter'
-                 }
+                style:{
+                  text:'Positive',
+                  fontSize:18,
+                  textAlign:'center',
+                  fill:'red',
+                  fontFamily:'inter'
+                }
               },
             ]
           },
@@ -235,23 +236,23 @@ export default {
             children:[
               {
                 type: 'text',
-                 style:{
-                   text:'Emotion',
-                   fontSize:18,
-                   textAlign:'center',
-                   fontFamily:'inter'
-                 }
+                style:{
+                  text:'Emotion',
+                  fontSize:18,
+                  textAlign:'center',
+                  fontFamily:'inter'
+                }
               },
               {
                 type: 'text',
                 y:18,
-                 style:{
-                   text:'Negative',
-                   fontSize:18,
-                   textAlign:'center',
-                   fill:'red',
-                   fontFamily:'inter'
-                 }
+                style:{
+                  text:'Negative',
+                  fontSize:18,
+                  textAlign:'center',
+                  fill:'red',
+                  fontFamily:'inter'
+                }
               },
             ]
           },
@@ -259,58 +260,58 @@ export default {
             type: 'text',
             x:48,
             y:-36,
-             style:{
-               text:'Indifference\nApathy',
-               fontSize:16,
-               textAlign:'center',
-               fontFamily:'inter'
-             }
+            style:{
+              text:'Indifference\nApathy',
+              fontSize:16,
+              textAlign:'center',
+              fontFamily:'inter'
+            }
           },
           //第一象限
           {
             type: 'text',
             x:l - 56,
             y:12-l,
-             style:{
-               text:'Active Listening,\ndeep engagement',
-               fontSize:16,
-               textAlign:'center',
-               fontFamily:'inter'
-             }
+            style:{
+              text:'Active Listening,\ndeep engagement',
+              fontSize:16,
+              textAlign:'center',
+              fontFamily:'inter'
+            }
           },
           {
             type: 'text',
             x:l ,
             y: -80,
-             style:{
-               text:'Camaraderie,\nAlignment',
-               fontSize:16,
-               textAlign:'center',
-               fontFamily:'inter'
-             }
+            style:{
+              text:'Camaraderie,\nAlignment',
+              fontSize:16,
+              textAlign:'center',
+              fontFamily:'inter'
+            }
           },
           //第二象限
           {
             type: 'text',
             x: 108,
             y: 24,
-             style:{
-               text:'Collective\nInterest/Curiosity',
-               fontSize:16,
-               textAlign:'center',
-               fontFamily:'inter'
-             }
+            style:{
+              text:'Collective\nInterest/Curiosity',
+              fontSize:16,
+              textAlign:'center',
+              fontFamily:'inter'
+            }
           },
           {
             type: 'text',
             x: l ,
             y: 80,
-             style:{
-               text:'Empathy',
-               fontSize:16,
-               textAlign:'center',
-               fontFamily:'inter'
-             }
+            style:{
+              text:'Empathy',
+              fontSize:16,
+              textAlign:'center',
+              fontFamily:'inter'
+            }
           },
           {
             type: 'text',

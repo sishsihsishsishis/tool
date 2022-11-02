@@ -48,7 +48,7 @@ function chunk(arr, len) {
     return ArrayList;
   }
   
- const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
+const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
 
 
 function transTime(time,e){
