@@ -48,25 +48,27 @@ function chunk(arr, len) {
     return ArrayList;
   }
   
- const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
+const average = (arr) => arr.reduce((a, b) => a ?? 0 + b ?? 0) / arr.length;
 
 
 function transTime(time,e){
     return [e[0]*1000 + time, e[1]]
 }
-const startTime = new Date("2020-04-05 08:00:00").getTime()
-const path = 'valence_signal/v2.json'
+// const startTime = new Date("2020-04-05 08:00:00").getTime()
+// const path = 'valence_signal/v2.json'
+const path = '../../v_1102.json'
 const data = JSON.parse(fs.readFileSync(path))
 /**
  * valence_signal
  */
 
- let smoothParam = 100
- for (let k in data) {
-   let t = data[k];
-   data[k] = chunk(t, smoothParam).map((e, index) => {
-     return transTime(startTime,[index * smoothParam, average(e.map(x => parseFloat(x[1])))])
-   })
- }
- 
-fs.writeFileSync('./do/'+path,JSON.stringify(data))
+let smoothParam = 100
+for (let k in data) {
+  let t = data[k];
+  data[k] = chunk(t, smoothParam).map((e, index) => {
+    return transTime(startTime,[index * smoothParam, average(e.map(x => parseFloat(x[1])))])
+  })
+}
+
+// fs.writeFileSync('./do/'+path,JSON.stringify(data))
+fs.writeFileSync('v_1102.json',JSON.stringify(data))

@@ -1,6 +1,6 @@
 import { EChartOption } from 'echarts'
 import sync from '../../../data/do/rppg_power/rppg_sync_smooth.json'
-import va from '../../../data/do/heatmap/va_h.json'
+import va from '../../../data/do/heatmap/va_1102.json'
 import color from "./color";
 let data: any = va;
 
@@ -38,12 +38,12 @@ function renderItem(params: any, api: any) {
 function TeamRenderItem(params: any, api: any) {
   let v = api.value(0) * 10;
   let a = api.value(1) * 10;
-  let r_v = api.value(2);
-  let r_a = api.value(3);
+  let r_v = api.value(2)=="null" ? 0 : api.value(2);
+  let r_a = api.value(3)=="null" ? 0 :api.value(3);
   let [x, y] = api.coord([v, a]);
   let [x0, y0] = api.coord([1, 1]);
   let [x00, y00] = api.coord([-1, -1]);
-
+  console.log(r_v,r_a)
   let r = api.size([1, 1])[1] * 10;
   return {
     type: 'group',

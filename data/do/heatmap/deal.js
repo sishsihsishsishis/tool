@@ -45,4 +45,4 @@ function deal(file){
 //   console.log(JSON.stringify(results,null,2))
 // })
 
-deal('va_h.csv').then(r=>console.log(JSON.stringify(r)))
+deal('va_1102.csv').then(r=>console.log(JSON.stringify(r)))

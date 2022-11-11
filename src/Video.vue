@@ -2,8 +2,9 @@
 import { ref, onMounted } from 'vue'
 
 import { getEmitter } from "./mitt";
+import demomp4 from "@/assets/demo.mp4";
 let video = ref<HTMLVideoElement>();
-
+const props = defineProps({file:String})
 onMounted(async () => {
   let last = 0
   video.value!.ontimeupdate = (event: any) => {
@@ -31,8 +32,8 @@ getEmitter().on('chart_time_update', async (i: number) => {
 </script>
 
 <template>
-  <video ref="video" id="video" height="270" width="500" controls="true">
-    <source src="./assets/demo.mp4" type="video/mp4">
+  <video ref="video" id="video" height="270" width="470" controls="true">
+    <source :src="(file == 'demo.mp4') ? demomp4 : `/api/download/test/${file}`" type="video/mp4">
   </video>
 </template>
 

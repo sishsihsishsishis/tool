@@ -22,7 +22,8 @@ export function LineChart(data: any, key: string, mul: boolean, customOpt?: ECha
         show: false,
         type: 'value',
         max: function (value: any) {
-          return Math.floor(value.max * 10 + 1) / 10;
+          let p = value.max.toString().split('.')[1].length
+          return Math.floor(value.max * 10**p + 1) / 10**p;
         },
         boundaryGap: [0, '100%']
       },
@@ -75,7 +76,8 @@ export function LineChart(data: any, key: string, mul: boolean, customOpt?: ECha
         show: false,
         type: 'value',
         max: function (value: any) {
-          return Math.floor(value.max * 10 + 1) / 10;
+          let p = value.max.toString().split('.')[1].length
+          return Math.floor(value.max * 10**p + 1) / 10**p;
         },
         boundaryGap: [0, '100%']
       },

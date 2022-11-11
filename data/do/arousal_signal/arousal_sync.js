@@ -54,7 +54,7 @@ function transTime(time,e){
     return [e[0]*1000 + time, e[1]]
 }
 // const startTime = new Date("2020-04-05 08:00:00").getTime()
-const path = 'arousal_signal/arousal_sync_new.json'
+const path = 'arousal_sync_1102.json'
 const sync = JSON.parse(fs.readFileSync(path))
 
 
@@ -66,4 +66,4 @@ for(let i in sync.arousal_sync){
     Synchrony:sync.arousal_sync
   }
 
-fs.writeFileSync('./do/'+path,JSON.stringify(data))
+fs.writeFileSync(path,JSON.stringify(data))

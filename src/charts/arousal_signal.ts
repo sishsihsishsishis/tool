@@ -1,5 +1,5 @@
-import data from '../../data/do/arousal_signal/a2.json'
-import sync from '../../data/do/arousal_signal/arousal_sync_new.json'
+import data from '../../data/do/arousal_signal/a_1102.json'
+import sync from '../../data/do/arousal_signal/arousal_sync_1102.json'
 import { LineChart } from "./template/linechart";
 
 export default async function () {

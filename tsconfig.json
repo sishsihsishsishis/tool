@@ -11,8 +11,12 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types":["vite/client","element-plus/global"],
+    "baseUrl": "./",
+    "paths": {"@/*":["src/*"]}
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","mock/**/*.ts","vite.config.ts"],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "dist", "**/*.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -48,14 +48,14 @@ function chunk(arr, len) {
     return ArrayList;
   }
   
- const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
+const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
 
 
 function transTime(time,e){
     return [e[0]*1000 + time, e[1]]
 }
 // const startTime = new Date("2020-04-05 08:00:00").getTime()
-const path = 'valence_signal/valence_sync_new.json'
+const path = 'valence_sync_1102.json'
 const sync = JSON.parse(fs.readFileSync(path))
 for(let i in sync.valence_sync){
     sync.valence_sync[i][0] = startTime + sync.valence_sync[i][0] * 30 * 1000
@@ -63,4 +63,4 @@ for(let i in sync.valence_sync){
   let data = {
     Synchrony:sync.valence_sync
   }
-fs.writeFileSync('./do/'+path,JSON.stringify(data))
+fs.writeFileSync(path,JSON.stringify(data))
