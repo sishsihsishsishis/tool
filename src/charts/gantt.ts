@@ -8,12 +8,21 @@ let data = [];
 
 let categories = spk.speakers.sort().reverse();
 
+// export let types: {
+//   [T: string]: string
+// } = {
+//   'Neutral': '#FF7410',//#F1975D
+//   'Positive': '#2B9529',//#70A861
+//   'Negative': '#226BA9',//#6088B6
+// }
+
+
 export let types: {
   [T: string]: string
 } = {
-  'Neutral': '#FF7410',
-  'Positive': '#2B9529',
-  'Negative': '#226BA9',
+  'Neutral': '#F1975D',
+  'Positive': '#70A861',
+  'Negative': '#6088B6',
 }
 
 const per: {

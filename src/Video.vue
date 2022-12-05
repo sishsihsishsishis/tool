@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 
 import { getEmitter } from "./mitt";
 import demomp4 from "@/assets/demo.mp4";
+// let demomp4 = "http://localhost:8100/video/demoweb"
 let video = ref<HTMLVideoElement>();
 const props = defineProps({file:String})
 onMounted(async () => {

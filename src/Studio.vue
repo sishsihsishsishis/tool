@@ -16,6 +16,7 @@ import { brain, heart, behavior } from './charts/score'
 import Echarts from './Echart.vue'
 import raddar from './charts/raddar'
 import heatmap from './charts/heatmap'
+import { p1, p2, u1 ,u2, u3} from './charts/pie'
 import colors from './charts/template/color'
 
 import { getEmitter } from "./mitt";
@@ -83,16 +84,21 @@ function jumpTo(time:number) {
         <!-- <img src="./assets/team_members.jpg" alt="" style="margin-top:0em;width: 400px;"> -->
         <Video :file="meetingid"></Video>
         <div class="left-echarts">
-          <div style="height: 2000px; padding-top: 1em;">
-          <div class="tips">
-            <div class="tip" :class="{ltip:t1.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][0].start)">section 1 :</span> {{t1}}</div>
-            <div class="tip" :class="{ltip:t2.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][1].start)">section 2 :</span> {{t2}}</div>
-            <div class="tip" :class="{ltip:t3.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][2].start)">section 3 :</span> {{t3}}</div>
+          <div style="height: 5000px; padding-top: 1em;">
+            <div class="tips">
+              <div class="tip" :class="{ltip:t1.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][0].start)">section 1 :</span> {{t1}}</div>
+              <div class="tip" :class="{ltip:t2.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][1].start)">section 2 :</span> {{t2}}</div>
+              <div class="tip" :class="{ltip:t3.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][2].start)">section 3 :</span> {{t3}}</div>
+            </div>
+            <Echarts class="echarts" :opt="raddar"  style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="heatmap" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="p1" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="p2" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="u1" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="u2" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="u3" style="width:600px; height: 600px;" />
           </div>
-          <Echarts class="echarts" :opt="raddar"  style="width:600px; height: 600px;" />
-          <Echarts class="echarts" :opt="heatmap" style="width:600px; height: 600px;" />
         </div>
-      </div>
       </div>
 
       <div class="vcharts">
@@ -297,6 +303,7 @@ function jumpTo(time:number) {
   height: 100%;
   margin: auto;
   zoom: 0.75;
+  /* transform: scale(0.75); */
   overflow: scroll;
 }
 .secjump{
