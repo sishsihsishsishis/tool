@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Layout from '@/components/layout.vue'
 import { h,resolveComponent  } from 'vue';
 const N = {setup:()=>()=>h(resolveComponent('router-view'))}
 
@@ -17,7 +16,7 @@ const N = {setup:()=>()=>h(resolveComponent('router-view'))}
 // }
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.API_URL), // hash模式：createWebHashHistory，history模式：createWebHistory
+  history: createWebHistory(),//import.meta.env.VITE_API_URL), // hash模式：createWebHashHistory，history模式：createWebHistory
   routes: [
     {
       path: '/',

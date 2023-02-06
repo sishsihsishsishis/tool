@@ -1,0 +1,211 @@
+{
+	"meetingStartTime":1668636000000,
+	"duration":848000,
+	"videoUrl":"demo.mp4",
+	"userAvatar": {
+		"user00":"user00.jpg",
+		"user01":"user01.jpg",
+		"user10":"user10.jpg"
+	},
+	"pie_speakers":[
+		{
+			"speaker":"user00",
+			"speaker_time":573.87,
+			"speaker_time_rate":0.777
+
+		},
+		{
+			"speaker":"user01",
+			"speaker_time":77.44,
+			"speaker_time_rate":0.105
+		},
+		{
+			"speaker":"user10",
+			"speaker_time":87.02,
+			"speaker_time_rate":0.118
+		}
+	],
+	"pie_emotions":[
+		{
+			"emotion":"Negative",
+			"emotion_time":40.53,
+			"emotion_time_rate":0.055
+		},
+		{
+			"emotion":"Neutral",
+			"emotion_time":665.78,
+			"emotion_time_rate":0.902			
+		},
+		{
+			"emotion":"Positive",
+			"emotion_time":32.02,
+			"emotion_time_rate":0.043	
+		}
+	],
+	"pie_acts":[
+		{
+			"act":"Statement-non-opinion",
+			"act_time":489.67,
+			"act_time_rate":0.663
+		},
+		{
+			"act":"Statement-opinion",
+			"act_time":136.58,
+			"act_time_rate":0.185
+		},
+		{
+			"act":"Collaborative Completion",
+			"act_time":19.09,
+			"act_time_rate":0.026
+		},
+		{
+			"act":"Abandoned or Turn-Exit",
+			"act_time":21.72,
+			"act_time_rate":0.029
+		},
+		{
+			"act":"Uninterpretable",
+			"act_time":1.72,
+			"act_time_rate":0.002
+		},
+		{
+			"act":"Yes-No-Question",
+			"act_time":6.79,
+			"act_time_rate":0.009
+		},
+		{
+			"act":"Others",
+			"act_time":62.76,
+			"act_time_rate":0.085
+		}
+	],
+	"stacked_bar_speakers":{
+		"user00": {
+			"Negative": 34.44,
+			"Neutral": 507.41,
+			"Positive": 32.02
+		},
+		"user01": {
+			"Negative": 3.64,
+			"Neutral": 73.8,
+			"Positive": 0.0
+		},
+		"user10": {
+			"Negative": 2.45,
+			"Neutral": 84.57,
+			"Positive": 0.0
+		}
+	},
+	"stacked_bar_emotions": {
+		"Negative": {
+			"user00": 34.44,
+			"user01": 3.64,
+			"user10": 2.45
+		},
+		"Neutral": {
+			"user00": 507.41,
+			"user01": 73.8,
+			"user10": 84.57
+		},
+		"Positive": {
+			"user00": 32.02,
+			"user01": 0.0,
+			"user10": 0.0
+		}
+	},
+	"radar":[
+		{
+			"key":"Equal Participation",
+			"value":0.623 
+		},
+		{
+			"key":"Enjoyment",
+			"value":0.285
+		},
+		{
+			"key":"Shared Goal Commitment",
+			"value":0.233
+		},
+		{
+			"key":"Absorption or Task Engagement",
+			"value":0.713
+		},
+		{
+			"key":"Trust and Psychological Safety",
+			"value":0.461
+		}
+	],
+	"scores":{
+		"brain":null,
+		"body":47,
+		"behavior":50,
+		"total":50
+	},
+	"sections":{
+			"user00": [
+				{
+					"start": 540,
+					"end": 570,
+					"label": 1
+				},
+				{
+					"start": 690,
+					"end": 720,
+					"label": 2
+				},
+				{
+					"start": 390,
+					"end": 420,
+					"label": 5
+				}
+			],
+			"user10": [
+				{
+					"start": 540,
+					"end": 570,
+					"label": 0
+				},
+				{
+					"start": 420,
+					"end": 450,
+					"label": 0
+				},
+				{
+					"start": 450,
+					"end": 480,
+					"label": 6
+				}
+			],
+			"user01": [
+				{
+					"start": 630,
+					"end": 660,
+					"label": 7
+				},
+				{
+					"start": 450,
+					"end": 480,
+					"label": 1
+				},
+				{
+					"start": 420,
+					"end": 450,
+					"label": 7
+				}
+			],
+			"team": [
+				{
+					"start": 570,
+					"end": 600
+				},
+				{
+					"start": 600,
+					"end": 630
+				},
+				{
+					"start": 750,
+					"end": 780
+				}
+			]
+		}		
+}

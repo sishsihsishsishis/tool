@@ -1,7 +1,6 @@
-
 export function DateFormat (date:Date,fmt:string):string {
     let ret;
-    const dic = {
+    const dic:{[key:string]:string} = {
         '1':'Jan',
         '2':'Feb',
         '3':'Mar',
@@ -15,7 +14,7 @@ export function DateFormat (date:Date,fmt:string):string {
         '11':'Nov',
         '12':'Dec',
     };
-    const opt = {
+    const opt:{[key:string]:string} = {
         "Y+": date.getFullYear().toString(),        // 年
         "y+": date.getFullYear().toString(),        // 年
         "m+": (date.getMonth() + 1).toString(),     // 月
@@ -38,17 +37,29 @@ export function DateFormat (date:Date,fmt:string):string {
 
 
 export function chunk(arr: Array<any>, len: number) {
-    const ArrayList = []
+    const ArrayList:Array<any> = []
     let index = 0
     while (index < arr.length) {
-      ArrayList.push(arr.slice(index, index += len))
+        ArrayList.push(arr.slice(index, index += len))
     }
     return ArrayList;
-  }
-  
+}
+
 export  const average = (arr: Array<any>) => arr.reduce((a, b) => a + b) / arr.length;
 
 
 export function transTime(time:any,e:Array<any>){
     return [e[0]*1000 + time, e[1]]
 }
+
+
+declare global {
+    interface Object {
+        _get<T extends object, K extends keyof T>(this: T, key: K) : T[K]
+    }
+}
+
+Object.defineProperty(Object.prototype,'_get',{
+    value: function<T extends object, K extends keyof T>(this: T, key: K) { return this[key]; },
+    enumerable:false,
+})

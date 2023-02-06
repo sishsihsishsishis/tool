@@ -8,7 +8,11 @@ import { ElMessage } from "element-plus";
 let list = ref([])
 
 onMounted(async () => {
-  list.value = (await axios.get('/list')).data
+  try{
+    list.value = (await axios.get('/meeting/video')).data.data
+  } catch(e){
+    
+  }
 })
 async function successfun() {
   ElMessage.success('success')
@@ -42,8 +46,8 @@ async function successfun() {
   </div>
   
   <div class="content">
-    <template v-for="item in list" :key="item">
-      <Card :file="item" />
+    <template v-for="item in list" :key="item.meeting_id">
+      <Card :file="(item as any).video_url" :img="(item as any).img_url" :meeting-id="(item as any).meeting_id"/>
     </template>
     <Card :file="'demo.mp4'"/>
   </div>

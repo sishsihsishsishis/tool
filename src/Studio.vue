@@ -2,47 +2,77 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { DateFormat } from "./utils";
-import { startDate } from "./charts/template/time"
-import Video from './Video.vue'
-import { ref, onMounted, reactive, computed } from 'vue'
+import { ref, onMounted, reactive, computed, toRefs, provide, watchEffect } from 'vue'
+import axios, { AxiosResponse } from 'axios'
+import { useRouter } from "vue-router";
 import Vchart from "./Vchart.vue";
+import Video from './Video.vue'
 import valence_signal, { valence_signal_syn } from './charts/valence_signal'
 import arousal_signal, { arousal_signal_syn } from './charts/arousal_signal'
-import rppg_signal from './charts/rppg_signal'
-import rppg_power, { rppg_sync } from './charts/rppg_power'
+import { rppg_signal, rppg_sync } from './charts/rppg'
 import e from './charts/template/ellipse.echarts'
-import gantt, { dialog, types, types2 } from './charts/gantt'
-import { brain, heart, behavior } from './charts/score'
+import gantt, { dialog, emotionTypes, ActTypes } from './charts/gantt'
 import Echarts from './Echart.vue'
+import Ring from './Ring.vue'
 import raddar from './charts/raddar'
-import heatmap from './charts/heatmap'
-import { p1, p2, u1 ,u2, u3} from './charts/pie'
+import heatMap from './charts/heatmap'
+import { pieEmotions, pieActs, pieSpeakers ,stackedBarEmotions, stackedBarSpeakers} from './charts/pie'
 import colors from './charts/template/color'
 
 import { getEmitter } from "./mitt";
-import tiplist from './tips.json'
-import marks from '../data/do/marks/user_marks.json'
-import axios from 'axios'
-import { useRouter } from "vue-router";
-const props = defineProps({meetingid:String})
+import tips from './tips.json'
+import { 
+  meetingStartTime as meetingStartTimeD,
+  userAvatar
+} from '../data/raw/json_outputs.json'
+
+const props = defineProps({meetingid:{type:String,default:'0'}})
 const router = useRouter();
 
+let meetingStartTime = ref<number>(meetingStartTimeD)
+provide('startTime', meetingStartTime)
+let drawer = ref(false)
+let videoCache = ref<boolean>(false)
+let Duration = ref<number>(0)
+
+let [stacked_bar_emotions, stacked_bar_speakers] = fetchDepath(axios.get(`/csv/bar?meetingID=${props.meetingid}`),['stacked_bar_emotions','stacked_bar_speakers'])
+
+let [speakers,Emotion,DialogueAct,nlpData] = fetchDepath(axios.get(`/csv/nlp?meetingID=${props.meetingid}`),['speakers','Emotion','DialogueAct','data'])
+let gantt_data = { speakers, Emotion, data: nlpData }
+let dialog_data = { speakers, DialogueAct, data: nlpData }
+
+let [pie_acts,pie_emotions,pie_speakers] = fetchDepath(axios.get(`/csv/pie?meetingID=${props.meetingid}`),['pie_acts','pie_emotions','pie_speakers'])
+let [heatmap] = fetchDepath(axios.get(`/csv/heatmap?meetingID=${props.meetingid}`),['heatmap'])
+
+let [radar] = fetchDepath(axios.get(`/csv/radar?meetingID=${props.meetingid}`),['radar'])
+
+let sections = axios.get(`/csv/section?meetingID=${props.meetingid}`).then(res=>{return {team:res.data.data.team,...res.data.data.user}})
+
+// let c1 = axios.get(`/csv/bar?meetingID=${meetingId}`).then(res=>{
+//   let { stacked_bar_emotions, stacked_bar_speakers } = res.data.data
+//   stacked_bar_emotions_resolve(stacked_bar_emotions);
+//   stacked_bar_emotions_resolve(stacked_bar_speakers);
+//   }
+// })
+let scores = toRefs(reactive({
+  brain:null,
+  body:47,
+  behavior:50,
+  total:50
+}))
 onMounted(async ()=>{
+  let {duration,body_score,behavior_score,total_score} = (await axios.get(`/csv/score?meetingID=${props.meetingid}`)).data.data
+  scores.body.value = body_score
+  scores.behavior.value = behavior_score
+  scores.total.value = total_score
+  marks.value = await sections
+  Duration.value = duration
 })
-const tips = reactive(marks);
+let users = Object.keys(userAvatar);
+let userSelected = ref<string>('')
+let marks = ref<{ [key: string]: { start: number, end: number, label?: number }[] }>({"team": [{"start": 0,"end": 0},],})
+let userTip = computed<any>(()=>userSelected.value?marks.value[userSelected.value].map(e=>tips[e.label!.toString() as keyof typeof tips]):marks.value['team'].map(e=>''))
 
-let userSelected = ref('')
-type s  = "10" | "11" | "12" | "team" | "00" | "01" | "02" ;
-function getValueFromKey<T extends object, K extends keyof T>(obj: T, key: K) {
-  return obj[key];
-}
-let c:s = "00"
-let um = computed<any>(()=>userSelected.value.replace('User',''))
-let t1 = computed<any>(()=>userSelected.value?getValueFromKey(tiplist,getValueFromKey(marks,um.value)[0].label.toString()):'')
-let t2 = computed(()=>userSelected.value?tiplist[marks[um.value][1].label.toString()]:'')
-let t3 = computed(()=>userSelected.value?tiplist[marks[um.value][2].label.toString()]:'')
-
-let users = ['User00','User01','User02','User10','User11','User12']
 function select(user:string){
   if(userSelected.value == user) {
     userSelected.value = '';
@@ -55,84 +85,110 @@ function select(user:string){
   }
 }
 function jumpTo(time:number) {
-  getEmitter().emit('video_time_update',time)
-  getEmitter().emit('chart_time_update',time)
+  getEmitter().emit('video_time_update',time/1000)
+  getEmitter().emit('chart_time_update',time/1000)
+}
+
+function getAssetsUrl(u:string) {
+    return new URL(`/data/assets/${u}`, import.meta.url).href;
+}
+
+function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
+  let resData:any;
+  api.then(res=>{
+    resData = res.data.data
+  })
+  return keys.map(key=>
+    new Promise(async resolve=>{
+      await api;
+      resolve(resData[key])
+    })
+  )
 }
 </script>
 
 <template>
+  <el-drawer v-model="drawer" title="Settings" :size="'25%'" :append-to-body="true" :with-header="true">
+    <span>VideoCache : </span>
+    <el-switch v-model="videoCache" inline-prompt
+    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
+    active-text="Y"
+    inactive-text="N" />
+    <div>
+      <div>Section Start Time:
+      <el-date-picker
+        v-model="meetingStartTime"
+        type="datetime"
+        placeholder="meeting start time"
+      /></div>
+
+    </div>
+    
+  </el-drawer>
   <div class="top">
       <div style="display: flex;">
       <img src="./assets/Logo-white.svg" class="logo" alt="logo" @click="router.push('/home')" />
         <strong>Syneurgy Team Performance Report</strong></div>
         <div class="scores">
-          <span class="scores_text">Total Score: {{ 63 }}</span> &nbsp;|&nbsp;
+          <span class="scores_text">Total Score: {{ scores.total }}</span> &nbsp;|&nbsp;
           <img class="logo1"  src="./assets/brain-white.svg" />
-          <Echarts class="inline-echarts" :opt="brain" :height="58" :width="58" />
+          <Ring class="inline-echarts" :value="scores.brain" color="#C79459" :height="58" :width="58" />
           <img class="logo1"  src="./assets/heart-white.svg" />
-          <Echarts class="inline-echarts" :opt="heart" :height="58" :width="58" />
+          <Ring class="inline-echarts" :value="scores.body" color="#B73B4B" :height="58" :width="58" />
           <img class="logo1"  src="./assets/hand-white.svg" />
-          <Echarts class="inline-echarts" :opt="behavior" :height="58" :width="58" />
+          <Ring class="inline-echarts" :value="scores.behavior" color="#9FC949" :height="58" :width="58" />
         </div>
-      <div>Section Start Time: {{ DateFormat(startDate, 'yyyy E ddth HH:MM PP') }} | Duration: {{
-          50
-      }}min</div>
+      <div>Section Start Time: {{ DateFormat(new Date(meetingStartTime??meetingStartTimeD), 'yyyy E ddth HH:MM') }} |
+          Duration: {{ (Duration /(60 * 1000)).toFixed(0) }}min</div>
+      <img class="logom"  src="./assets/more.svg" @click="drawer = true" />
+
   </div>
   <div class="con">
     <div class="tc">
       <div class="left">
         <!-- <img src="./assets/team_members.jpg" alt="" style="margin-top:0em;width: 400px;"> -->
-        <Video :file="meetingid"></Video>
+        <!-- <Video :file="getAssetsUrl(meetingid!)"></Video> -->
+        <Video :file="`/s3/video?meetingID=${meetingid!}`" :cache="videoCache" :key="videoCache+''"></Video>
         <div class="left-echarts">
           <div style="height: 5000px; padding-top: 1em;">
             <div class="tips">
-              <div class="tip" :class="{ltip:t1.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][0].start)">section 1 :</span> {{t1}}</div>
-              <div class="tip" :class="{ltip:t2.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][1].start)">section 2 :</span> {{t2}}</div>
-              <div class="tip" :class="{ltip:t3.length>20}" :style="{borderColor:colors[um]}"><span class="secjump" @click="jumpTo(marks[um][2].start)">section 3 :</span> {{t3}}</div>
+              <div class="tip" v-for="i in marks['team'].length" :key="i" :class="{ltip:userTip[i-1].length>20}" :style="{borderColor:colors[userSelected]}"><span class="secjump" @click="jumpTo(marks[userSelected][i-1].start)">section {{ i }} :</span> {{userTip[i-1]}}</div>
             </div>
-            <Echarts class="echarts" :opt="raddar"  style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="heatmap" style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="p1" style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="p2" style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="u1" style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="u2" style="width:600px; height: 600px;" />
-            <Echarts class="echarts" :opt="u3" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="raddar(radar)"  style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="heatMap(heatmap)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="pieEmotions(pie_emotions)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="pieActs(pie_acts)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="pieSpeakers(pie_speakers)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="stackedBarEmotions(stacked_bar_emotions)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="stackedBarSpeakers(stacked_bar_speakers)" style="width:600px; height: 600px;" />
           </div>
         </div>
       </div>
 
       <div class="vcharts">
         <div class="right-top">
-          <div class="avatar" :class="{unselected:userSelected!='00'}" :style="{backgroundColor:colors['00']}" @click="select('00')"><img src="./assets/user00.jpg"><span :class="{selected:userSelected=='00'}" :style="{color:colors['00']}">User00</span></div>
-          <div class="avatar" :class="{unselected:userSelected!='01'}" :style="{backgroundColor:colors['01']}" @click="select('01')"><img src="./assets/user01.jpg"><span :class="{selected:userSelected=='01'}" :style="{color:colors['01']}">User01</span></div>
-          <div class="avatar" :class="{unselected:userSelected!='02'}" :style="{backgroundColor:colors['02']}" @click="select('02')"><img src="./assets/user02.jpg"><span :class="{selected:userSelected=='02'}" :style="{color:colors['02']}">User02</span></div>
-          <div class="avatar" :class="{unselected:userSelected!='10'}" :style="{backgroundColor:colors['10']}" @click="select('10')"><img src="./assets/user10.jpg"><span :class="{selected:userSelected=='10'}" :style="{color:colors['10']}">User10</span></div>
-          <div class="avatar" :class="{unselected:userSelected!='11'}" :style="{backgroundColor:colors['11']}" @click="select('11')"><img src="./assets/user11.jpg"><span :class="{selected:userSelected=='11'}" :style="{color:colors['11']}">User11</span></div>
-          <div class="avatar" :class="{unselected:userSelected!='12'}" :style="{backgroundColor:colors['12']}" @click="select('12')"><img src="./assets/user12.jpg"><span :class="{selected:userSelected=='12'}" :style="{color:colors['12']}">User12</span></div>
+          <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="getAssetsUrl(userAvatar[u as keyof typeof userAvatar])"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
         </div>
         Heart Synchrony
-        <Vchart :opt="rppg_sync" :height="300" :width="900" />
+        <Vchart :opt="rppg_sync(meetingid,sections)" :height="300" :width="900" />
         Heart Signal
-        <Vchart :opt="rppg_signal" :height="300" :width="900" />
-        
-
-
+        <Vchart :opt="rppg_signal(meetingid,sections)" :height="300" :width="900" />
         
         Emotional Synchrony (Positive or Negative)
-        <Vchart :opt="valence_signal_syn" :height="300" :width="900" />
+        <Vchart :opt="valence_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Emotional Signal (Positive or Negative)
-        <Vchart :opt="valence_signal" :height="300" :width="900" />
+        <Vchart :opt="valence_signal(meetingid,sections)" :height="300" :width="900" />
         Attentiveness Synchrony
-        <Vchart :opt="arousal_signal_syn" :height="300" :width="900" />
+        <Vchart :opt="arousal_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Attentiveness Signal
-        <Vchart :opt="arousal_signal" :height="300" :width="900" />
+        <Vchart :opt="arousal_signal(meetingid,sections)" :height="300" :width="900" />
 
-        <Vchart :opt="e" :height="700" :width="900" :type="'ellipse'"/>
+        <Vchart :opt="e(meetingid)" :height="700" :width="900" :type="'ellipse'"/>
         
         Sentiment Overview
-        <Vchart :opt="gantt" :height="500" :width="900" :type="'gantt'" />
+        <Vchart :opt="gantt(gantt_data)" :height="500" :width="900" :type="'gantt'" />
         Language Use Overview
-        <Vchart :opt="dialog" :height="500" :width="900" :type="'gantt'"/>
+        <Vchart :opt="dialog(dialog_data)" :height="500" :width="900" :type="'gantt'"/>
 
       </div>
     </div>
@@ -181,6 +237,15 @@ function jumpTo(time:number) {
 .logo1{
   height: 1.5em;
   margin: 1em 0.25em;
+}
+.logom{
+  height: 1.5em;
+  margin: 1em -0.25em 1em 1em;
+}
+.logom:hover{
+  cursor: pointer;
+  background-color: #00000012;
+  border-radius: 50%;
 }
 .scores_text {
   font-size: 1.35em;

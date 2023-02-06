@@ -1,7 +1,7 @@
-import { EChartOption } from 'echarts'
+import { EChartsOption } from 'echarts'
 
-export function RingChart(data:number, title:string, color:string, logo:any){
-    const opt:EChartOption = {
+export function RingChart(data:number|null, color:string){
+    const opt:EChartsOption = {
         series: [
             {
                 type: 'gauge',
@@ -39,7 +39,7 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                 },
                 data: [
                     {
-                        value: data,
+                        value: data ?? 0,
                         title: {
                         },
                         detail: {
@@ -52,7 +52,7 @@ export function RingChart(data:number, title:string, color:string, logo:any){
                 },
                 detail: {
                     offsetCenter: [0, 0],
-                    formatter: data==0?`{valuenone|N/A}`: `{value|{value}}`,
+                    formatter: data===null?`{valuenone|N/A}`: `{value|{value}}`,
                     rich: {
                         value: {
                             color: 'white',
@@ -72,5 +72,5 @@ export function RingChart(data:number, title:string, color:string, logo:any){
             }
         ]
     };
-    return opt as EChartOption
+    return opt as EChartsOption
 }

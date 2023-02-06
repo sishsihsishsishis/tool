@@ -18,7 +18,7 @@
 <script setup lang="ts">
 
 import axios from 'axios'
-import { ref, reactive, defineProps, onMounted } from "vue";
+import { ref, reactive, onMounted } from "vue";
 import { useRouter } from 'vue-router';
 import { ElMessage } from 'element-plus'
 
@@ -49,20 +49,9 @@ function login() {
   } else if (password.value === '') {
     ElMessage.warning('password null')
   } else {
-    try{
-      userLogin({ username: username.value, password: password.value }).then(res => {
-        if(res.data.token)
           router.push(decodeURIComponent(redirect || '/home'))
-        else
-        ElMessage.error('User or Password Error')
-    })
-    } catch (e) {
-      
-    }
   }
 }
-
-
 
 
 </script>

@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, inject, Ref } from 'vue'
 import * as echarts from 'echarts'
-import { startTime } from "./charts/template/time";
 import { getEmitter } from "./mitt";
 
 let video = ref();
-let d = []
-for (let i = 0; i < 50 * 60; i++) {
-  d.push(startTime + i * 1000)
-}
+const startTime = inject<Ref<number>>('startTime',ref(0))
+
+
 const props = defineProps<{ opt: Object | Function, height?: number, width?: number, type?: string }>()
 
 let chartDiv = ref<HTMLDivElement>();
@@ -16,22 +14,59 @@ let options = props.opt instanceof Function ? props.opt() : ((async () => props.
 let myChart: any;
 onMounted(async () => {
   myChart = echarts.init(chartDiv.value!, undefined, { height: props.height!, width: props.width! });
-  try{
+  try {
     myChart.setOption(await options);
-  }catch(e){console.log(e)}
-  if(props.type!='ellipse') myChart.setOption({
+  } catch (e) { console.log(e) }
+  if (props.type === 'gantt') myChart.setOption({
     tooltip: {
       trigger: 'axis',
       triggerOn: 'click',
     },
     xAxis: {
       type: 'time',
+      axisLabel: {
+        formatter: function (value: number, index: number) {
+          return echarts.time.format(startTime.value + value, '{HH}:{mm}', false);
+        }
+      },
       axisPointer: {
-        value: startTime,
+        value: 0,
         label: {
           show: true,
           formatter: function (params: any) {
-            return echarts.time.format(params.value,'{hh}:{mm}:{ss}');
+            return echarts.time.format(startTime.value + params.value, '{HH}:{mm}:{ss}', false);
+          },
+          backgroundColor: '#7581BD',
+          margin: 20
+        },
+        handle: {
+          show: true,
+          icon: 'path://M2,8 L5,2 L8,8 L 2,8',
+          size: 15,
+          margin: 10,
+          color: '#7581BD'
+        }
+      }
+    }
+  });
+  else if (props.type != 'ellipse') myChart.setOption({
+    tooltip: {
+      trigger: 'axis',
+      triggerOn: 'click',
+    },
+    xAxis: {
+      type: 'time',
+      axisLabel: {
+        formatter: function (value: number, index: number) {
+          return echarts.time.format(startTime.value + value, '{HH}:{mm}', false);
+        }
+      },
+      axisPointer: {
+        value: 0,
+        label: {
+          show: true,
+          formatter: function (params: any) {
+            return echarts.time.format(startTime.value + params.value, '{HH}:{mm}:{ss}', false);
           },
           backgroundColor: '#7581BD',
           margin: 20
@@ -49,70 +84,77 @@ onMounted(async () => {
   window.onresize = function () {
     myChart.resize();
   };
-  // let ev = ['click','dblclick','mousedown','mousemove','mouseup','mouseover','mouseout','globalout','contextmenu','highlight','downplay','selectchanged','axisareaselected',]
-  // ev.forEach(e=>myChart.on(e, function (params:any) {
-  //     console.log(params);
-  // }))
-  if(props.type=='gantt'){
 
-  }else if(props.type == 'ellipse'){
-    getEmitter().on('video_time_update',async (time:number)=>{
+  if (props.type == 'gantt') {
+      let ev = ['click','dblclick','mousedown','mousemove','mouseup','mouseover','mouseout','globalout','contextmenu','highlight','downplay','selectchanged','axisareaselected',];
+      myChart.on('highlight', async function (params:any) {
+          // console.log(params);
+          if(params.batch!==undefined){
+            let t1 = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[1]
+            let t2 = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[2]
+            // console.log(t)
+            // getEmitter().emit('chart_time_update', (t2/2-t1/2+t1) / 1000)
+            getEmitter().emit('chart_time_update', (t1) / 1000)
+          }
+      })
+  } else if (props.type == 'ellipse') {
+    getEmitter().on('video_time_update', async (time: number) => {
       myChart.dispatchAction({
-      type: 'timelineChange',
-      // 时间点的 index
-      currentIndex: time
-  })
+        type: 'timelineChange',
+        // 时间点的 index
+        currentIndex: time
+      })
     })
   }
-  else{
+  else {
     myChart.on('highlight', async (params: any) => {
-    // console.log(params)
-    if(params.escapeConnect == true){
-      let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
-      getEmitter().emit('chart_time_update', (t - startTime) / 1000)
-    }
-  })
+      // console.log(params)
+      if (params.escapeConnect == true) {
+        let t = ((await options).series[params.batch[0]?.seriesIndex].data[params.batch[0]?.dataIndex])[0]
+        getEmitter().emit('chart_time_update', (t) / 1000)
+      }
+    })
   }
-  
+
   getEmitter().on('video_time_update', (i: number) => {
     echartsUpdata(i)
   })
 
-  myChart.on('legendselectchanged',async (params:any)=>{
+  myChart.on('legendselectchanged', async (params: any) => {
     // console.log(params)
   })
-  getEmitter().on('legendUnSelect',(user:string|string[])=>{
+  getEmitter().on('legendUnSelect', (user: string | string[]) => {
     // console.log(user)
-    if(user instanceof Array)
-    user.forEach(e=> myChart.dispatchAction({
-      type: 'legendUnSelect',
-      // 图例名称
-      name: e
-    }))
+    if (user instanceof Array)
+      user.forEach(e => myChart.dispatchAction({
+        type: 'legendUnSelect',
+        // 图例名称
+        name: e
+      }))
     else myChart.dispatchAction({
       type: 'legendUnSelect',
       // 图例名称
       name: user
     })
   })
-  getEmitter().on('legendHighlight',()=>{
-    
+  getEmitter().on('legendHighlight', () => {
+
     myChart.dispatchAction({
       type: 'legendUnSelect'
     })
   })
-  getEmitter().on('legendAllSelect',(user:string)=>{
+  getEmitter().on('legendAllSelect', (user: string) => {
     myChart.dispatchAction({
       type: 'legendAllSelect',
     })
   })
-  
+
 });
 function echartsUpdata(value: number) {
   myChart.setOption({
     xAxis: {
       axisPointer: {
-        value: startTime + value * 1000,
+        value: value * 1000,
       }
     }
   })

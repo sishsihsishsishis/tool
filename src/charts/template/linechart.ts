@@ -1,126 +1,81 @@
-import { EChartOption } from 'echarts'
-import { graphic } from "echarts";
+import { EChartsOption } from 'echarts'
 import color from "./color";
 import merge from "deepmerge";
-import marks from "../../../data/do/marks/user_marks.json"
-import { startTime } from './time';
 
-export function LineChart(data: any, key: string, mul: boolean, customOpt?: EChartOption) {
-  if (mul) {
-    const opt: EChartOption = {
-      grid: {
-        top: 60,
-        left: 100,
-        right: 100,
-        bottom: 60
+const isSpec = (key: string) => {
+  return key.includes('mean') || key.includes('sync')
+}
+
+export function LineChart(data: any, specColorKey: string, single: boolean, marks:{ [key: string]: { start: number, end: number, label?: number }[] }, customOpt?: EChartsOption) {
+  const opt: EChartsOption = {
+    grid: {
+      top: 60,
+      left: 100,
+      right: 100,
+      bottom: 60
+    },
+    tooltip: {},
+    xAxis: {
+      type: 'time',
+    },
+    yAxis: {
+      show: false,
+      type: 'value',
+      max: function (value: any) {
+        let p = value.max.toString().split('.')[1].length
+        return Math.floor(value.max * 10 ** p + 1) / 10 ** p;
       },
-      tooltip: {},
-      xAxis: {
-        type: 'time',
-      },
-      yAxis: {
-        show: false,
-        type: 'value',
-        max: function (value: any) {
-          let p = value.max.toString().split('.')[1].length
-          return Math.floor(value.max * 10**p + 1) / 10**p;
+      boundaryGap: [0, '100%']
+    },
+    legend: {
+      data: Object.keys(data)
+    },
+    series: Object.keys(data).map(e => {
+      return {
+        name: e,
+        type: 'line',
+        smooth: true,
+        symbol: 'none',
+        data: data[e],
+        sampling: 'lttb',
+        lineStyle: isSpec(e) ? {
+          width: 4,
+          color: color[specColorKey] + 'cc',
+        } : {},
+        itemStyle: {
+          color: isSpec(e) ? color[specColorKey] + 'cc' : color[e],
         },
-        boundaryGap: [0, '100%']
-      },
-      legend: {
-        data: Object.keys(data).map(e => e == 'Synchrony' ? 'Synchrony' : e == 'avg' ? 'Avg' : `User${e}`).sort()
-      },
-      series: Object.keys(data).map(e => {
-        return {
-          name: e == 'Synchrony' ? 'Synchrony' : e == 'avg' ? 'Avg' : `User${e}`,
-          type: 'line',
-          smooth: true,
-          symbol: 'none',
-          data: data[e],
-          lineStyle: e == 'avg' || e == 'Synchrony' ? {
-            width: 4,
-            color: color[key] + 'cc',
-          } : {},
-          itemStyle: {
-            color: e == 'avg' || e == 'Synchrony' ? color[key] + 'cc' : color[e],
-          },
-          markArea: (e == 'Synchrony' || e == 'avg') ? {
-            data: marks["team"].map((m: any, index: number) => [
-              {
-                name: '',
-                itemStyle: { color: color[key] + '75' },
-                xAxis: startTime + parseInt(m.start) * 1000
-              },
-              {
-                xAxis: startTime + parseInt(m.end) * 1000
-              }]
-            ),
-          } : {}
-        }
-      })
-    }
-    return customOpt ? merge<EChartOption>(opt, customOpt) as EChartOption : opt;
-  } else {
-    const opt: EChartOption = {
-      grid: {
-        top: 60,
-        left: 100,
-        right: 100,
-        bottom: 60
-      },
-      tooltip: {},
-      xAxis: {
-        type: 'time',
-      },
-      yAxis: {
-        show: false,
-        type: 'value',
-        max: function (value: any) {
-          let p = value.max.toString().split('.')[1].length
-          return Math.floor(value.max * 10**p + 1) / 10**p;
-        },
-        boundaryGap: [0, '100%']
-      },
-      legend: {
-        data: Object.keys(data).map(e => e == 'Synchrony' ? 'Synchrony' : e == 'avg' ? 'Avg' : `User${e}`).sort()
-      },
-      series: Object.keys(data).map(e => {
-        return {
-          name: e == 'Synchrony' ? 'Synchrony' : e == 'avg' ? 'Avg' : `User${e}`,
-          type: 'line',
-          smooth: true,
-          symbol: 'none',
-          data: data[e],
-          lineStyle: e == 'avg' || e == 'Synchrony' ? {
-            width: 4,
-            color: color[key] + 'cc',
-          } : {},
-          itemStyle: {
-            color: e == 'avg' || e == 'Synchrony' ? color[key] + 'cc' : color[e],
-          },
-          // markArea: {
-          markArea: (e == 'Synchrony' || e == 'avg') ? {} : {
-            label: {
-              rotate: 35,
-              offset: [25, 0]
+        markArea: single ? {
+          data: marks["team"].map((m: any, index: number) => [
+            {
+              name: '',
+              itemStyle: { color: color[specColorKey] + '75' },
+              xAxis: parseInt(m.start)
             },
-            data: marks[e].map((m: { start: string, end: string, label?: number }, index: number) =>
-              [{
-                name: 'section ' + (index + 1),
-                xAxis: startTime + parseInt(m.start) * 1000,
-                itemStyle: {
-                  color: `${color[e]}75`
-                }
-              },
-              {
-                xAxis: startTime + parseInt(m.end) * 1000,
-              },
-              ])
-          }
-        }
-      })
-    }
-    return customOpt ? merge<EChartOption>(opt, customOpt) as EChartOption : opt;
+            {
+              xAxis: parseInt(m.end)
+            }]
+          ),
+        } : marks.hasOwnProperty(e) ? {
+          label: {
+            rotate: 35,
+            offset: [25, 0]
+          },
+          data: (marks as { [key: string]: { start: number, end: number, label?: number }[] })[e].map((m, index) =>
+            [{
+              name: 'section ' + (index + 1),
+              xAxis: m.start,
+              itemStyle: {
+                color: `${color[e]}75`
+              }
+            },
+            {
+              xAxis: m.end,
+            },
+            ])
+        } : {}
+      }
+    })
   }
-  // return Object.assign(opt,customOpt) as EChartOption
+  return customOpt ? merge<EChartsOption>(opt, customOpt) as EChartsOption : opt;
 }

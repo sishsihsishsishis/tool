@@ -1,29 +1,33 @@
 <script setup lang="ts">
 import { ref, provide } from "vue";
 import { useRouter, useRoute } from "vue-router";
-import png from "@/assets/demo.png";
 import axios from "axios";
-import { fi } from "element-plus/es/locale";
 import { ElMessage } from "element-plus";
-const props = defineProps({ file: String })
+const props = defineProps({ file: String, img: String, meetingId:Number })
 const router = useRouter()
 const route = useRoute()
 function handleClick() {
   let l = props.file?.split('/') ?? ''
-  router.push(`/home/${l[l?.length-1]}/`)
+  router.push(`/home/${props.meetingId??'0'}/`)
 }
 let Delete = async (file:string|undefined)=>axios.delete('/delete/'+file).then(()=>ElMessage.success('success')).then(()=>location.reload())
 let See = async (file:string|undefined)=>axios.get('/download/'+file).then((e)=>alert(e.data))
+function getAssetsUrl(u:string) {
+    return new URL(`/data/assets/${u}`, import.meta.url).href;
+}
+function getAssetsUrls(u:string) {
+  return import.meta.env.VITE_API_URL+u
+}
 </script>
 
 <template>
   <div class="con">
     <template v-if="file=='demo.mp4'">
-      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${png})`}"></div>
+      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${getAssetsUrl('demo.png')})`}"></div>
       <span class="filename">{{ file }}</span>
     </template>
     <template v-else>
-      <div class="card" @click="handleClick"></div>
+      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${getAssetsUrls(img!)}`}"></div>
       <span class="del" @click="See(file)">see</span><span class="filename">{{ file }}</span><span class="del" @click="Delete(file)">del</span>
     </template>
     
@@ -68,7 +72,7 @@ let See = async (file:string|undefined)=>axios.get('/download/'+file).then((e)=>
   transition: all 0.3s;
   box-sizing: content-box;
   border: solid 2px rgba(73, 73, 73, 0.277);
-  background-image: url('@/assets/default_topo.png');
+  /* background-image: url('@/assets/default_topo.png'); */
   background-size: 95%;
   background-repeat: no-repeat;
   background-position: 50% 50%;

@@ -1,0 +1,139 @@
+Speaker	Start	End	Sentence	Emotion	DialogueAct
+user00	2.10	6.52	As a as margin, I check in you can a.	Neutral	Statement-non-opinion
+user00	7.62	17.49	Already preparing go ahead, just like tight bow, the yourer tare an active projects. Theyare are youre working on n and mus. O am.	Neutral	Statement-non-opinion
+user00	18.54	19.94	Expected.	Neutral	Collaborative Completion
+user00	21.14	44.51	Like work this frid so and what, on this friday, you we can expect for each of us two to share. Ah, no until, for example, te under perfect circle, o the face book, the campaign, what a mariaiming to get done by this a friday and then march fore the same for whicheper projects.	Neutral	Statement-non-opinion
+user00	45.25	51.90	Am o ca? Let's, let's dive in I'll I'll start with a.	Neutral	Action-directive
+user00	53.20	72.93	Estart with the celebration, a high connections assigned of another yearlong contract a last night, yea fo thatall. I allow us to continue an working together as well, ah na because there, the current me the a the most active.	Positive	Statement-non-opinion
+user00	75.83	124.41	Like big client tat, really man, so am that's ausen. I m pien swene to celebrate the having boat the ugaes be able to tust the spark habbits op is really really helpful. We know a angela you leading a enjroyd and mar ju leading apple, like that's so really oscilate. So please continue doing that and with lollys free to work a with goth and to day angela to get the androy log a fixed, tosa, thagugise gen get past that io and I guess just making a note am when it is fixed for you er. You can emale sireley. So under the redolphin list, confirmi eagoes have access to the tarch habits, dolfinist.	Neutral	Statement-non-opinion
+user10	76.82	78.60	Tat really man so.	Neutral	Statement-opinion
+user10	129.41	131.06	A gente ai, gazeme.	Neutral	Collaborative Completion
+user00	131.06	131.87	I will.	Neutral	Statement-non-opinion
+user10	131.87	133.07	An to I.	Neutral	Repeat-phrase
+user00	133.68	143.90	I will link it a into e spark habits, channel and I'll put it under the descriptions e so that its evy is ones.	Neutral	Statement-non-opinion
+user10	143.07	144.21	Evy is ones.	Neutral	Statement-non-opinion
+user10	145.44	146.50	Fillors.	Neutral	Collaborative Completion
+user00	147.50	159.75	O kavs well so indeed spark heave with slack turnel edges atic the dultinist anu, once android is up. You can message, I shirley shirley has an android.	Neutral	Statement-non-opinion
+user10	159.75	160.44	Ccuwel.	Neutral	Statement-non-opinion
+user00	161.74	162.99	Ound.	Neutral	Appreciation
+user00	163.65	165.65	And they just olt. Let me go like a note.	Negative	Statement-non-opinion
+user00	166.40	167.37	An.	Neutral	Statement-non-opinion
+user10	169.96	170.50	On.	Neutral	Collaborative Completion
+user00	171.46	172.57	They enjoy de.	Neutral	Statement-non-opinion
+user10	171.49	171.73	They.	Neutral	Statement-non-opinion
+user10	172.42	175.98	Ha thenjoy dter ther, not emain, saii,.	Neutral	Statement-non-opinion
+user00	173.23	174.21	Dter.	Neutral	Statement-non-opinion
+user10	176.88	178.06	Bu danton san tai.	Neutral	Hold before answer/agreement
+user00	178.09	179.09	And dree da.	Neutral	Agree/Accept
+user10	179.63	181.13	E go rai, onula.	Neutral	Conventional-closing
+user10	184.91	186.63	Wens wont on er.	Neutral	Statement-non-opinion
+user10	187.41	190.95	The fell, it is atis luse, mine, comparson, your mploye.	Neutral	Statement-non-opinion
+user00	190.95	194.02	An there's, a nessa as well.	Neutral	Statement-non-opinion
+user10	194.02	197.53	Ate as awarin and orly te.	Neutral	Statement-non-opinion
+user00	194.83	195.67	Ate as.	Neutral	Collaborative Completion
+user10	198.29	202.00	I mn here on land, an ok, a on in.	Neutral	Statement-non-opinion
+user00	200.47	200.91	Ok, a.	Neutral	Response Acknowledgement
+user00	204.62	206.68	So big moston there is ye.	Neutral	Statement-opinion
+user00	208.36	213.48	Oh yes, yes, surely yeh ou gies can connect with that ly. Am.	Neutral	Agree/Accept
+user00	214.84	215.76	Fouqut, I think.	Neutral	Statement-opinion
+user10	216.14	218.47	That her ons a long apet ite.	Neutral	Abandoned or Turn-Exit
+user00	216.67	217.05	Ons, a.	Neutral	Collaborative Completion
+user00	220.68	233.88	And a also a brain featured has already given the first draught of the the article a and sin the future.	Neutral	Statement-non-opinion
+user10	225.83	226.27	The.	Neutral	Uninterpretable
+user00	235.53	240.00	Pen, one eageise not in the future, but like a addive.	Neutral	Statement-non-opinion
+user00	242.37	243.06	I guess.	Neutral	Statement-non-opinion
+user00	243.92	247.41	Who's the go to zat beer person with you between you, two.	Neutral	Statement-non-opinion
+user00	249.29	250.11	Usually isue.	Neutral	Statement-non-opinion
+user01	250.32	255.18	No you nim on if the bensanda opin theater oi was got.	Neutral	Statement-opinion
+user00	253.64	261.33	Theater oi was got aetane and o case im. Teing would like afor bounds, an.	Neutral	Statement-non-opinion
+user10	255.18	256.09	And.	Neutral	Statement-non-opinion
+user00	262.35	265.18	I think yoc an trade as apt mat affore in the seamal.	Neutral	Statement-opinion
+user10	265.18	269.74	Eean bidit see a an ebares on the.	Neutral	Statement-non-opinion
+user10	270.50	274.99	Har on e wanted the re, plind bu very dns here oin before the seamel.	Neutral	Statement-non-opinion
+user00	274.02	277.03	Before the seamel to edis menjor marge.	Neutral	Statement-non-opinion
+user00	278.28	279.69	I'll su sher, my swinral quick.	Neutral	Statement-non-opinion
+user00	281.08	284.59	Im connotratus at where e, if it's from.	Neutral	Statement-non-opinion
+user00	285.94	290.46	This emale right and the subject title is this:.	Neutral	Statement-non-opinion
+user00	291.74	293.89	Then forward.	Neutral	Collaborative Completion
+user00	294.63	302.00	This emalto eugais and I believe well yougos- are able to do that right in my zapier.	Positive	Statement-non-opinion
+user10	301.58	305.02	A very nerve bmont okeewy that.	Neutral	Statement-non-opinion
+user00	303.86	308.79	Okeewy that way in the future, on the easkin gip te draught immediately.	Neutral	Abandoned or Turn-Exit
+user10	308.31	310.29	On I want bit.	Neutral	Statement-non-opinion
+user00	310.26	318.83	And am in the future, you'll can communicate to the cliens and what you have to do right down o the article and so that I.	Neutral	Statement-non-opinion
+user10	320.62	329.05	So t ois, what it looks like you is ly, say e sa poes anonclu its me its in its teria.	Neutral	Statement-opinion
+user00	321.14	323.05	So t ois what it looks like you.	Neutral	Declarative Yes-No-Question
+user00	325.19	326.57	Poes.	Neutral	Statement-non-opinion
+user00	328.99	333.91	O awll just show it well show it fully, and the future would love you guise to own. This whole were a flow.	Positive	Statement-opinion
+user10	333.98	336.72	Or it ie ben in see a pasial nerve.	Neutral	Statement-non-opinion
+user10	338.45	338.84	Noise.	Neutral	Appreciation
+user10	339.77	342.22	Was one of the migi ire than the pa fingere.	Negative	Yes-No-Question
+user00	342.22	345.20	So in the future, you'll have the whole gep.	Neutral	Statement-opinion
+user10	345.74	347.19	He relrict.	Neutral	Statement-non-opinion
+user00	347.19	379.63	You have the whole word dar, like this yonn and then uges will be able to. I think al should probably no copy in pace this. You don't have to do it this time, because I already did ill a, but in the future, copying paces into a gugledoc put it into the client folder and then share with them so that if they have any edits, they can make it directly on the buledac andt after that's dud mive yets and send the draught back to a to these guise in the mill a make. The change.	Negative	Statement-opinion
+user00	380.35	406.98	And we have a think too a revisions for that ont in thereis on so that's goin, well, an in terms of a process c, a pause there marge please take it away and as marge takes it away a angele again, you can bull et point and type out. Ah those those bits on your end march, what arison actor? What are te active projects that you're leading an.	Neutral	Statement-non-opinion
+user10	384.17	384.99	Thereis on.	Neutral	Collaborative Completion
+user00	407.67	411.66	Time line of deliverables in any blockers that we might be having.	Neutral	Abandoned or Turn-Exit
+user01	413.04	434.39	O ca so a say from a leaving the ipone fores for cabits and then helping you assisting viditonsomande vor jon last night, mian angela traded fool a wat sombiages regarding the vasefolk, my eting soer blanging unpreeating of ontin for a perfect serto.	Neutral	Statement-non-opinion
+user01	437.02	437.63	Poorrer.	Negative	Appreciation
+user01	438.66	441.69	Poor perflec ago and then I'm still looking for no.	Negative	Statement-non-opinion
+user01	442.30	465.29	Facing images, because I saw your comments and then think ou for your omens, biguss yet helt yome on chaker mule, ye till oend, it's onmaily sause end, then ther will be ats, able wat toreplan yoar in august. Oh, that's! Fine! Young ye, don't huch a yer off chance, ye iwo a we ca, gattl headat.	Neutral	Statement-non-opinion
+user10	450.33	451.13	Mule.	Neutral	Collaborative Completion
+user00	459.57	461.83	Oh, that's: fine, young ye, don't huch a yer off.	Neutral	Statement-opinion
+user10	463.14	467.09	A we ca, gattl headat to as bean just.	Neutral	Statement-non-opinion
+user00	465.29	477.72	To as bean just cto ofce and just confirming, we have already paused angela yeur gulblad campin, o k, coto ma cndetni loka.	Neutral	Statement-non-opinion
+user10	478.68	480.64	Pay on the.	Neutral	Collaborative Completion
+user00	479.55	482.13	Pay on the yourst sorrytybon.	Neutral	Statement-non-opinion
+user01	482.31	488.98	Onk so thes ma tos er men, prayer rityo for tisre, no perfect, sinto, paceable peach.	Neutral	Statement-non-opinion
+user00	491.36	499.09	Yes, sir lad, that would be great a herwiso and just confirming it right. Nows.	Neutral	Agree/Accept
+user00	502.26	513.01	The yol, how is the face of a page being created as it under neua, whose cas has to be like housed under angeles, housed under your personal face lookaccou.	Neutral	Rhetorical-Questions
+user00	514.39	517.01	Got it wam the sand.	Neutral	Statement-non-opinion
+user10	517.45	519.30	Say they nay that er.	Neutral	Collaborative Completion
+user00	519.47	523.81	Ultimately, can people transfer face but pages to uther accounts.	Neutral	Yes-No-Question
+user10	524.79	526.07	My.	Neutral	Uninterpretable
+user00	526.61	541.17	Oke oke, graham um, yet as long as we are able to do that, an thot'll be great that way: wecan house at all, undour, perfect or whole emale orr, whatever un. Yet if I could wear the magic ane by friday, eugis can show a draught a.	Neutral	Statement-non-opinion
+user10	542.62	543.52	A.	Neutral	Abandoned or Turn-Exit
+user00	542.94	545.29	A the actor facebork ana.	Neutral	Statement-non-opinion
+user00	546.61	548.95	Page amet.	Neutral	Statement-non-opinion
+user00	550.12	558.17	And I doing her thus to fall out the things that way we can start running v. The potential adds. Will you know.	Neutral	Statement-non-opinion
+user10	559.09	559.79	Yis, a.	Neutral	Statement-non-opinion
+user00	559.74	560.93	Mile.	Neutral	Statement-non-opinion
+user00	562.54	593.72	And remember: we have levidios rite on vemio a I actually know on the perfect circle. Vemio account now ray because the gis created on their putividios there. So that's great, so we have those to be able to share a and as cris crate's copy on the site. That's also tons of copy to be reused, e o as well, I in terms of posts, but I think the biggest thing is egys set up. Whatever needs to be set up operationally to that.	Neutral	Statement-non-opinion
+user00	594.70	602.09	We can say to castler on monday next monday, saying haylike ready to start just testing different adds and as.	Neutral	Statement-non-opinion
+user00	603.24	618.78	Actually, like writing out those adds would be helpful too, because yugais can we can build off of the copy that we learned on gubelads and kind of ported over te. It's not that match one to one, but there's learnings there right so on.	Neutral	Statement-non-opinion
+user00	620.57	630.10	Ye that way, next monday we'd be a hicasser, will bea stark running some face, blook adds, and ah this is how much were you to spend a day, and this is what it's get it look like in.	Neutral	Statement-non-opinion
+user00	630.76	631.77	Itl link to this.	Neutral	Statement-non-opinion
+user10	631.77	634.61	Etir you mais a for a.	Neutral	Collaborative Completion
+user01	633.56	639.35	Mais, a for a peaceable meach ar e eranda, if be eyes, let with her engs.	Neutral	Abandoned or Turn-Exit
+user00	640.85	641.51	Si youn.	Neutral	Conventional-closing
+user01	642.12	648.14	Ah, be weran that it be as lak fit nat woo the lads fore for a perfect satone.	Neutral	Appreciation
+user00	648.72	655.92	I think I'll, none too till so sower keeping your gouvelad campaign running.	Neutral	Statement-non-opinion
+user01	649.36	651.38	None too till so.	Neutral	Statement-non-opinion
+user00	657.59	662.49	Im and then we're gotg to do the face. Wok um add in startesting that.	Neutral	Statement-non-opinion
+user00	663.48	671.97	And um, I think, you'll also need tos, create a landing page, a man I paint.	Neutral	Statement-opinion
+user00	673.14	680.43	Ah use my perfect cercile emel do crade an accounts, a free count on active campaigns and let dusplikt try that out.	Neutral	Action-directive
+user10	681.30	686.60	Epri ot is no esi, wit av gan e, grasping.	Neutral	Statement-opinion
+user01	683.16	684.22	Ot is no.	Neutral	Agree/Accept
+user10	688.73	690.48	I ol to be ender in reo.	Neutral	Statement-non-opinion
+user10	691.11	692.12	A betterina.	Neutral	Collaborative Completion
+user10	695.17	695.51	That she.	Neutral	Statement-non-opinion
+user00	697.76	702.45	The copy for facefug.	Neutral	Statement-non-opinion
+user00	703.76	704.47	A.	Neutral	Collaborative Completion
+user10	704.88	705.99	Ema.	Neutral	Repeat-phrase
+user00	708.32	720.55	Ye you can not. You can ask a christan an emal thread. You know they, like ha like, were gearing not too preceed content on face ba co on the face bo page light.	Neutral	Statement-opinion
+user00	722.06	724.45	Which parts of the sight do you recommend.	Neutral	Wh-Question
+user10	724.72	725.55	Av.	Neutral	Statement-non-opinion
+user00	726.81	727.39	On.	Neutral	Repeat-phrase
+user00	729.04	729.84	Ans.	Neutral	Statement-non-opinion
+user00	731.59	760.67	If tou'll ever need to jump on a a call licris, I know he a. I know I think calls energize him so feel freeda like a do that a cokared toyo. You know, I think aother people have different working styles like maximine, like we prefer. If we don't need a jump on a meeting like we don't have to, but sometimes it's necessary, so I think, jumping on a call of cris if you everneed to just go through the copy olack hape, which we want to.	Neutral	Statement-opinion
+user00	761.93	765.71	For you to just note that you use this this, this thas, this again.	Neutral	Abandoned or Turn-Exit
+user00	767.84	770.45	Toou keep up the great word um.	Neutral	Statement-opinion
+user00	771.42	789.07	An angele got got your a message: heere as well, so I think offfen stretch lorking at ten, a n eastern. So that's about thirty minutes from nowport am so ereped you can corinate. Ah with him. I think what's happens, the besolater a.	Neutral	Statement-non-opinion
+user00	789.66	791.72	You get in touch.	Neutral	Statement-non-opinion
+user00	793.45	808.84	I think I'm I don't naf you done this already, but recording do a heil, loom or screener cording from your phone of going through the process and in getting stughtliness, because he is very visual, and so you need th communicatevery visually to heaven. You.	Neutral	Statement-opinion
+user10	821.33	821.91	Arra.	Neutral	Repeat-phrase
+user00	823.93	824.40	Bitsaf.	Neutral	Statement-non-opinion
+user00	826.07	838.34	And aseegaes on teamzones and angela hope you feel better ahoney. An apple cider vinengar seems the likb really really helpful, with coughs.	Neutral	Statement-non-opinion
+user00	840.23	841.31	O cans, os oso.	Neutral	Collaborative Completion
+user10	840.35	840.72	Cans.	Neutral	Statement-non-opinion
+user00	842.07	845.41	Arl right, ok, zigaison, antinzons, an second.	Neutral	Agree/Accept
+user01	845.41	848.45	Yet va.	Neutral	Statement-non-opinion

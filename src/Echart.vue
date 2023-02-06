@@ -2,13 +2,15 @@
 import { ref, onMounted } from 'vue'
 import * as echarts from 'echarts'
 
-const props = defineProps<{ opt: Object|Function, height?: number, width?: number }>()
+
+// type EChartsOptionFunc = () => 
+const props = defineProps<{ opt: echarts.EChartsOption | Function | Promise<echarts.EChartsOption>, height?: number, width?: number }>()
 
 let chartDiv = ref<HTMLDivElement>();
-let options = props.opt instanceof Function ? props.opt() : ((async()=>props.opt)())
+let options:Promise<echarts.EChartsOption> = props.opt instanceof Promise ? props.opt : props.opt instanceof Function ? (props.opt as Function)()  : ((async():Promise<echarts.EChartsOption>=>props.opt as echarts.EChartsOption)())
 onMounted(async () => {
   let myChart = echarts.init(chartDiv.value!, undefined, { height: props.height!, width: props.width! });
-  myChart.setOption(await options);
+  myChart.setOption<echarts.EChartsOption>(await options);
   window.onresize = function () {
     myChart.resize();
   };

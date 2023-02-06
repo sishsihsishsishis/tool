@@ -1,0 +1,803 @@
+Speaker	Start	End	Sentence	Emotion	DialogueAct
+user01	2.43	14.55	null	Neutral	Statement-non-opinion
+user01	14.96	15.41	null	Neutral	Abandoned or Turn-Exit
+user01	16.96	28.76	null	Neutral	Statement-opinion
+user01	29.7	30.21	null	Neutral	Others
+user01	31.38	41.87	null	Neutral	Statement-opinion
+user01	43.1	54.71	null	Neutral	Statement-opinion
+user01	54.9	57.35	null	Positive	Statement-non-opinion
+user01	57.92	72.82	null	Neutral	Statement-non-opinion
+user01	74.19	89.58	null	Negative	Statement-opinion
+user01	90.13	95.16	null	Neutral	Statement-non-opinion
+user01	95.52	105.39	null	Neutral	Statement-non-opinion
+user01	108	117.08	null	Positive	Statement-opinion
+user01	117.44	120.12	null	Neutral	Statement-non-opinion
+user01	121.03	128.81	null	Neutral	Statement-non-opinion
+user01	129	141.79	null	Positive	Statement-non-opinion
+user01	142.36	149.13	null	Positive	Statement-opinion
+user01	149.79	150.23	null	Neutral	Statement-opinion
+user01	151.26	169.72	null	Neutral	Statement-opinion
+user01	170.09	179.35	null	Neutral	Statement-opinion
+user00	179.96	181.53	null	Negative	Statement-non-opinion
+user00	182.79	183.91	null	Neutral	Statement-non-opinion
+user00	184.55	186.12	null	Neutral	Statement-non-opinion
+user00	186.49	187.1	null	Neutral	Uninterpretable
+user00	187.54	189.48	null	Neutral	Statement-opinion
+user00	190.69	194.4	null	Neutral	Statement-non-opinion
+user00	194.76	197.58	null	Negative	Statement-opinion
+user00	198.54	199.05	null	Neutral	Others
+user00	199.43	200.33	null	Neutral	Statement-non-opinion
+user00	200.72	204.19	null	Neutral	Statement-opinion
+user00	204.6	207.69	null	Neutral	Statement-non-opinion
+user00	208.55	212.28	null	Neutral	Statement-non-opinion
+user00	212.92	214.84	null	Neutral	Collaborative Completion
+user00	216.29	216.85	null	Neutral	Abandoned or Turn-Exit
+user00	217.41	218.33	null	Neutral	Statement-non-opinion
+user00	219.97	222.08	null	Positive	Collaborative Completion
+user00	222.65	223.53	null	Neutral	Collaborative Completion
+user00	224.51	227.5	null	Negative	Statement-non-opinion
+user00	227.72	228.24	null	Neutral	Statement-non-opinion
+user00	228.68	231.28	null	Neutral	Statement-non-opinion
+user00	232.04	233.2	null	Neutral	Collaborative Completion
+user00	233.45	235.34	null	Neutral	Others
+user00	235.92	239.33	null	Neutral	Statement-non-opinion
+user00	239.92	241.99	null	Negative	Statement-non-opinion
+user00	243.6	244.37	null	Neutral	Statement-opinion
+user00	245.06	248.12	null	Negative	Statement-opinion
+user00	248.81	250.28	null	Neutral	Statement-non-opinion
+user00	251.21	252.32	null	Neutral	Collaborative Completion
+user00	253.5	253.92	null	Neutral	Abandoned or Turn-Exit
+user00	254.82	256.29	null	Negative	Others
+user00	256.66	259.81	null	Neutral	Statement-opinion
+user00	260.44	261.04	null	Neutral	Uninterpretable
+user00	261.25	262.29	null	Neutral	Statement-non-opinion
+user00	263.74	264.59	null	Neutral	Statement-opinion
+user00	264.89	270.33	null	Negative	Statement-non-opinion
+user00	270.92	271.2	null	Neutral	Others
+user00	271.76	272.77	null	Neutral	Statement-non-opinion
+user00	273.45	275.29	null	Neutral	Statement-non-opinion
+user00	276.3	278.61	null	Neutral	Statement-non-opinion
+user00	279.12	281.83	null	Neutral	Statement-non-opinion
+user00	283.15	285.58	null	Negative	Statement-opinion
+user00	285.83	289.88	null	Neutral	Others
+user00	290.49	293.26	null	Neutral	Statement-non-opinion
+user00	293.85	296.75	null	Neutral	Statement-non-opinion
+user00	298.47	301.7	null	Neutral	Statement-non-opinion
+user00	301.97	302.59	null	Neutral	Collaborative Completion
+user00	303.4	303.96	null	Neutral	Collaborative Completion
+user00	304.63	306.83	null	Neutral	Statement-non-opinion
+user00	307.32	309.59	null	Neutral	Statement-non-opinion
+user00	310.35	313.07	null	Neutral	Statement-non-opinion
+user00	314.59	315.09	null	Neutral	Collaborative Completion
+user00	315.21	316.92	null	Neutral	Others
+user01	317.31	321.32	null	Negative	Statement-non-opinion
+user01	323.55	323.94	null	Neutral	Others
+user01	324.41	324.85	null	Neutral	Statement-non-opinion
+user00	324.85	330.77	null	Neutral	Statement-opinion
+user00	331.77	332.48	null	Neutral	Statement-opinion
+user00	334.15	339.5	null	Neutral	Statement-non-opinion
+user00	340.37	341.82	null	Neutral	Collaborative Completion
+user00	342.36	344.74	null	Neutral	Statement-non-opinion
+user00	345.94	351.04	null	Neutral	Statement-non-opinion
+user00	351.14	353.64	null	Neutral	Abandoned or Turn-Exit
+user00	354.3	357.97	null	Neutral	Statement-non-opinion
+user01	358.28	368.93	null	Neutral	Statement-non-opinion
+user01	369.38	375.12	null	Neutral	Statement-opinion
+user01	376.11	376.54	null	Neutral	Statement-opinion
+user01	377.31	380.06	null	Positive	Others
+user01	380.59	389.99	null	Negative	Yes-No-Question
+user01	390.12	393.06	null	Neutral	Abandoned or Turn-Exit
+user01	393.55	397.68	null	Negative	Statement-non-opinion
+user01	398.05	399.86	null	Neutral	Collaborative Completion
+user01	401.14	403.5	null	Neutral	Statement-opinion
+user01	404.04	406.71	null	Neutral	Statement-non-opinion
+user01	407.22	408.45	null	Neutral	Collaborative Completion
+user01	408.9	411	null	Positive	Statement-non-opinion
+user01	411.57	412.5	null	Neutral	Others
+user01	412.77	413.32	null	Positive	Statement-non-opinion
+user01	413.8	438.72	null	Neutral	Statement-non-opinion
+user11	439.43	441.49	null	Neutral	Statement-non-opinion
+user11	442.16	443.5	null	Neutral	Collaborative Completion
+user11	444.59	447.02	null	Neutral	Statement-non-opinion
+user11	447.5	451.29	null	Neutral	Statement-opinion
+user11	452.14	452.46	null	Neutral	Uninterpretable
+user11	452.83	454.28	null	Neutral	Statement-non-opinion
+user11	455.02	456.19	null	Neutral	Statement-non-opinion
+user11	457.77	459.71	null	Neutral	Yes-No-Question
+user11	459.85	460.52	null	Neutral	Statement-non-opinion
+user00	460.34	461.57	null	Neutral	Statement-non-opinion
+user00	461.81	462.97	null	Neutral	Statement-non-opinion
+user00	463.38	466.26	null	Neutral	Statement-non-opinion
+user11	466.87	467.17	null	Neutral	Others
+user00	468.08	469.45	null	Neutral	Statement-opinion
+user00	470.82	471.15	null	Neutral	Uninterpretable
+user00	471.44	479.42	null	Neutral	Statement-non-opinion
+user11	480.54	481.8	null	Neutral	Others
+user11	482.22	482.49	null	Negative	Others
+user11	482.92	485.09	null	Neutral	Statement-non-opinion
+user11	485.79	487.44	null	Neutral	Statement-non-opinion
+user11	488.11	488.81	null	Neutral	Collaborative Completion
+user11	489.36	494.59	null	Neutral	Statement-non-opinion
+user11	495.34	498.96	null	Neutral	Statement-non-opinion
+user11	499.94	500.69	null	Neutral	Statement-non-opinion
+user11	500.91	501.38	null	Neutral	Others
+user11	501.58	507.39	null	Neutral	Statement-non-opinion
+user12	511.22	511.76	null	Neutral	Collaborative Completion
+user12	512.3	513.9	null	Neutral	Statement-opinion
+user12	514.03	514.37	null	Neutral	Others
+user12	514.61	515.32	null	Neutral	Others
+user00	514.69	515.16	null	Neutral	Statement-non-opinion
+user00	515.7	518.66	null	Neutral	Statement-non-opinion
+user02	519.59	521.19	null	Positive	Statement-non-opinion
+user02	521.68	524.68	null	Neutral	Statement-non-opinion
+user02	525.09	526.86	null	Neutral	Yes-No-Question
+user01	525.54	526.1	null	Neutral	Statement-non-opinion
+user01	529.9	531.35	null	Positive	Statement-opinion
+user01	532.65	535.04	null	Positive	Statement-non-opinion
+user01	535.25	538.87	null	Neutral	Statement-non-opinion
+user01	539.41	541.05	null	Positive	Statement-non-opinion
+user01	542	542.6	null	Neutral	Others
+user01	543.06	545.24	null	Neutral	Statement-opinion
+user00	546.06	550.42	null	Negative	Statement-non-opinion
+user12	551.14	557.67	null	Neutral	Statement-non-opinion
+user00	551.72	552.93	null	Neutral	Collaborative Completion
+user02	558.01	561.69	null	Neutral	Statement-non-opinion
+user02	561.94	573.94	null	Neutral	Statement-non-opinion
+user10	563.95	564.2	null	Neutral	Statement-non-opinion
+user00	574.19	574.41	null	Neutral	Uninterpretable
+user02	574.41	575.91	null	Neutral	Yes-No-Question
+user00	574.53	574.73	null	Neutral	Others
+user00	576.12	576.93	null	Neutral	Statement-non-opinion
+user02	576.61	576.98	null	Neutral	Abandoned or Turn-Exit
+user00	577.23	577.67	null	Neutral	Statement-non-opinion
+user02	577.45	579.42	null	Neutral	Others
+user02	579.78	582.12	null	Negative	Statement-non-opinion
+user02	582.26	586.43	null	Neutral	Statement-non-opinion
+user00	585.08	585.38	null	Neutral	Uninterpretable
+user00	587.17	594.02	null	Neutral	Statement-opinion
+user00	594.61	598.29	null	Neutral	Others
+user00	598.73	602.32	null	Negative	Statement-opinion
+user00	602.58	602.98	null	Neutral	Others
+user00	603.64	606.68	null	Neutral	Statement-opinion
+user00	607.12	608.52	null	Neutral	Collaborative Completion
+user00	608.8	611.34	null	Neutral	Statement-opinion
+user00	612.06	616.48	null	Neutral	Statement-non-opinion
+user02	616.48	624.92	null	Negative	Statement-opinion
+user00	618.41	618.84	null	Neutral	Abandoned or Turn-Exit
+user00	622.03	624.18	null	Neutral	Abandoned or Turn-Exit
+user00	625.31	628.16	null	Neutral	Statement-non-opinion
+user00	628.87	631.15	null	Positive	Abandoned or Turn-Exit
+user00	631.47	637.17	null	Neutral	Statement-non-opinion
+user00	637.54	639.72	null	Neutral	Statement-non-opinion
+user00	640.38	641.69	null	Neutral	Statement-opinion
+user00	641.96	642.96	null	Neutral	Collaborative Completion
+user00	643.5	644.49	null	Neutral	Statement-non-opinion
+user00	644.8	646.06	null	Neutral	Statement-non-opinion
+user00	646.54	648.6	null	Neutral	Statement-non-opinion
+user10	647.87	662.53	null	Negative	Statement-non-opinion
+user10	663.46	677.08	null	Negative	Statement-opinion
+user01	677.62	686.13	null	Neutral	Statement-non-opinion
+user01	686.78	692.81	null	Neutral	Abandoned or Turn-Exit
+user01	693.77	694.28	null	Neutral	Others
+user01	694.66	699.03	null	Neutral	Statement-non-opinion
+user01	699.74	700.45	null	Neutral	Collaborative Completion
+user01	700.81	701.46	null	Neutral	Statement-non-opinion
+user01	701.99	720.31	null	Negative	Statement-non-opinion
+user01	720.65	725.14	null	Positive	Statement-non-opinion
+user01	726.09	731.52	null	Negative	Statement-non-opinion
+user01	732.01	753.76	null	Neutral	Statement-non-opinion
+user01	754.62	755.14	null	Neutral	Collaborative Completion
+user01	755.48	757.17	null	Neutral	Statement-non-opinion
+user01	759.23	760.78	null	Negative	Statement-opinion
+user01	762.05	769.64	null	Neutral	Statement-opinion
+user01	770.33	771.73	null	Neutral	Statement-non-opinion
+user01	772.39	772.76	null	Neutral	Statement-non-opinion
+user01	774.35	783.46	null	Negative	Statement-non-opinion
+user01	783.76	784.44	null	Negative	Statement-non-opinion
+user01	785.32	788.81	null	Neutral	Statement-non-opinion
+user01	789.43	793.32	null	Neutral	Statement-non-opinion
+user01	793.91	804.76	null	Neutral	Statement-opinion
+user01	805.08	812.65	null	Neutral	Others
+user01	813.97	817.95	null	Positive	Statement-non-opinion
+user11	819.15	821.36	null	Neutral	Others
+user12	821.97	822.76	null	Positive	Statement-non-opinion
+user00	822.75	824.16	null	Neutral	Abandoned or Turn-Exit
+user00	824.87	832.82	null	Neutral	Statement-non-opinion
+user00	833.82	835.99	null	Neutral	Statement-non-opinion
+user00	836.38	841.7	null	Positive	Statement-non-opinion
+user00	842.34	843.4	null	Neutral	Collaborative Completion
+user00	845.54	845.95	null	Neutral	Statement-non-opinion
+user12	846.51	851.75	null	Neutral	Statement-non-opinion
+user00	847.01	847.47	null	Neutral	Statement-non-opinion
+user12	852.28	853.8	null	Neutral	Statement-non-opinion
+user01	852.48	853.04	null	Neutral	Statement-non-opinion
+user01	855.36	856.17	null	Neutral	Statement-opinion
+user01	857.04	865.66	null	Negative	Statement-opinion
+user01	865.98	869.34	null	Positive	Statement-opinion
+user01	870.03	872.71	null	Neutral	Statement-non-opinion
+user01	873.51	877.44	null	Negative	Statement-non-opinion
+user01	878.67	879.23	null	Neutral	Collaborative Completion
+user01	880.42	881.59	null	Neutral	Statement-non-opinion
+user01	882.23	882.96	null	Neutral	Abandoned or Turn-Exit
+user01	883.41	883.93	null	Neutral	Collaborative Completion
+user01	885.47	887.14	null	Negative	Statement-non-opinion
+user01	888.03	890.35	null	Neutral	Statement-non-opinion
+user01	890.5	891.97	null	Neutral	Statement-non-opinion
+user01	892.12	896.4	null	Neutral	Statement-opinion
+user01	897.54	900.78	null	Neutral	Statement-opinion
+user01	901.82	902.45	null	Neutral	Statement-opinion
+user01	902.6	905.38	null	Neutral	Statement-non-opinion
+user01	906.24	907.14	null	Neutral	Collaborative Completion
+user01	907.51	908.42	null	Neutral	Statement-non-opinion
+user01	909.01	914.78	null	Negative	Statement-opinion
+user01	915.24	930.05	null	Negative	Statement-opinion
+user01	930.54	931.44	null	Negative	Statement-non-opinion
+user01	931.94	943.05	null	Neutral	Statement-non-opinion
+user01	943.35	952.29	null	Neutral	Statement-opinion
+user01	952.95	963.74	null	Negative	Yes-No-Question
+user00	964.71	973.46	null	Neutral	Statement-opinion
+user00	974.06	979.78	null	Neutral	Statement-non-opinion
+user00	980.07	980.73	null	Neutral	Collaborative Completion
+user00	981.2	982.35	null	Neutral	Statement-opinion
+user01	982.87	992.27	null	Negative	Statement-opinion
+user01	993.45	994.84	null	Positive	Statement-non-opinion
+user01	995.7	996.57	null	Neutral	Collaborative Completion
+user01	997.13	1004.81	null	Neutral	Yes-No-Question
+user01	1004.98	1009.21	null	Neutral	Others
+user01	1009.5	1009.97	null	Neutral	Statement-non-opinion
+user01	1010.68	1015.32	null	Positive	Statement-opinion
+user01	1016.1	1020.13	null	Neutral	Statement-non-opinion
+user01	1022.53	1023.46	null	Neutral	Abandoned or Turn-Exit
+user01	1025.23	1025.55	null	Neutral	Collaborative Completion
+user01	1026.11	1027.59	null	Neutral	Statement-non-opinion
+user01	1028.03	1029.94	null	Neutral	Collaborative Completion
+user01	1031.1	1031.39	null	Neutral	Uninterpretable
+user01	1031.66	1032.33	null	Neutral	Abandoned or Turn-Exit
+user01	1034.56	1036.13	null	Neutral	Abandoned or Turn-Exit
+user12	1038.54	1039.96	null	Neutral	Statement-opinion
+user01	1041.19	1042.51	null	Neutral	Others
+user01	1044.15	1046.22	null	Neutral	Statement-non-opinion
+user01	1046.86	1055.11	null	Negative	Statement-non-opinion
+user01	1056.19	1056.55	null	Positive	Others
+user01	1057.43	1063.84	null	Neutral	Statement-opinion
+user01	1064.5	1066.89	null	Neutral	Statement-non-opinion
+user01	1067.35	1074.49	null	Neutral	Statement-opinion
+user01	1075.5	1079.48	null	Neutral	Statement-non-opinion
+user01	1080.16	1086.47	null	Neutral	Statement-opinion
+user01	1087.13	1088.9	null	Neutral	Statement-opinion
+user01	1090.37	1093.71	null	Neutral	Statement-non-opinion
+user01	1094.48	1096.12	null	Neutral	Collaborative Completion
+user01	1097.45	1105.76	null	Positive	Statement-non-opinion
+user01	1106.92	1107.48	null	Neutral	Others
+user02	1107.21	1114.26	null	Neutral	Yes-No-Question
+user02	1114.58	1114.83	null	Neutral	Statement-non-opinion
+user01	1115.12	1120.23	null	Neutral	Statement-opinion
+user01	1120.69	1122.58	null	Neutral	Statement-opinion
+user01	1123.2	1124.62	null	Neutral	Statement-non-opinion
+user01	1125.96	1126.34	null	Neutral	Uninterpretable
+user01	1128.01	1128.77	null	Neutral	Statement-non-opinion
+user01	1129.09	1129.57	null	Neutral	Others
+user01	1130.92	1134.66	null	Neutral	Others
+user00	1135.22	1136.79	null	Neutral	Others
+user00	1137.18	1137.55	null	Neutral	Statement-non-opinion
+user00	1138.97	1141.72	null	Neutral	Statement-non-opinion
+user00	1142.32	1145.72	null	Neutral	Statement-non-opinion
+user00	1146.64	1147.29	null	Neutral	Uninterpretable
+user00	1147.72	1148.25	null	Neutral	Collaborative Completion
+user00	1149.07	1150.05	null	Neutral	Others
+user00	1150.96	1154.56	null	Negative	Statement-non-opinion
+user00	1155.17	1156.53	null	Neutral	Collaborative Completion
+user00	1156.87	1159.91	null	Neutral	Statement-non-opinion
+user00	1160.36	1162.91	null	Neutral	Statement-opinion
+user00	1163.87	1165.34	null	Neutral	Statement-opinion
+user00	1166.24	1166.62	null	Neutral	Statement-opinion
+user00	1167.05	1167.75	null	Neutral	Statement-non-opinion
+user00	1168.23	1169.27	null	Neutral	Statement-non-opinion
+user00	1170.54	1172.9	null	Neutral	Abandoned or Turn-Exit
+user00	1173.56	1176.65	null	Neutral	Statement-non-opinion
+user00	1177.39	1179.5	null	Neutral	Yes-No-Question
+user00	1180.26	1181.44	null	Neutral	Others
+user00	1182.08	1182.99	null	Neutral	Abandoned or Turn-Exit
+user00	1184.02	1184.49	null	Neutral	Statement-non-opinion
+user00	1185.3	1186.11	null	Neutral	Statement-non-opinion
+user00	1186.5	1189.03	null	Neutral	Statement-non-opinion
+user00	1189.66	1191.26	null	Neutral	Statement-non-opinion
+user00	1192.43	1198.82	null	Neutral	Yes-No-Question
+user00	1199.23	1200.36	null	Neutral	Collaborative Completion
+user00	1200.68	1201.88	null	Neutral	Others
+user00	1202.37	1205.47	null	Neutral	Yes-No-Question
+user00	1206.26	1209.89	null	Neutral	Statement-non-opinion
+user00	1210.99	1212.79	null	Neutral	Statement-opinion
+user00	1213.06	1215.43	null	Neutral	Statement-opinion
+user00	1215.97	1216.41	null	Neutral	Collaborative Completion
+user00	1216.96	1218.21	null	Neutral	Collaborative Completion
+user00	1219.39	1219.8	null	Neutral	Statement-non-opinion
+user00	1220.98	1223.29	null	Neutral	Statement-opinion
+user00	1223.81	1230.51	null	Neutral	Abandoned or Turn-Exit
+user00	1230.93	1231.32	null	Neutral	Uninterpretable
+user00	1231.49	1233.03	null	Neutral	Statement-non-opinion
+user00	1233.45	1235.14	null	Neutral	Others
+user00	1235.63	1237.99	null	Neutral	Statement-opinion
+user00	1238.56	1241.53	null	Negative	Collaborative Completion
+user00	1242.07	1246.02	null	Neutral	Statement-opinion
+user00	1246.73	1247.37	null	Positive	Collaborative Completion
+user12	1247.67	1252.97	null	Neutral	Statement-non-opinion
+user12	1253.43	1264.4	null	Neutral	Statement-non-opinion
+user00	1266	1267.52	null	Negative	Collaborative Completion
+user00	1268.33	1271.32	null	Neutral	Statement-non-opinion
+user00	1271.79	1273.44	null	Neutral	Collaborative Completion
+user00	1273.98	1279.35	null	Negative	Others
+user00	1280.28	1280.8	null	Neutral	Statement-non-opinion
+user00	1281.12	1284.77	null	Negative	Statement-opinion
+user12	1285.17	1285.39	null	Neutral	Others
+user00	1285.78	1286.17	null	Neutral	Uninterpretable
+user00	1286.66	1288.7	null	Neutral	Statement-non-opinion
+user00	1289.32	1294.25	null	Negative	Abandoned or Turn-Exit
+user00	1295.38	1295.8	null	Neutral	Uninterpretable
+user00	1296.02	1298.01	null	Neutral	Statement-opinion
+user00	1298.35	1299.57	null	Neutral	Collaborative Completion
+user00	1300.38	1300.83	null	Neutral	Uninterpretable
+user00	1301.56	1304.32	null	Neutral	Statement-non-opinion
+user00	1304.59	1310.82	null	Neutral	Statement-non-opinion
+user00	1311.16	1312.34	null	Neutral	Statement-opinion
+user00	1312.76	1315.24	null	Neutral	Statement-opinion
+user00	1315.98	1316.58	null	Neutral	Abandoned or Turn-Exit
+user12	1317.66	1319.26	null	Neutral	Statement-non-opinion
+user12	1319.58	1324.24	null	Neutral	Statement-non-opinion
+user12	1324.62	1325.55	null	Neutral	Statement-non-opinion
+user12	1325.86	1329.05	null	Neutral	Statement-non-opinion
+user12	1329.42	1331.51	null	Negative	Statement-opinion
+user12	1331.86	1333.97	null	Neutral	Abandoned or Turn-Exit
+user12	1334.34	1336.57	null	Neutral	Others
+user12	1337.37	1338.97	null	Neutral	Statement-non-opinion
+user02	1338.53	1339.51	null	Neutral	Statement-non-opinion
+user02	1339.71	1343.46	null	Neutral	Statement-non-opinion
+user02	1343.78	1345.18	null	Neutral	Abandoned or Turn-Exit
+user02	1345.53	1346.01	null	Neutral	Statement-non-opinion
+user02	1346.55	1356.7	null	Negative	Statement-non-opinion
+user02	1357.19	1362.26	null	Neutral	Statement-non-opinion
+user00	1360.74	1361.01	null	Neutral	Statement-opinion
+user00	1362.73	1366.54	null	Neutral	Statement-non-opinion
+user00	1366.88	1368.01	null	Positive	Others
+user01	1368.48	1368.87	null	Neutral	Statement-non-opinion
+user01	1369.31	1369.73	null	Neutral	Others
+user01	1370.88	1371.5	null	Neutral	Others
+user01	1371.86	1374.86	null	Neutral	Statement-opinion
+user01	1375.69	1381.22	null	Negative	Statement-non-opinion
+user01	1381.46	1383	null	Neutral	Statement-opinion
+user00	1383.42	1390.89	null	Negative	Statement-opinion
+user01	1391.23	1402.74	null	Neutral	Statement-non-opinion
+user00	1391.82	1392.51	null	Neutral	Others
+user00	1404.26	1407.68	null	Neutral	Statement-opinion
+user00	1407.95	1409.57	null	Neutral	Statement-opinion
+user01	1410.59	1416.1	null	Negative	Statement-opinion
+user00	1416.42	1418.23	null	Neutral	Collaborative Completion
+user00	1418.43	1420.39	null	Negative	Statement-opinion
+user00	1420.68	1423.8	null	Neutral	Statement-opinion
+user00	1424.73	1427.68	null	Neutral	Statement-non-opinion
+user00	1428.2	1432.66	null	Neutral	Statement-non-opinion
+user00	1433.11	1436.47	null	Neutral	Abandoned or Turn-Exit
+user01	1437.05	1444.4	null	Positive	Yes-No-Question
+user12	1444.83	1454.12	null	Neutral	Statement-opinion
+user12	1454.56	1455.07	null	Neutral	Uninterpretable
+user12	1455.9	1460.23	null	Neutral	Statement-opinion
+user12	1461.16	1465.33	null	Neutral	Collaborative Completion
+user00	1465.33	1471.61	null	Neutral	Yes-No-Question
+user10	1471.94	1476.06	null	Neutral	Yes-No-Question
+user02	1475.5	1485.54	null	Neutral	Statement-non-opinion
+user01	1485.75	1486.29	null	Neutral	Statement-non-opinion
+user02	1485.87	1489.98	null	Neutral	Statement-non-opinion
+user02	1490.22	1497.21	null	Neutral	Statement-non-opinion
+user02	1497.39	1500.31	null	Neutral	Statement-opinion
+user02	1501.2	1505.05	null	Neutral	Statement-non-opinion
+user02	1505.52	1509.44	null	Neutral	Statement-non-opinion
+user00	1509.91	1510.98	null	Neutral	Others
+user02	1510.27	1519.5	null	Negative	Statement-opinion
+user02	1520.02	1521.76	null	Neutral	Statement-non-opinion
+user02	1522.18	1524.32	null	Neutral	Statement-non-opinion
+user02	1524.59	1528.02	null	Neutral	Statement-non-opinion
+user10	1528.31	1528.86	null	Neutral	Collaborative Completion
+user02	1528.37	1532.2	null	Neutral	Statement-opinion
+user01	1531.93	1538.11	null	Neutral	Statement-opinion
+user02	1536.56	1538.03	null	Neutral	Statement-opinion
+user00	1538.03	1541.89	null	Neutral	Statement-non-opinion
+user02	1538.63	1538.97	null	Neutral	Collaborative Completion
+user02	1540.81	1541.11	null	Neutral	Collaborative Completion
+user00	1542.4	1542.82	null	Neutral	Statement-non-opinion
+user00	1543.39	1545.27	null	Neutral	Abandoned or Turn-Exit
+user00	1545.74	1550.21	null	Neutral	Statement-non-opinion
+user00	1551.31	1551.73	null	Neutral	Others
+user00	1552.42	1555.85	null	Neutral	Statement-non-opinion
+user00	1556.32	1559.95	null	Neutral	Collaborative Completion
+user00	1560.49	1561.97	null	Neutral	Statement-non-opinion
+user00	1562.31	1563.29	null	Neutral	Collaborative Completion
+user00	1563.79	1565.38	null	Negative	Statement-opinion
+user01	1566.29	1566.56	null	Neutral	Uninterpretable
+user02	1566.56	1571.84	null	Neutral	Statement-opinion
+user01	1567.29	1568.23	null	Neutral	Statement-non-opinion
+user00	1569.9	1570.71	null	Neutral	Collaborative Completion
+user00	1572.3	1576.52	null	Neutral	Statement-non-opinion
+user01	1579.17	1579.4	null	Neutral	Statement-non-opinion
+user01	1579.96	1582.1	null	Neutral	Statement-non-opinion
+user01	1583.17	1583.55	null	Neutral	Statement-non-opinion
+user01	1583.82	1587.01	null	Negative	Statement-non-opinion
+user01	1587.98	1588.33	null	Neutral	Statement-non-opinion
+user01	1588.77	1594.68	null	Neutral	Statement-non-opinion
+user01	1594.96	1603.1	null	Neutral	Statement-opinion
+user01	1603.23	1603.62	null	Neutral	Collaborative Completion
+user01	1604.01	1611.99	null	Neutral	Statement-opinion
+user01	1612.46	1618.49	null	Negative	Statement-non-opinion
+user01	1619.19	1620.04	null	Neutral	Abandoned or Turn-Exit
+user01	1620.53	1621.42	null	Neutral	Abandoned or Turn-Exit
+user01	1622.57	1623.35	null	Neutral	Statement-non-opinion
+user01	1623.92	1626.52	null	Neutral	Statement-opinion
+user01	1627.04	1634.23	null	Neutral	Statement-non-opinion
+user12	1634.87	1654.35	null	Neutral	Statement-opinion
+user00	1654.08	1654.65	null	Neutral	Others
+user12	1654.48	1657.18	null	Negative	Statement-non-opinion
+user00	1656.22	1658.92	null	Neutral	Collaborative Completion
+user00	1659.59	1660.71	null	Neutral	Statement-non-opinion
+user00	1662.7	1665.2	null	Neutral	Statement-non-opinion
+user00	1665.52	1665.9	null	Neutral	Others
+user00	1666.43	1673.14	null	Negative	Statement-non-opinion
+user00	1673.97	1674.78	null	Neutral	Others
+user12	1674.27	1685.65	null	Negative	Statement-opinion
+user12	1685.85	1688.92	null	Neutral	Abandoned or Turn-Exit
+user12	1690.32	1691.47	null	Neutral	Abandoned or Turn-Exit
+user01	1691.47	1694.96	null	Neutral	Statement-non-opinion
+user01	1695.4	1699.06	null	Neutral	Abandoned or Turn-Exit
+user01	1700.95	1703.16	null	Neutral	Others
+user01	1703.43	1707.82	null	Neutral	Statement-non-opinion
+user12	1711.2	1714.23	null	Negative	Statement-non-opinion
+user12	1715.03	1715.84	null	Neutral	Collaborative Completion
+user01	1716.02	1726.15	null	Negative	Statement-opinion
+user01	1726.71	1731.4	null	Negative	Statement-opinion
+user01	1731.97	1738.18	null	Neutral	Statement-opinion
+user12	1738.48	1748.51	null	Negative	Statement-non-opinion
+user10	1748.51	1752.96	null	Neutral	Statement-non-opinion
+user10	1753.06	1766.09	null	Negative	Statement-non-opinion
+user00	1767.41	1769.43	null	Neutral	Others
+user00	1769.79	1773.08	null	Neutral	Statement-non-opinion
+user00	1774.6	1775.63	null	Neutral	Collaborative Completion
+user00	1776.13	1777.04	null	Neutral	Others
+user00	1777.41	1777.8	null	Neutral	Statement-non-opinion
+user00	1779.12	1781.9	null	Negative	Statement-non-opinion
+user00	1782.65	1783.64	null	Negative	Statement-opinion
+user01	1784.22	1798.9	null	Neutral	Statement-non-opinion
+user01	1799.08	1810.98	null	Neutral	Statement-opinion
+user01	1811.1	1814.07	null	Neutral	Statement-opinion
+user01	1814.3	1830.69	null	Neutral	Statement-opinion
+user01	1831.58	1839.45	null	Positive	Statement-non-opinion
+user01	1840.04	1841.62	null	Neutral	Collaborative Completion
+user01	1842.38	1843.36	null	Negative	Statement-opinion
+user01	1844.34	1847.28	null	Positive	Statement-non-opinion
+user01	1847.68	1848.19	null	Neutral	Uninterpretable
+user00	1848.61	1852.63	null	Neutral	Statement-non-opinion
+user00	1854.52	1855.61	null	Neutral	Others
+user00	1856.41	1857.57	null	Neutral	Abandoned or Turn-Exit
+user00	1858.72	1859.26	null	Neutral	Others
+user00	1861.32	1864.93	null	Negative	Statement-opinion
+user00	1866.14	1866.48	null	Neutral	Uninterpretable
+user00	1867.07	1868.64	null	Negative	Statement-opinion
+user01	1869.23	1869.57	null	Neutral	Statement-non-opinion
+user01	1870.58	1896.75	null	Negative	Statement-opinion
+user01	1900.26	1903.91	null	Negative	Statement-non-opinion
+user10	1905.04	1905.38	null	Neutral	Collaborative Completion
+user10	1906.37	1909.87	null	Neutral	Statement-non-opinion
+user10	1911.54	1913.51	null	Neutral	Statement-non-opinion
+user01	1913.65	1916.85	null	Neutral	Collaborative Completion
+user00	1917.49	1917.81	null	Neutral	Others
+user01	1918.19	1918.51	null	Neutral	Others
+user00	1918.78	1922.76	null	Neutral	Statement-opinion
+user01	1923.64	1924.04	null	Neutral	Collaborative Completion
+user01	1924.55	1925.04	null	Neutral	Uninterpretable
+user11	1927.67	1929.24	null	Neutral	Abandoned or Turn-Exit
+user11	1929.41	1930.42	null	Neutral	Collaborative Completion
+user11	1930.71	1931.16	null	Neutral	Statement-non-opinion
+user11	1931.55	1932.28	null	Positive	Others
+user11	1932.77	1933.26	null	Neutral	Uninterpretable
+user11	1933.88	1935.97	null	Neutral	Yes-No-Question
+user11	1936.58	1938.91	null	Neutral	Statement-non-opinion
+user11	1939.35	1940.12	null	Neutral	Collaborative Completion
+user11	1940.49	1942.25	null	Neutral	Collaborative Completion
+user11	1942.55	1943.08	null	Neutral	Statement-non-opinion
+user11	1943.85	1945.24	null	Neutral	Statement-opinion
+user11	1945.54	1948.29	null	Neutral	Others
+user11	1948.54	1953.35	null	Neutral	Yes-No-Question
+user11	1953.93	1961.64	null	Neutral	Statement-non-opinion
+user11	1961.74	1963.44	null	Negative	Statement-opinion
+user11	1963.78	1965.13	null	Neutral	Collaborative Completion
+user11	1965.76	1966.52	null	Neutral	Others
+user11	1967.06	1975.09	null	Neutral	Statement-non-opinion
+user11	1975.49	1978.09	null	Neutral	Statement-non-opinion
+user11	1978.56	1980.66	null	Neutral	Collaborative Completion
+user11	1980.89	1986.73	null	Neutral	Statement-non-opinion
+user11	1986.85	1988.54	null	Neutral	Statement-non-opinion
+user11	1989.04	1992.4	null	Neutral	Statement-opinion
+user11	1993.04	1994.97	null	Neutral	Statement-non-opinion
+user11	1995.46	2001.43	null	Negative	Statement-non-opinion
+user11	2002	2004	null	Neutral	Statement-non-opinion
+user11	2004.52	2004.84	null	Positive	Others
+user11	2005.04	2006.29	null	Positive	Statement-opinion
+user11	2006.59	2010	null	Negative	Statement-non-opinion
+user11	2010.83	2011.35	null	Neutral	Statement-non-opinion
+user11	2012.37	2012.94	null	Neutral	Others
+user11	2013.95	2018.76	null	Negative	Yes-No-Question
+user00	2019.17	2021.71	null	Neutral	Statement-opinion
+user00	2022.54	2024.84	null	Neutral	Abandoned or Turn-Exit
+user00	2024.94	2026.59	null	Neutral	Collaborative Completion
+user00	2027.11	2032.02	null	Neutral	Statement-non-opinion
+user00	2032.6	2033.46	null	Neutral	Statement-opinion
+user00	2034.25	2034.81	null	Neutral	Uninterpretable
+user00	2036.23	2038.05	null	Negative	Statement-non-opinion
+user00	2038.34	2043.04	null	Neutral	Statement-opinion
+user00	2043.53	2045.05	null	Neutral	Statement-opinion
+user00	2045.37	2046.17	null	Neutral	Statement-opinion
+user00	2046.71	2051.21	null	Negative	Statement-non-opinion
+user00	2051.68	2054.08	null	Neutral	Statement-opinion
+user00	2054.57	2058.11	null	Negative	Statement-opinion
+user00	2058.96	2064.76	null	Neutral	Statement-opinion
+user00	2065.35	2066.96	null	Neutral	Collaborative Completion
+user00	2067.41	2068.64	null	Neutral	Statement-opinion
+user00	2069.49	2070.16	null	Neutral	Collaborative Completion
+user00	2071.06	2072.37	null	Neutral	Statement-opinion
+user00	2072.63	2074.4	null	Neutral	Abandoned or Turn-Exit
+user00	2075.26	2077.55	null	Neutral	Statement-non-opinion
+user00	2078.09	2078.36	null	Neutral	Statement-non-opinion
+user00	2078.82	2080.07	null	Neutral	Statement-non-opinion
+user00	2080.91	2085.74	null	Neutral	Statement-non-opinion
+user00	2086.19	2088.42	null	Positive	Statement-non-opinion
+user00	2088.93	2097.6	null	Neutral	Statement-non-opinion
+user00	2098.02	2102.26	null	Negative	Statement-non-opinion
+user00	2103	2105.09	null	Negative	Statement-non-opinion
+user00	2106.02	2108.05	null	Negative	Statement-non-opinion
+user00	2108.38	2110.43	null	Neutral	Collaborative Completion
+user00	2110.81	2117.61	null	Neutral	Statement-non-opinion
+user00	2118.14	2120.79	null	Neutral	Statement-opinion
+user00	2121.14	2122.78	null	Neutral	Statement-opinion
+user00	2123.2	2124.48	null	Neutral	Collaborative Completion
+user00	2125.23	2127.57	null	Neutral	Statement-non-opinion
+user00	2127.91	2130.47	null	Negative	Statement-opinion
+user00	2131.72	2132.6	null	Positive	Statement-opinion
+user01	2133.75	2138.74	null	Neutral	Statement-opinion
+user01	2139.32	2140.55	null	Negative	Statement-opinion
+user00	2140.9	2141.16	null	Neutral	Yes-No-Question
+user00	2141.71	2143.15	null	Neutral	Yes-No-Question
+user01	2143.32	2144.29	null	Neutral	Others
+user01	2144.94	2147.31	null	Positive	Abandoned or Turn-Exit
+user01	2147.8	2150.34	null	Neutral	Statement-opinion
+user01	2150.61	2154.23	null	Neutral	Statement-opinion
+user01	2155.18	2159.92	null	Negative	Abandoned or Turn-Exit
+user01	2160.22	2166.16	null	Neutral	Statement-opinion
+user01	2166.74	2169.47	null	Neutral	Statement-opinion
+user01	2169.91	2172.64	null	Neutral	Statement-non-opinion
+user01	2174.04	2181.79	null	Neutral	Statement-opinion
+user01	2182.62	2184.76	null	Neutral	Statement-non-opinion
+user01	2186.04	2188.52	null	Neutral	Collaborative Completion
+user11	2189.4	2192.79	null	Neutral	Statement-opinion
+user11	2193.54	2195.51	null	Neutral	Statement-non-opinion
+user11	2195.75	2197.2	null	Neutral	Statement-non-opinion
+user11	2197.64	2201.01	null	Neutral	Statement-non-opinion
+user11	2201.48	2203.36	null	Neutral	Statement-non-opinion
+user11	2203.74	2205.42	null	Positive	Others
+user11	2206.04	2206.65	null	Neutral	Uninterpretable
+user11	2207.05	2209.72	null	Negative	Statement-non-opinion
+user11	2210.11	2211.46	null	Neutral	Collaborative Completion
+user11	2211.74	2214.33	null	Neutral	Statement-non-opinion
+user00	2212.99	2215.59	null	Neutral	Statement-non-opinion
+user00	2215.95	2218.65	null	Neutral	Statement-opinion
+user00	2219.47	2219.91	null	Neutral	Collaborative Completion
+user00	2220.27	2220.79	null	Neutral	Uninterpretable
+user00	2222.1	2231.15	null	Neutral	Statement-opinion
+user00	2231.81	2233.5	null	Neutral	Statement-non-opinion
+user00	2233.75	2234.91	null	Neutral	Statement-non-opinion
+user00	2235.54	2237.02	null	Neutral	Statement-non-opinion
+user00	2238.17	2241.02	null	Neutral	Statement-non-opinion
+user00	2241.76	2242.41	null	Neutral	Others
+user00	2242.73	2244.65	null	Neutral	Others
+user00	2245.63	2251.48	null	Neutral	Statement-non-opinion
+user00	2253.07	2253.56	null	Neutral	Statement-non-opinion
+user00	2254.3	2255.4	null	Neutral	Others
+user00	2255.85	2258.42	null	Neutral	Statement-non-opinion
+user00	2258.89	2263.33	null	Neutral	Statement-non-opinion
+user00	2263.65	2267.18	null	Neutral	Statement-non-opinion
+user00	2267.52	2267.85	null	Neutral	Yes-No-Question
+user00	2268.17	2272.21	null	Neutral	Statement-opinion
+user00	2272.59	2273.4	null	Neutral	Collaborative Completion
+user00	2274.08	2277.61	null	Neutral	Statement-opinion
+user00	2277.99	2280.42	null	Neutral	Statement-non-opinion
+user00	2281.56	2283.87	null	Neutral	Statement-non-opinion
+user00	2284.15	2288.24	null	Negative	Statement-non-opinion
+user00	2289.03	2296.25	null	Neutral	Others
+user00	2297.57	2298.04	null	Neutral	Statement-non-opinion
+user00	2298.92	2300.15	null	Neutral	Statement-non-opinion
+user00	2301.45	2305.96	null	Neutral	Others
+user00	2306.65	2308.29	null	Neutral	Collaborative Completion
+user00	2309.04	2310.5	null	Neutral	Statement-opinion
+user00	2311.36	2312.45	null	Neutral	Statement-non-opinion
+user00	2312.71	2313.31	null	Neutral	Collaborative Completion
+user00	2313.75	2317.26	null	Neutral	Statement-opinion
+user00	2318.53	2319.3	null	Neutral	Collaborative Completion
+user00	2319.73	2320.28	null	Neutral	Collaborative Completion
+user00	2320.6	2323.3	null	Neutral	Abandoned or Turn-Exit
+user00	2323.64	2324.16	null	Neutral	Statement-non-opinion
+user00	2324.64	2325.08	null	Neutral	Collaborative Completion
+user00	2325.26	2327.05	null	Neutral	Statement-non-opinion
+user01	2327.96	2328.48	null	Neutral	Others
+user01	2328.81	2334.17	null	Neutral	Statement-opinion
+user11	2334.78	2335.32	null	Neutral	Others
+user11	2336.11	2339.79	null	Neutral	Statement-non-opinion
+user01	2339.69	2343.3	null	Negative	Yes-No-Question
+user11	2344.65	2344.99	null	Neutral	Others
+user11	2345.51	2346.47	null	Neutral	Statement-non-opinion
+user11	2348.63	2353.07	null	Neutral	Statement-non-opinion
+user11	2353.44	2354.62	null	Negative	Collaborative Completion
+user11	2355	2357.83	null	Neutral	Statement-opinion
+user00	2358.49	2360.88	null	Neutral	Others
+user01	2360.38	2361.44	null	Neutral	Statement-opinion
+user01	2361.71	2366.4	null	Neutral	Statement-non-opinion
+user01	2366.81	2369.78	null	Negative	Statement-non-opinion
+user01	2370.42	2376.43	null	Neutral	Statement-non-opinion
+user01	2376.98	2384.71	null	Positive	Statement-non-opinion
+user01	2385.54	2389.99	null	Positive	Statement-opinion
+user01	2390.57	2394.57	null	Neutral	Statement-non-opinion
+user11	2395.33	2396.41	null	Neutral	Others
+user11	2398.7	2402.43	null	Neutral	Statement-non-opinion
+user11	2402.75	2405.13	null	Neutral	Statement-non-opinion
+user11	2405.52	2407.78	null	Neutral	Statement-non-opinion
+user11	2408.19	2414.24	null	Negative	Statement-non-opinion
+user11	2414.65	2417.03	null	Neutral	Yes-No-Question
+user11	2417.4	2419.47	null	Negative	Statement-non-opinion
+user11	2419.76	2421.89	null	Neutral	Statement-opinion
+user11	2422.23	2423.69	null	Neutral	Statement-non-opinion
+user01	2424.44	2424.91	null	Neutral	Collaborative Completion
+user01	2425.72	2429.75	null	Negative	Statement-opinion
+user01	2430.63	2437.02	null	Positive	Statement-opinion
+user11	2440.77	2446.47	null	Neutral	Statement-non-opinion
+user11	2446.91	2451.06	null	Neutral	Statement-non-opinion
+user11	2451.39	2453.95	null	Neutral	Statement-non-opinion
+user11	2454.69	2455.06	null	Neutral	Others
+user11	2455.33	2459.47	null	Neutral	Statement-opinion
+user11	2460.18	2460.58	null	Neutral	Others
+user11	2460.95	2461.85	null	Neutral	Statement-non-opinion
+user00	2465.48	2465.63	null	Neutral	Uninterpretable
+user01	2466.89	2467.3	null	Positive	Others
+user01	2468.19	2471.72	null	Neutral	Statement-non-opinion
+user01	2472.11	2472.66	null	Neutral	Uninterpretable
+user01	2474.25	2481.29	null	Neutral	Statement-non-opinion
+user01	2481.68	2482.28	null	Neutral	Statement-non-opinion
+user01	2482.94	2484.27	null	Negative	Statement-opinion
+user01	2484.85	2485.57	null	Neutral	Uninterpretable
+user01	2486.74	2491.89	null	Neutral	Statement-non-opinion
+user01	2492.86	2493.81	null	Positive	Statement-opinion
+user01	2494.77	2522.7	null	Negative	Statement-non-opinion
+user01	2523.34	2529.7	null	Negative	Statement-non-opinion
+user01	2530.58	2531.15	null	Neutral	Abandoned or Turn-Exit
+user01	2531.64	2538.81	null	Neutral	Others
+user01	2539.56	2543.67	null	Positive	Statement-non-opinion
+user01	2543.78	2549.09	null	Neutral	Abandoned or Turn-Exit
+user01	2549.28	2561.95	null	Neutral	Statement-non-opinion
+user01	2563.74	2574.76	null	Neutral	Statement-non-opinion
+user00	2579.87	2582.93	null	Neutral	Statement-non-opinion
+user00	2583.52	2585.56	null	Neutral	Abandoned or Turn-Exit
+user00	2585.73	2585.98	null	Neutral	Abandoned or Turn-Exit
+user10	2587.36	2588.9	null	Neutral	Statement-non-opinion
+user10	2589.3	2598.42	null	Negative	Statement-opinion
+user10	2599.78	2600.09	null	Neutral	Others
+user01	2600.09	2601.08	null	Neutral	Statement-opinion
+user01	2601.72	2605.35	null	Neutral	Statement-opinion
+user10	2603.51	2603.8	null	Neutral	Others
+user10	2605.66	2606.08	null	Neutral	Others
+user10	2606.4	2608.04	null	Neutral	Statement-non-opinion
+user01	2606.48	2607.04	null	Neutral	Others
+user01	2608.46	2608.85	null	Neutral	Statement-non-opinion
+user01	2610.16	2613.66	null	Negative	Statement-opinion
+user01	2613.79	2623.66	null	Neutral	Statement-non-opinion
+user01	2624.44	2625.75	null	Neutral	Statement-non-opinion
+user01	2626.21	2634.68	null	Neutral	Statement-non-opinion
+user01	2635.95	2638.75	null	Neutral	Statement-opinion
+user01	2639.85	2644.64	null	Neutral	Statement-non-opinion
+user01	2645.63	2646.21	null	Neutral	Others
+user01	2648.3	2648.67	null	Negative	Statement-non-opinion
+user01	2649.09	2650.46	null	Negative	Statement-non-opinion
+user01	2650.76	2653.48	null	Neutral	Yes-No-Question
+user02	2655.25	2660.45	null	Neutral	Statement-opinion
+user02	2660.89	2661.87	null	Negative	Statement-non-opinion
+user02	2662.39	2676.6	null	Negative	Statement-non-opinion
+user01	2677.54	2692.24	null	Neutral	Statement-opinion
+user02	2677.75	2678.22	null	Neutral	Others
+user01	2692.51	2694.5	null	Positive	Statement-non-opinion
+user01	2695.18	2700.29	null	Negative	Statement-non-opinion
+user01	2700.54	2703.01	null	Neutral	Statement-non-opinion
+user01	2703.82	2721.44	null	Positive	Statement-non-opinion
+user01	2721.81	2724.27	null	Neutral	Others
+user01	2725.18	2725.64	null	Neutral	Others
+user01	2725.94	2728.07	null	Negative	Statement-non-opinion
+user01	2729.49	2733	null	Neutral	Statement-non-opinion
+user01	2734.4	2734.87	null	Neutral	Others
+user01	2735.37	2744.64	null	Neutral	Statement-non-opinion
+user01	2745.25	2745.7	null	Neutral	Others
+user01	2746.55	2752.54	null	Neutral	Statement-non-opinion
+user01	2753.08	2756.92	null	Negative	Statement-opinion
+user01	2757.6	2764.25	null	Neutral	Statement-opinion
+user01	2764.52	2768.33	null	Negative	Statement-opinion
+user01	2768.94	2773.31	null	Negative	Statement-non-opinion
+user01	2773.75	2775.74	null	Neutral	Abandoned or Turn-Exit
+user01	2776.28	2778.15	null	Negative	Statement-opinion
+user01	2778.63	2782.3	null	Neutral	Statement-opinion
+user01	2782.73	2784.48	null	Negative	Statement-opinion
+user12	2785.8	2790.37	null	Neutral	Statement-non-opinion
+user01	2789.91	2791.1	null	Neutral	Uninterpretable
+user01	2792.11	2794.35	null	Negative	Statement-non-opinion
+user01	2794.79	2803.82	null	Neutral	Statement-non-opinion
+user01	2804.24	2805.74	null	Neutral	Collaborative Completion
+user00	2805.93	2806.69	null	Neutral	Others
+user00	2807.06	2811.33	null	Negative	Statement-non-opinion
+user00	2811.85	2813.27	null	Neutral	Statement-non-opinion
+user00	2814.13	2815.33	null	Neutral	Statement-non-opinion
+user00	2815.58	2816.34	null	Neutral	Others
+user01	2817.76	2818.23	null	Neutral	Others
+user01	2819.26	2819.94	null	Neutral	Others
+user01	2820.56	2823.34	null	Negative	Statement-non-opinion
+user00	2824.61	2825.22	null	Neutral	Statement-non-opinion
+user10	2825.79	2826.09	null	Neutral	Others
+user10	2827.93	2832.17	null	Negative	Statement-opinion
+user00	2828.1	2828.58	null	Neutral	Others
+user01	2828.58	2828.78	null	Neutral	Uninterpretable
+user01	2833.13	2837.06	null	Neutral	Statement-non-opinion
+user01	2837.69	2844.98	null	Positive	Statement-non-opinion
+user01	2845.08	2846.21	null	Negative	Statement-opinion
+user01	2846.46	2847.48	null	Positive	Statement-opinion
+user01	2849.35	2849.97	null	Neutral	Statement-non-opinion
+user01	2850.31	2859.02	null	Negative	Statement-non-opinion
+user01	2859.41	2859.84	null	Neutral	Others
+user01	2860.84	2864.32	null	Negative	Statement-non-opinion
+user01	2864.64	2876.25	null	Negative	Statement-non-opinion
+user01	2877.01	2878.74	null	Neutral	Others
+user01	2879.17	2892.7	null	Neutral	Statement-opinion
+user01	2893.83	2894.19	null	Neutral	Uninterpretable
+user12	2894.84	2898.08	null	Neutral	Yes-No-Question
+user01	2898.79	2902.22	null	Neutral	Others
+user01	2902.79	2904.97	null	Neutral	Statement-non-opinion
+user01	2906.32	2911.75	null	Neutral	Statement-non-opinion
+user01	2912.36	2919.24	null	Neutral	Statement-non-opinion
+user02	2912.46	2912.92	null	Neutral	Collaborative Completion
+user11	2916.71	2917.32	null	Neutral	Others
+user01	2919.78	2921.02	null	Neutral	Collaborative Completion
+user01	2921.83	2925.07	null	Neutral	Statement-opinion
+user12	2925.49	2928.07	null	Neutral	Statement-non-opinion
+user01	2925.83	2926.45	null	Neutral	Collaborative Completion
+user01	2928.36	2933.13	null	Neutral	Statement-opinion
+user01	2934.01	2936.46	null	Negative	Others
+user11	2935.58	2935.73	null	Neutral	Abandoned or Turn-Exit
+user12	2935.73	2936.24	null	Negative	Collaborative Completion
+user01	2936.66	2937	null	Neutral	Others
+user01	2937.62	2940.42	null	Neutral	Statement-opinion
+user12	2938.23	2938.65	null	Neutral	Abandoned or Turn-Exit
+user01	2941.59	2949.67	null	Negative	Statement-opinion
+user01	2950.87	2954.99	null	Neutral	Statement-opinion
+user01	2955.26	2977.26	null	Neutral	Statement-opinion
+user11	2958.85	2959.29	null	Neutral	Uninterpretable
+user01	2977.63	2981.07	null	Negative	Statement-non-opinion
+user01	2981.63	2983.66	null	Negative	Statement-opinion
+user01	2984.37	2986.12	null	Neutral	Collaborative Completion
+user01	2986.49	2996.23	null	Neutral	Abandoned or Turn-Exit
+user12	2995.99	2996.36	null	Neutral	Statement-non-opinion
+user01	2996.73	2997.14	null	Neutral	Statement-opinion
+user01	2997.34	2997.85	null	Neutral	Statement-non-opinion
+user01	2998.59	3001.14	null	Neutral	Statement-non-opinion
+user12	3000.55	3010.71	null	Negative	Yes-No-Question
+user01	3011.99	3013.1	null	Positive	Others
+user01	3013.59	3014.35	null	Neutral	Uninterpretable
+user01	3015.23	3024.9	null	Negative	Statement-opinion
+user01	3025.29	3027.99	null	Neutral	Abandoned or Turn-Exit
+user01	3028.32	3029.79	null	Neutral	Abandoned or Turn-Exit
+user01	3029.89	3033.89	null	Neutral	Collaborative Completion
+user01	3034.28	3041.07	null	Neutral	Statement-non-opinion
+user01	3041.28	3045.18	null	Neutral	Statement-non-opinion
+user12	3041.81	3042.18	null	Neutral	Others
+user12	3045.62	3047.09	null	Neutral	Statement-non-opinion
+user12	3049.15	3049.47	null	Neutral	Others
+user12	3053.82	3054.08	null	Neutral	Statement-non-opinion
+user01	3055.49	3055.95	null	Neutral	Statement-non-opinion
+user01	3057.45	3058.19	null	Neutral	Statement-non-opinion

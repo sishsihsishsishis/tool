@@ -1,91 +1,10 @@
-import { types2 } from './gantt'
-import { types } from './gantt'
+import { EChartsOption } from 'echarts'
+import { emotionTypes, ActTypes } from './gantt'
 
-export let p1 = async function () {
+function pie({ title, data }: { title: string, data: any[] }): EChartsOption {
   return {
     title: {
-      text: 'Sentiment',
-      // subtext: 'Fake Data',
-      left: 'center'
-    },
-    tooltip: {
-      trigger: 'item'
-    },
-    legend: {
-      show: false,
-      orient: 'vertical',
-      left: 'left'
-    },
-    color: Object.values(types),
-    series: [
-      {
-        type: 'pie',
-        radius: '70%',
-        data: [
-          { value: 1466, name: 'Neutral' },
-          { value: 141, name: 'Positive' },
-          { value: 555, name: 'Negative' },
-        ],
-        emphasis: {
-          itemStyle: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
-      }
-    ]
-  };
-}
-
-
-export let p2 = async function () {
-  return {
-    title: {
-      text: 'Language Use',
-      // subtext: 'Fake Data',
-      left: 'center'
-    },
-    tooltip: {
-      trigger: 'item'
-    },
-    legend: {
-      show: false,
-      orient: 'vertical',
-      left: 'left'
-    },
-    color: Object.values(types2),
-    series: [
-      {
-        type: 'pie',
-        radius: '75%',
-        data: [
-          { value: 1, name: 'Uninterpretable' },   // '#84584E',
-          { value: 720, name: 'Statement-opinion' },   // '#8E69B8',
-          { value: 1127, name: 'Statement-non-opinion' },   // '#C53932',
-          { value: 95, name: 'Yes-No-Question' },   // '#D57DBE',
-          { value: 60, name: 'Collaborative Completion' },  // '#EF8636',
-          { value: 75, name: 'Abandoned or Turn-Exit' },  // '#3B75AF',
-          { value: 84, name: 'Others' },  // '#529E3E',
-        ],
-        emphasis: {
-          itemStyle: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
-      }
-    ]
-  };
-}
-
-import color from './template/color'
-export let u1 = async function () {
-  return {
-    title: {
-      text: 'User',
-      // subtext: 'Fake Data',
+      text: title,
       left: 'center'
     },
     tooltip: {
@@ -99,15 +18,21 @@ export let u1 = async function () {
     series: [
       {
         type: 'pie',
-        radius: '75%',
-        data: [
-          { value: 525, name: 'User00', itemStyle: { color: color['User00'] } },
-          { value: 1156, name: 'User01', itemStyle: { color: color['User01'] } },
-          { value: 133, name: 'User02', itemStyle: { color: color['User02'] } },
-          { value: 67, name: 'User10', itemStyle: { color: color['User10'] } },
-          { value: 151, name: 'User11', itemStyle: { color: color['User11'] } },
-          { value: 130, name: 'User12', itemStyle: { color: color['User12'] } },
-        ],
+        radius: '60%',
+        data,
+        label: {
+          formatter: '{b} \n {pre|{c} ({d}%)}',
+          alignTo: 'labelLine',
+          minMargin: 5,
+          edgeDistance: 10,
+          lineHeight: 15,
+          rich: {
+            pre: {
+              fontSize: 10,
+              color: '#444'
+            }
+          }
+        },
         emphasis: {
           itemStyle: {
             shadowBlur: 10,
@@ -117,15 +42,59 @@ export let u1 = async function () {
         }
       }
     ]
-  };
+  } as EChartsOption;
 }
 
-export let u2 = async function () {
+export const pieEmotions = async (pie_emotions: Promise<{ emotion: string, emotion_time: number }[]>): Promise<EChartsOption> => pie({
+  title: 'Sentiment',
+  data: (await pie_emotions).map(e => ({
+    value: e.emotion_time,
+    name: e.emotion,
+    itemStyle: {
+      color: emotionTypes[e.emotion]
+    }
+  }))
+})
+
+
+export const pieActs = async (pie_acts: Promise<{ act: string, act_time: number }[]>): Promise<EChartsOption> => pie({
+  title: 'Language Use',
+  data: (await pie_acts).map(e => ({
+    value: e.act_time,
+    name: e.act,
+    itemStyle: {
+      color: ActTypes[e.act]
+    }
+  }))
+})
+
+// [
+//   { value: 2, name: 'Uninterpretable' },   // '#84584E',
+//   { value: 137, name: 'Statement-opinion' },   // '#8E69B8',
+//   { value: 490, name: 'Statement-non-opinion' },   // '#C53932',
+//   { value: 7, name: 'Yes-No-Question' },   // '#D57DBE',
+//   { value: 19, name: 'Collaborative Completion' },  // '#EF8636',
+//   { value: 22, name: 'Abandoned or Turn-Exit' },  // '#3B75AF',
+//   { value: 63, name: 'Others' },  // '#529E3E',
+// ],
+import userColor from './template/color'
+
+export const pieSpeakers = async (pie_speakers: Promise<{ speaker: string, speaker_time: number }[]>): Promise<EChartsOption> => pie({
+  title: 'Speaker Time',
+  data: (await pie_speakers).map(e => ({
+    value: e.speaker_time,
+    name: e.speaker,
+    itemStyle: {
+      color: userColor[e.speaker]
+    }
+  }))
+})
+
+function mulBar({ title, data, color }: { title: string, data: {[key:string]:{[ket:string]:number}} ,color:{[key:string]:string}}): EChartsOption {
   return {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        // Use axis to trigger tooltip
         type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
       }
     },
@@ -141,11 +110,11 @@ export let u2 = async function () {
     },
     xAxis: {
       type: 'category',
-      data: ['User00', 'User01', 'User02', 'User10', 'User11', 'User12']
+      data: Object.keys(data[Object.keys(data)[0]])
     },
-    series: [
+    series: Object.keys(data).map(e=>(
       {
-        name: 'Negative',
+        name: e,
         type: 'bar',
         stack: 'total',
         label: {
@@ -154,86 +123,23 @@ export let u2 = async function () {
         emphasis: {
           focus: 'series'
         },
-        itemStyle: { color: types.Negative },
-        data: [90, 307, 43, 53, 24, 38]
-      },
-      {
-        name: 'Neutral',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        itemStyle: { color: types.Neutral },
-        data: [423, 724, 89, 14, 125, 92]
-      },
-      {
-        name: 'Positive',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        itemStyle: { color: types.Positive },
-        data: [12, 126, 1, 0, 2, 0]
-      },
-    ]
-  };
+        itemStyle: { color: color[e] },
+        data: Object.values(data[e])
+      })),
+  }
 }
 
-
-let da:{[key:string]:number[]} = {
-  'User00':[ 90,423,12],
-  'User01':[307,724,126],
-  'User02':[ 43,89,1],
-  'User10':[ 53,14,0],
-  'User11':[ 24,125,2],
-  'User12':[ 38,92,0]
+export const stackedBarEmotions = async (stacked_bar_emotions:Promise<{[key:string]:{[ket:string]:number}}>): Promise<EChartsOption> => {
+  return mulBar({
+    title:'',
+    color: emotionTypes,
+    data: await stacked_bar_emotions
+  })
 }
 
-export let u3 = async function () {
-  return {
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
-      }
-    },
-    legend: {},
-    // grid: {
-    //   left: '3%',
-    //   right: '4%',
-    //   bottom: '3%',
-    //   containLabel: true
-    // },
-    yAxis: {
-      type: 'value'
-    },
-    xAxis: {
-      type: 'category',
-      data: ['Negative', 'Neutral', 'Positive']
-    },
-    series: Object.keys(da).map(k=>{
-      return {
-        name: k,
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        itemStyle: { color: color[k] },
-        data: da[k]
-      }
-    })
-  };
-}
+export const stackedBarSpeakers = async (stacked_bar_speakers:Promise<{[key:string]:{[ket:string]:number}}>): Promise<EChartsOption> => mulBar({
+  title:'',
+  color: userColor,
+  data: await stacked_bar_speakers
+})
+

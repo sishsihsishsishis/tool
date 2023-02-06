@@ -1,0 +1,296 @@
+{
+	"meetingStartTime":1586044800000,
+	"duration":3060000,
+	"videoUrl":"demo.mp4",
+	"userAvatar": {
+		"user00":"user00.jpg",
+		"user01":"user01.jpg",
+		"user02":"user02.jpg",
+		"user10":"user10.jpg",
+		"user11":"user11.jpg",
+		"user12":"user12.jpg"
+	},
+	"pie_speakers":[
+		{
+			"speaker":"user00",
+			"speaker_time":525,
+			"speaker_time_rate":0.242
+
+		},
+		{
+			"speaker":"user01",
+			"speaker_time":1156,
+			"speaker_time_rate":0.535
+		},
+		{
+			"speaker":"user02",
+			"speaker_time":133,
+			"speaker_time_rate":0.062
+		},
+		{
+			"speaker":"user10",
+			"speaker_time":67,
+			"speaker_time_rate":0.031
+		},
+		{
+			"speaker":"user11",
+			"speaker_time":151,
+			"speaker_time_rate":0.070
+		},
+		{
+			"speaker":"user12",
+			"speaker_time":130,
+			"speaker_time_rate":0.060
+		}
+	],
+	"pie_emotions":[
+		{
+			"emotion":"Negative",
+			"emotion_time":555,
+			"emotion_time_rate":0.257
+		},
+		{
+			"emotion":"Neutral",
+			"emotion_time":1466,
+			"emotion_time_rate":0.678		
+		},
+		{
+			"emotion":"Positive",
+			"emotion_time":141,
+			"emotion_time_rate":0.065	
+		}
+	],
+	"pie_acts":[
+		{
+			"act":"Statement-non-opinion",
+			"act_time":1127,
+			"act_time_rate":0.5212
+		},
+		{
+			"act":"Statement-opinion",
+			"act_time":720,
+			"act_time_rate":0.3330
+		},
+		{
+			"act":"Collaborative Completion",
+			"act_time":60,
+			"act_time_rate":0.0278
+		},
+		{
+			"act":"Abandoned or Turn-Exit",
+			"act_time":75,
+			"act_time_rate":0.0347
+		},
+		{
+			"act":"Uninterpretable",
+			"act_time":1,
+			"act_time_rate":0.0005
+		},
+		{
+			"act":"Yes-No-Question",
+			"act_time":95,
+			"act_time_rate":0.0439
+		},
+		{
+			"act":"Others",
+			"act_time":84,
+			"act_time_rate":0.0389
+		}
+	],
+	"stacked_bar_speakers":{
+		"user00": {
+			"Negative": 90,
+			"Neutral": 423,
+			"Positive": 12
+		},
+		"user01": {
+			"Negative": 307,
+			"Neutral": 724,
+			"Positive": 126
+		},
+		"user02": {
+			"Negative": 43,
+			"Neutral": 89,
+			"Positive": 1
+		},
+		"user10": {
+			"Negative": 53,
+			"Neutral": 14,
+			"Positive": 0
+		},
+		"user11": {
+			"Negative": 24,
+			"Neutral": 125,
+			"Positive": 2
+		},
+		"user12": {
+			"Negative": 38,
+			"Neutral": 92,
+			"Positive": 0
+		}
+	},
+	"stacked_bar_emotions": {
+		"Negative": {
+			"user00": 90,
+			"user01": 307,
+			"user02": 43,
+			"user10": 53,
+			"user11": 24,
+			"user12": 38
+
+		},
+		"Neutral": {
+			"user00": 423,
+			"user01": 724,
+			"user02": 89,
+			"user10": 14,
+			"user11": 125,
+			"user12": 92
+		},
+		"Positive": {
+			"user00": 12,
+			"user01": 126,
+			"user02": 1,
+			"user10": 0,
+			"user11": 2,
+			"user12": 0
+		}
+	},
+	"radar":[
+		{
+			"key":"Equal Participation",
+			"value":0.73
+		},
+		{
+			"key":"Enjoyment",
+			"value":0.2
+		},
+		{
+			"key":"Shared Goal Commitment",
+			"value":0.42
+		},
+		{
+			"key":"Absorption or Task Engagement",
+			"value":0.48
+		},
+		{
+			"key":"Trust and Psychological Safety",
+			"value":0.51
+		}
+	],
+	"scores":{
+		"brain":null,
+		"body":48,
+		"behavior":71,
+		"total":63
+	},
+	"sections":{
+			"user00": [
+				{
+					"start": 2100,
+					"end": 2130,
+					"label": 6
+				},
+				{
+					"start": 2550,
+					"end": 2580,
+					"label": 5
+				},
+				{
+					"start": 2730,
+					"end": 2760,
+					"label": 0
+				}
+			],
+			"user01": [
+				{
+					"start": 720,
+					"end": 750,
+					"label": 6
+				},
+				{
+					"start": 1200,
+					"end": 1230,
+					"label": 5
+				},
+				{
+					"start": 2190,
+					"end": 2220,
+					"label": 5
+				}
+			],
+			"user02": [
+				{
+					"start": 720,
+					"end": 750,
+					"label": 3
+				},
+				{
+					"start": 1290,
+					"end": 1320,
+					"label": 6
+				},
+				{
+					"start": 2220,
+					"end": 2250,
+					"label": 5
+				}
+			],
+			"user10": [
+				{
+					"start": 660,
+					"end": 690,
+					"label": 0
+				},
+				{
+					"start": 1590,
+					"end": 1620,
+					"label": 7
+				},
+				{
+					"start": 2460,
+					"end": 2490,
+					"label": 3
+				}
+			],
+			"user11": [
+				{
+					"start": 1890,
+					"end": 1920,
+					"label": 7
+				},
+				{
+					"start": 2010,
+					"end": 2040,
+					"label": 3
+				},
+				{
+					"start": 2190,
+					"end": 2220,
+					"label": 3
+				}
+			],
+			"user12": [
+				{
+					"start": 2160,
+					"end": 2190,
+					"label": 6
+				},
+				{
+					"start": 2190,
+					"end": 2220,
+					"label": 2
+				},
+				{
+					"start": 2610,
+					"end": 2640,
+					"label": 0
+				}
+			],
+			"team" : [
+        { "start": 2070, "end": 2100 },
+        { "start": 1170, "end": 1200 },
+        { "start": 1500, "end": 1530 }
+			]
+		}		
+}

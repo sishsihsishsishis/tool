@@ -15,7 +15,10 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       host: true,
       open: true,
       proxy: {
-        [process.env.VITE_API_URL]: 'http://localhost:8088',
+        [process.env.VITE_API_URL as string]: {
+          target: 'http://47.102.118.168:8080',
+          rewrite: (path) => path.replace(process.env.VITE_API_URL as string, '')
+        }
       },
     },
     plugins: [vue(), splitVendorChunkPlugin(),

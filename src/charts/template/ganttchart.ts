@@ -1,8 +1,14 @@
-import { EChartOption } from 'echarts'
-import { graphic } from "echarts";
+import { EChartsOption, graphic } from 'echarts'
 import merge from "deepmerge";
-export function GanttChart(data:any, colors:{[T:string]:string}, categories:string[], customOpt?:EChartOption){
-    const opt:EChartOption = {
+export function GanttChart(data:any,type:string,legend:string[],colors:{[T:string]:string}, categories:string[], customOpt?:EChartsOption){
+  // data.push(new Array(14*60).fill('').map((e,index)=>({
+  //   Speaker:"T",
+  //   Start:index*1000,
+  //   End:(index+1)*1000,
+  //   Emotion:"T",
+  //   DialogueAct:"T"
+  // })))
+    const opt:EChartsOption = {
       tooltip: {
         show:false
       },
@@ -10,7 +16,7 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
         {
           type: 'slider',
           filterMode: 'weakFilter',
-          showDataShadow: 'false',
+          showDataShadow: false,
           top: 400,
           labelFormatter: '',
         },
@@ -24,11 +30,11 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
         left:120
       },
       legend: {
-        data: Object.keys(data).map(e => {
+        data: legend.map(k => {
           return {
-            name: e,
+            name: k,
             itemStyle: {
-              color: colors[e]
+              color: colors[k]
             }
           }
         }),
@@ -40,9 +46,9 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
       yAxis: {
         data: categories,
       },
-      series: Object.keys(data).map(c => {
+      series: data.map((e:any) => {
         return {
-          name: c,
+          name: legend.includes(e[type]) ? e[type] : 'Others',
           type: 'custom',
           renderItem: function (params:any, api:any) {
             var categoryIndex = api.value(0);
@@ -69,7 +75,7 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
                 transition: ['shape'],
                 shape: rectShape,
                 style: {
-                  fill: colors[c]
+                  fill: colors[e[type]]
                 }
               }
             );
@@ -81,9 +87,10 @@ export function GanttChart(data:any, colors:{[T:string]:string}, categories:stri
             x: [1, 2],
             y: 0
           },
-          data: data[c]
+          // data: [Object.values(e)]
+          data: [[e.speaker,e.starts,e.ends,e.sentence,e.emotion,e.dialogue]]
         }
       })
     };
-    return customOpt ? merge<EChartOption>(opt,customOpt) as EChartOption : opt;
+    return customOpt ? merge<EChartsOption>(opt,customOpt) as EChartsOption : opt;
 }

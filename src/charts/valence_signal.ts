@@ -1,12 +1,12 @@
-import { EChartOption } from 'echarts'
-import data from '../../data/do/valence_signal/v_1102.json'
-import sync from '../../data/do/valence_signal/valence_sync_1102.json'
 import { LineChart } from "./template/linechart";
+import axios from "axios";
 
-export default async function () {
-  return LineChart(data,'behavior',false)
+export default async function (meetingId:string,marks:Promise<any>) {
+  let { data }  = (await axios.get(`/csv/vresult?meetingID=${meetingId}`)).data
+  return LineChart(data,'behavior',false,await marks)
 }
 
-export async function valence_signal_syn () {
-  return LineChart(sync,'behavior',true)
+export async function valence_signal_syn (meetingId:string,marks:Promise<any>) {
+  let { data: sync }  = (await axios.get(`/csv/vsync?meetingID=${meetingId}`)).data
+  return LineChart(sync,'behavior',true,await marks)
 }

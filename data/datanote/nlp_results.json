@@ -1,0 +1,1136 @@
+{
+  "speakers": { //统计有几个讲话者
+    "user00": "77.73", //时间占比
+    "user10": "11.79",
+    "user01": "10.49"
+  },
+  "Emotion": [ //统计出现了那几个Emotion
+    "Neutral",
+    "Positive",
+    "Negative"
+  ],
+  "DialogueAct": [ //统计出现了那几个DialogueAct
+    "Statement-non-opinion",
+    "Collaborative Completion",
+    "Action-directive",
+    "Statement-opinion",
+    "Repeat-phrase",
+    "Appreciation",
+    "Hold before answer/agreement",
+    "Agree/Accept",
+    "Conventional-closing",
+    "Response Acknowledgement",
+    "Abandoned or Turn-Exit",
+    "Uninterpretable",
+    "Declarative Yes-No-Question",
+    "Yes-No-Question",
+    "Rhetorical-Questions",
+    "Wh-Question"
+  ],
+  "data": [ //数据
+    {
+      "Speaker": "user00",
+      "Start": 2100, //开始时间(ms)
+      "End": 6520, //结束时间(ms)
+      "Sentence": "As a as margin, I check in you can a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 7620,
+      "End": 17490,
+      "Sentence": "Already preparing go ahead, just like tight bow, the yourer tare an active projects. Theyare are youre working on n and mus. O am.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 18540,
+      "End": 19940,
+      "Sentence": "Expected.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 21140,
+      "End": 44510,
+      "Sentence": "Like work this frid so and what, on this friday, you we can expect for each of us two to share. Ah, no until, for example, te under perfect circle, o the face book, the campaign, what a mariaiming to get done by this a friday and then march fore the same for whicheper projects.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 45250,
+      "End": 51900,
+      "Sentence": "Am o ca? Let's, let's dive in I'll I'll start with a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Action-directive"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 53200,
+      "End": 72930,
+      "Sentence": "Estart with the celebration, a high connections assigned of another yearlong contract a last night, yea fo thatall. I allow us to continue an working together as well, ah na because there, the current me the a the most active.",
+      "Emotion": "Positive",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 75830,
+      "End": 124410,
+      "Sentence": "Like big client tat, really man, so am that's ausen. I m pien swene to celebrate the having boat the ugaes be able to tust the spark habbits op is really really helpful. We know a angela you leading a enjroyd and mar ju leading apple, like that's so really oscilate. So please continue doing that and with lollys free to work a with goth and to day angela to get the androy log a fixed, tosa, thagugise gen get past that io and I guess just making a note am when it is fixed for you er. You can emale sireley. So under the redolphin list, confirmi eagoes have access to the tarch habits, dolfinist.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 76820,
+      "End": 78600,
+      "Sentence": "Tat really man so.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 129410,
+      "End": 131060,
+      "Sentence": "A gente ai, gazeme.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 131060,
+      "End": 131870,
+      "Sentence": "I will.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 131870,
+      "End": 133070,
+      "Sentence": "An to I.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Repeat-phrase"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 133680,
+      "End": 143900,
+      "Sentence": "I will link it a into e spark habits, channel and I'll put it under the descriptions e so that its evy is ones.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 143070,
+      "End": 144210,
+      "Sentence": "Evy is ones.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 145440,
+      "End": 146500,
+      "Sentence": "Fillors.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 147500,
+      "End": 159750,
+      "Sentence": "O kavs well so indeed spark heave with slack turnel edges atic the dultinist anu, once android is up. You can message, I shirley shirley has an android.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 159750,
+      "End": 160440,
+      "Sentence": "Ccuwel.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 161740,
+      "End": 162990,
+      "Sentence": "Ound.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Appreciation"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 163650,
+      "End": 165650,
+      "Sentence": "And they just olt. Let me go like a note.",
+      "Emotion": "Negative",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 166400,
+      "End": 167370,
+      "Sentence": "An.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 169960,
+      "End": 170500,
+      "Sentence": "On.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 171460,
+      "End": 172570,
+      "Sentence": "They enjoy de.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 171490,
+      "End": 171730,
+      "Sentence": "They.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 172420,
+      "End": 175980,
+      "Sentence": "Ha thenjoy dter ther, not emain, saii,.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 173230,
+      "End": 174210,
+      "Sentence": "Dter.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 176880,
+      "End": 178060,
+      "Sentence": "Bu danton san tai.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Hold before answer/agreement"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 178090,
+      "End": 179090,
+      "Sentence": "And dree da.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Agree/Accept"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 179630,
+      "End": 181130,
+      "Sentence": "E go rai, onula.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Conventional-closing"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 184910,
+      "End": 186630,
+      "Sentence": "Wens wont on er.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 187410,
+      "End": 190950,
+      "Sentence": "The fell, it is atis luse, mine, comparson, your mploye.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 190950,
+      "End": 194020,
+      "Sentence": "An there's, a nessa as well.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 194020,
+      "End": 197530,
+      "Sentence": "Ate as awarin and orly te.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 194830,
+      "End": 195670,
+      "Sentence": "Ate as.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 198290,
+      "End": 202000,
+      "Sentence": "I mn here on land, an ok, a on in.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 200470,
+      "End": 200910,
+      "Sentence": "Ok, a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Response Acknowledgement"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 204620,
+      "End": 206680,
+      "Sentence": "So big moston there is ye.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 208360,
+      "End": 213480,
+      "Sentence": "Oh yes, yes, surely yeh ou gies can connect with that ly. Am.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Agree/Accept"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 214840,
+      "End": 215760,
+      "Sentence": "Fouqut, I think.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 216140,
+      "End": 218470,
+      "Sentence": "That her ons a long apet ite.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 216670,
+      "End": 217050,
+      "Sentence": "Ons, a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 220680,
+      "End": 233880,
+      "Sentence": "And a also a brain featured has already given the first draught of the the article a and sin the future.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 225830,
+      "End": 226270,
+      "Sentence": "The.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Uninterpretable"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 235530,
+      "End": 240000,
+      "Sentence": "Pen, one eageise not in the future, but like a addive.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 242370,
+      "End": 243060,
+      "Sentence": "I guess.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 243920,
+      "End": 247410,
+      "Sentence": "Who's the go to zat beer person with you between you, two.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 249290,
+      "End": 250110,
+      "Sentence": "Usually isue.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 250320,
+      "End": 255180,
+      "Sentence": "No you nim on if the bensanda opin theater oi was got.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 253640,
+      "End": 261329,
+      "Sentence": "Theater oi was got aetane and o case im. Teing would like afor bounds, an.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 255180,
+      "End": 256089,
+      "Sentence": "And.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 262350,
+      "End": 265180,
+      "Sentence": "I think yoc an trade as apt mat affore in the seamal.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 265180,
+      "End": 269740,
+      "Sentence": "Eean bidit see a an ebares on the.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 270500,
+      "End": 274990,
+      "Sentence": "Har on e wanted the re, plind bu very dns here oin before the seamel.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 274020,
+      "End": 277030,
+      "Sentence": "Before the seamel to edis menjor marge.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 278280,
+      "End": 279690,
+      "Sentence": "I'll su sher, my swinral quick.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 281080,
+      "End": 284590,
+      "Sentence": "Im connotratus at where e, if it's from.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 285940,
+      "End": 290460,
+      "Sentence": "This emale right and the subject title is this:.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 291740,
+      "End": 293890,
+      "Sentence": "Then forward.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 294630,
+      "End": 302000,
+      "Sentence": "This emalto eugais and I believe well yougos- are able to do that right in my zapier.",
+      "Emotion": "Positive",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 301580,
+      "End": 305020,
+      "Sentence": "A very nerve bmont okeewy that.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 303860,
+      "End": 308790,
+      "Sentence": "Okeewy that way in the future, on the easkin gip te draught immediately.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 308310,
+      "End": 310290,
+      "Sentence": "On I want bit.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 310260,
+      "End": 318830,
+      "Sentence": "And am in the future, you'll can communicate to the cliens and what you have to do right down o the article and so that I.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 320620,
+      "End": 329050,
+      "Sentence": "So t ois, what it looks like you is ly, say e sa poes anonclu its me its in its teria.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 321140,
+      "End": 323050,
+      "Sentence": "So t ois what it looks like you.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Declarative Yes-No-Question"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 325190,
+      "End": 326570,
+      "Sentence": "Poes.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 328990,
+      "End": 333910,
+      "Sentence": "O awll just show it well show it fully, and the future would love you guise to own. This whole were a flow.",
+      "Emotion": "Positive",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 333980,
+      "End": 336720,
+      "Sentence": "Or it ie ben in see a pasial nerve.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 338450,
+      "End": 338840,
+      "Sentence": "Noise.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Appreciation"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 339770,
+      "End": 342220,
+      "Sentence": "Was one of the migi ire than the pa fingere.",
+      "Emotion": "Negative",
+      "DialogueAct": "Yes-No-Question"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 342220,
+      "End": 345200,
+      "Sentence": "So in the future, you'll have the whole gep.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 345740,
+      "End": 347190,
+      "Sentence": "He relrict.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 347190,
+      "End": 379630,
+      "Sentence": "You have the whole word dar, like this yonn and then uges will be able to. I think al should probably no copy in pace this. You don't have to do it this time, because I already did ill a, but in the future, copying paces into a gugledoc put it into the client folder and then share with them so that if they have any edits, they can make it directly on the buledac andt after that's dud mive yets and send the draught back to a to these guise in the mill a make. The change.",
+      "Emotion": "Negative",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 380350,
+      "End": 406980,
+      "Sentence": "And we have a think too a revisions for that ont in thereis on so that's goin, well, an in terms of a process c, a pause there marge please take it away and as marge takes it away a angele again, you can bull et point and type out. Ah those those bits on your end march, what arison actor? What are te active projects that you're leading an.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 384170,
+      "End": 384990,
+      "Sentence": "Thereis on.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 407670,
+      "End": 411660,
+      "Sentence": "Time line of deliverables in any blockers that we might be having.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 413040,
+      "End": 434390,
+      "Sentence": "O ca so a say from a leaving the ipone fores for cabits and then helping you assisting viditonsomande vor jon last night, mian angela traded fool a wat sombiages regarding the vasefolk, my eting soer blanging unpreeating of ontin for a perfect serto.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 437020,
+      "End": 437630,
+      "Sentence": "Poorrer.",
+      "Emotion": "Negative",
+      "DialogueAct": "Appreciation"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 438660,
+      "End": 441690,
+      "Sentence": "Poor perflec ago and then I'm still looking for no.",
+      "Emotion": "Negative",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 442300,
+      "End": 465290,
+      "Sentence": "Facing images, because I saw your comments and then think ou for your omens, biguss yet helt yome on chaker mule, ye till oend, it's onmaily sause end, then ther will be ats, able wat toreplan yoar in august. Oh, that's! Fine! Young ye, don't huch a yer off chance, ye iwo a we ca, gattl headat.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 450330,
+      "End": 451130,
+      "Sentence": "Mule.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 459570,
+      "End": 461830,
+      "Sentence": "Oh, that's: fine, young ye, don't huch a yer off.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 463140,
+      "End": 467090,
+      "Sentence": "A we ca, gattl headat to as bean just.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 465290,
+      "End": 477720,
+      "Sentence": "To as bean just cto ofce and just confirming, we have already paused angela yeur gulblad campin, o k, coto ma cndetni loka.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 478680,
+      "End": 480640,
+      "Sentence": "Pay on the.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 479550,
+      "End": 482130,
+      "Sentence": "Pay on the yourst sorrytybon.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 482310,
+      "End": 488980,
+      "Sentence": "Onk so thes ma tos er men, prayer rityo for tisre, no perfect, sinto, paceable peach.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 491360,
+      "End": 499090,
+      "Sentence": "Yes, sir lad, that would be great a herwiso and just confirming it right. Nows.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Agree/Accept"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 502260,
+      "End": 513010,
+      "Sentence": "The yol, how is the face of a page being created as it under neua, whose cas has to be like housed under angeles, housed under your personal face lookaccou.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Rhetorical-Questions"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 514390,
+      "End": 517010,
+      "Sentence": "Got it wam the sand.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 517450,
+      "End": 519299,
+      "Sentence": "Say they nay that er.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 519470,
+      "End": 523809,
+      "Sentence": "Ultimately, can people transfer face but pages to uther accounts.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Yes-No-Question"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 524790,
+      "End": 526070,
+      "Sentence": "My.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Uninterpretable"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 526610,
+      "End": 541170,
+      "Sentence": "Oke oke, graham um, yet as long as we are able to do that, an thot'll be great that way: wecan house at all, undour, perfect or whole emale orr, whatever un. Yet if I could wear the magic ane by friday, eugis can show a draught a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 542620,
+      "End": 543520,
+      "Sentence": "A.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 542940,
+      "End": 545290,
+      "Sentence": "A the actor facebork ana.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 546610,
+      "End": 548950,
+      "Sentence": "Page amet.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 550120,
+      "End": 558170,
+      "Sentence": "And I doing her thus to fall out the things that way we can start running v. The potential adds. Will you know.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 559090,
+      "End": 559790,
+      "Sentence": "Yis, a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 559740,
+      "End": 560930,
+      "Sentence": "Mile.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 562540,
+      "End": 593720,
+      "Sentence": "And remember: we have levidios rite on vemio a I actually know on the perfect circle. Vemio account now ray because the gis created on their putividios there. So that's great, so we have those to be able to share a and as cris crate's copy on the site. That's also tons of copy to be reused, e o as well, I in terms of posts, but I think the biggest thing is egys set up. Whatever needs to be set up operationally to that.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 594700,
+      "End": 602090,
+      "Sentence": "We can say to castler on monday next monday, saying haylike ready to start just testing different adds and as.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 603240,
+      "End": 618780,
+      "Sentence": "Actually, like writing out those adds would be helpful too, because yugais can we can build off of the copy that we learned on gubelads and kind of ported over te. It's not that match one to one, but there's learnings there right so on.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 620570,
+      "End": 630100,
+      "Sentence": "Ye that way, next monday we'd be a hicasser, will bea stark running some face, blook adds, and ah this is how much were you to spend a day, and this is what it's get it look like in.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 630760,
+      "End": 631770,
+      "Sentence": "Itl link to this.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 631770,
+      "End": 634610,
+      "Sentence": "Etir you mais a for a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 633560,
+      "End": 639350,
+      "Sentence": "Mais, a for a peaceable meach ar e eranda, if be eyes, let with her engs.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 640850,
+      "End": 641510,
+      "Sentence": "Si youn.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Conventional-closing"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 642120,
+      "End": 648140,
+      "Sentence": "Ah, be weran that it be as lak fit nat woo the lads fore for a perfect satone.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Appreciation"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 648720,
+      "End": 655920,
+      "Sentence": "I think I'll, none too till so sower keeping your gouvelad campaign running.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 649360,
+      "End": 651380,
+      "Sentence": "None too till so.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 657590,
+      "End": 662490,
+      "Sentence": "Im and then we're gotg to do the face. Wok um add in startesting that.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 663480,
+      "End": 671970,
+      "Sentence": "And um, I think, you'll also need tos, create a landing page, a man I paint.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 673140,
+      "End": 680430,
+      "Sentence": "Ah use my perfect cercile emel do crade an accounts, a free count on active campaigns and let dusplikt try that out.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Action-directive"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 681300,
+      "End": 686600,
+      "Sentence": "Epri ot is no esi, wit av gan e, grasping.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 683160,
+      "End": 684220,
+      "Sentence": "Ot is no.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Agree/Accept"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 688730,
+      "End": 690480,
+      "Sentence": "I ol to be ender in reo.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 691110,
+      "End": 692120,
+      "Sentence": "A betterina.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 695170,
+      "End": 695510,
+      "Sentence": "That she.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 697760,
+      "End": 702450,
+      "Sentence": "The copy for facefug.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 703760,
+      "End": 704470,
+      "Sentence": "A.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 704880,
+      "End": 705990,
+      "Sentence": "Ema.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Repeat-phrase"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 708320,
+      "End": 720550,
+      "Sentence": "Ye you can not. You can ask a christan an emal thread. You know they, like ha like, were gearing not too preceed content on face ba co on the face bo page light.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 722060,
+      "End": 724450,
+      "Sentence": "Which parts of the sight do you recommend.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Wh-Question"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 724720,
+      "End": 725550,
+      "Sentence": "Av.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 726810,
+      "End": 727390,
+      "Sentence": "On.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Repeat-phrase"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 729040,
+      "End": 729840,
+      "Sentence": "Ans.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 731590,
+      "End": 760670,
+      "Sentence": "If tou'll ever need to jump on a a call licris, I know he a. I know I think calls energize him so feel freeda like a do that a cokared toyo. You know, I think aother people have different working styles like maximine, like we prefer. If we don't need a jump on a meeting like we don't have to, but sometimes it's necessary, so I think, jumping on a call of cris if you everneed to just go through the copy olack hape, which we want to.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 761930,
+      "End": 765710,
+      "Sentence": "For you to just note that you use this this, this thas, this again.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Abandoned or Turn-Exit"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 767840,
+      "End": 770450,
+      "Sentence": "Toou keep up the great word um.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 771420,
+      "End": 789070,
+      "Sentence": "An angele got got your a message: heere as well, so I think offfen stretch lorking at ten, a n eastern. So that's about thirty minutes from nowport am so ereped you can corinate. Ah with him. I think what's happens, the besolater a.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 789660,
+      "End": 791720,
+      "Sentence": "You get in touch.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 793450,
+      "End": 808840,
+      "Sentence": "I think I'm I don't naf you done this already, but recording do a heil, loom or screener cording from your phone of going through the process and in getting stughtliness, because he is very visual, and so you need th communicatevery visually to heaven. You.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-opinion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 821330,
+      "End": 821910,
+      "Sentence": "Arra.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Repeat-phrase"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 823930,
+      "End": 824400,
+      "Sentence": "Bitsaf.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 826070,
+      "End": 838340,
+      "Sentence": "And aseegaes on teamzones and angela hope you feel better ahoney. An apple cider vinengar seems the likb really really helpful, with coughs.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 840230,
+      "End": 841310,
+      "Sentence": "O cans, os oso.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Collaborative Completion"
+    },
+    {
+      "Speaker": "user10",
+      "Start": 840350,
+      "End": 840720,
+      "Sentence": "Cans.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    },
+    {
+      "Speaker": "user00",
+      "Start": 842070,
+      "End": 845410,
+      "Sentence": "Arl right, ok, zigaison, antinzons, an second.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Agree/Accept"
+    },
+    {
+      "Speaker": "user01",
+      "Start": 845410,
+      "End": 848450,
+      "Sentence": "Yet va.",
+      "Emotion": "Neutral",
+      "DialogueAct": "Statement-non-opinion"
+    }
+  ]
+}

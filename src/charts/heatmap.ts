@@ -1,19 +1,23 @@
-import { EChartOption } from 'echarts'
-import img from '../../data/heatmap/1_3.json'
+import { EChartsOption } from 'echarts'
 
 /**
  * heatmap
  */
 
 let L = 300;
-let xData = [], yData = [];
-for (let j = 0; j <= L; j++) {
-  xData.push(j - L/2);
-  yData.push(j - L/2);
-}
-                 
-let data = img//.map(e=>[e[0],e[1],e[2]])
-export default {
+
+
+// let data = img.map(e=>[e[0],L-e[1],e[2]])
+export default async (img:Promise<any[]>):Promise<EChartsOption> => {
+  let data = (await img).map(e=>[e[0],L-e[1],e[2]])
+
+  let xData :any[] = [], yData:any[] = [];
+  for (let j = 0; j <= L; j++) {
+    xData.push(j - L/2);
+    yData.push(j - L/2);
+  }
+  return {
+  
   grid: {
     top: 0,
     left: 0,
@@ -156,7 +160,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Attentiveness',
+                   text:'Alert, Awake, Attentive',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
@@ -183,7 +187,7 @@ export default {
               {
                 type: 'text',
                  style:{
-                   text:'Attentiveness',
+                   text:'',
                    fontSize:18,
                    textAlign:'center',
                    fontFamily:'inter'
@@ -377,4 +381,5 @@ export default {
       data: [1]
     }
   ]
+} as EChartsOption
 }
