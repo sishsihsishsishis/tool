@@ -25,6 +25,7 @@ import {
   meetingStartTime as meetingStartTimeD,
   userAvatar
 } from '../data/raw/json_outputs.json'
+import { tb } from "./charts/threebody";
 
 const props = defineProps({meetingid:{type:String,default:'0'}})
 const router = useRouter();
@@ -169,6 +170,8 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
         <div class="right-top">
           <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="getAssetsUrl(userAvatar[u as keyof typeof userAvatar])"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
         </div>
+        <Vchart :opt="tb(meetingid,sections)" :height="500" :width="900" />
+
         Heart Synchrony
         <Vchart :opt="rppg_sync(meetingid,sections)" :height="300" :width="900" />
         Heart Signal
