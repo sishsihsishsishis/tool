@@ -74,7 +74,7 @@ let sync_opt: EChartsOption = {
 }
 
 
-let individual_sync_value_opt: EChartsOption = {
+let distance_opt: EChartsOption = {
   xAxis: {
     type: 'time',
     axisLine:{
@@ -213,17 +213,17 @@ export async function tb (meetingId:string,marks:Promise<any>) {
     },
     xAxis:[
       sync_opt.xAxis as XAXisComponentOption,
-      individual_sync_value_opt.xAxis as XAXisComponentOption,
+      distance_opt.xAxis as XAXisComponentOption,
       rate_opt.xAxis as XAXisComponentOption
     ],
     yAxis:[
       sync_opt.yAxis as YAXisComponentOption,
-      individual_sync_value_opt.yAxis as YAXisComponentOption,
+      distance_opt.yAxis as YAXisComponentOption,
       rate_opt.yAxis as YAXisComponentOption
     ],
     series:[
       ...sync_opt.series as LinesSeriesOption[],
-      ...individual_sync_value_opt.series as LinesSeriesOption[],
+      ...distance_opt.series as LinesSeriesOption[],
       ...rate_opt.series as LinesSeriesOption[]
     ],
   }
