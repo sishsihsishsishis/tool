@@ -21,14 +21,14 @@ export function LineChart(data: any, specColorKey: string, single: boolean, mark
     yAxis: {
       show: false,
       type: 'value',
-      max: function (value: any) {
-        let p = value.max.toString().split('.')[1].length
-        return Math.floor(value.max * 10 ** p + 1) / 10 ** p;
-      },
+      // max: function (value: any) {
+      //   let p = value.max.toString().split('.')[1].length
+      //   return Math.floor(value.max * 10 ** p + 1) / 10 ** p;
+      // },
       boundaryGap: [0, '100%']
     },
     legend: {
-      data: Object.keys(data)
+      data: Object.keys(data).sort()
     },
     series: Object.keys(data).map(e => {
       return {

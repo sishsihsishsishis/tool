@@ -14,5 +14,13 @@ export default {
     'user10':'#E07351',
     'user11':'#D4A072',
     'user12':'#7A5E3F',
+
+    'user03':'#E07351',
+    'user04':'#D4A072',
+    'user05':'#7A5E3F',
+    'user06':'#fac858',
+    'user07':'#ee6666',
+    'user08':'#9a60b4',
     'Team':'#A0BD80',
 } as {[T:string]:string}
+// ['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc']

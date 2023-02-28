@@ -23,29 +23,38 @@ import { getEmitter } from "./mitt";
 import tips from './tips.json'
 import { 
   meetingStartTime as meetingStartTimeD,
-  userAvatar
+  userAvatar as userAvatarD
 } from '../data/raw/json_outputs.json'
 import { tb } from "./charts/threebody";
+let baseurl = import.meta.env.VITE_API_URL
 
 const props = defineProps({meetingid:{type:String,default:'0'}})
 const router = useRouter();
 
-let meetingStartTime = ref<number>(meetingStartTimeD)
+let meetingStartTime = ref<Date>(new Date())
+let meetingStartTimeString = computed(()=>{
+  return DateFormat(meetingStartTime.value!, 'yyyy E ddth HH:MM')
+})
 provide('startTime', meetingStartTime)
 let drawer = ref(false)
 let videoCache = ref<boolean>(false)
 let Duration = ref<number>(0)
 
-let [stacked_bar_emotions, stacked_bar_speakers] = fetchDepath(axios.get(`/csv/bar?meetingID=${props.meetingid}`),['stacked_bar_emotions','stacked_bar_speakers'])
+let {stacked_bar_emotions, stacked_bar_speakers} = fetchDepath(axios.get(`/csv/bar?meetingID=${props.meetingid}`),['stacked_bar_emotions','stacked_bar_speakers'])
 
-let [speakers,Emotion,DialogueAct,nlpData] = fetchDepath(axios.get(`/csv/nlp?meetingID=${props.meetingid}`),['speakers','Emotion','DialogueAct','data'])
+let {speakers, Emotion, DialogueAct, data: nlpData} = fetchDepath(axios.get(`/csv/nlp?meetingID=${props.meetingid}`),['speakers','Emotion','DialogueAct','data'])
 let gantt_data = { speakers, Emotion, data: nlpData }
 let dialog_data = { speakers, DialogueAct, data: nlpData }
 
-let [pie_acts,pie_emotions,pie_speakers] = fetchDepath(axios.get(`/csv/pie?meetingID=${props.meetingid}`),['pie_acts','pie_emotions','pie_speakers'])
-let [heatmap] = fetchDepath(axios.get(`/csv/heatmap?meetingID=${props.meetingid}`),['heatmap'])
+let {pie_acts,pie_emotions,pie_speakers} = fetchDepath(axios.get(`/csv/pie?meetingID=${props.meetingid}`),['pie_acts','pie_emotions','pie_speakers'])
+let {heatmap} = fetchDepath(axios.get(`/csv/heatmap?meetingID=${props.meetingid}`),['heatmap'])
 
-let [radar] = fetchDepath(axios.get(`/csv/radar?meetingID=${props.meetingid}`),['radar'])
+let {radar} = fetchDepath(axios.get(`/csv/radar?meetingID=${props.meetingid}`),['radar'])
+
+let individualr = fetchDepath(axios.get(`/csv/individualr/${props.meetingid}`),['time','distance','rate','individual_sync_value'])
+let individuala = fetchDepath(axios.get(`/csv/individuala/${props.meetingid}`),['time','distance','rate','individual_sync_value'])
+let individualv = fetchDepath(axios.get(`/csv/individualv/${props.meetingid}`),['time','distance','rate','individual_sync_value'])
+
 
 let sections = axios.get(`/csv/section?meetingID=${props.meetingid}`).then(res=>{return {team:res.data.data.team,...res.data.data.user}})
 
@@ -61,15 +70,19 @@ let scores = toRefs(reactive({
   behavior:50,
   total:50
 }))
+let userAvatar = ref<{[key :string]:string}>()
+let users = computed(()=>Object.keys(userAvatar.value??{}).sort())
 onMounted(async ()=>{
-  let {duration,body_score,behavior_score,total_score} = (await axios.get(`/csv/score?meetingID=${props.meetingid}`)).data.data
+  let {duration,body_score,behavior_score,total_score,meetingStartTime:meeting_start_time } = (await axios.get(`/csv/score?meetingID=${props.meetingid}`)).data.data
   scores.body.value = body_score
   scores.behavior.value = behavior_score
   scores.total.value = total_score
   marks.value = await sections
   Duration.value = duration
+  meetingStartTime.value = new Date(meeting_start_time)
+  let {userAvatar:user_avatar} = (await axios.get(`/meeting/avatar/${props.meetingid}`)).data.data
+  userAvatar.value = user_avatar
 })
-let users = Object.keys(userAvatar);
 let userSelected = ref<string>('')
 let marks = ref<{ [key: string]: { start: number, end: number, label?: number }[] }>({"team": [{"start": 0,"end": 0},],})
 let userTip = computed<any>(()=>userSelected.value?marks.value[userSelected.value].map(e=>tips[e.label!.toString() as keyof typeof tips]):marks.value['team'].map(e=>''))
@@ -81,7 +94,7 @@ function select(user:string){
   }
   else {
     getEmitter().emit('legendAllSelect',``)
-    getEmitter().emit('legendUnSelect',users.filter(e=>e.indexOf(user)<0))
+    getEmitter().emit('legendUnSelect',users.value.filter(e=>e.indexOf(user)<0))
     userSelected.value = user;
   }
 }
@@ -94,17 +107,18 @@ function getAssetsUrl(u:string) {
     return new URL(`/data/assets/${u}`, import.meta.url).href;
 }
 
-function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
+function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Promise<any>}{
   let resData:any;
   api.then(res=>{
     resData = res.data.data
   })
-  return keys.map(key=>
-    new Promise(async resolve=>{
+  return keys.reduce((pre:{[key :string]:Promise<any>},key)=>{
+    pre[key] = new Promise(async resolve=>{
       await api;
       resolve(resData[key])
     })
-  )
+    return pre;
+  },{})
 }
 </script>
 
@@ -139,7 +153,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
           <img class="logo1"  src="./assets/hand-white.svg" />
           <Ring class="inline-echarts" :value="scores.behavior" color="#9FC949" :height="58" :width="58" />
         </div>
-      <div>Section Start Time: {{ DateFormat(new Date(meetingStartTime??meetingStartTimeD), 'yyyy E ddth HH:MM') }} |
+      <div>Section Start Time: {{ meetingStartTimeString }} |
           Duration: {{ (Duration /(60 * 1000)).toFixed(0) }}min</div>
       <img class="logom"  src="./assets/more.svg" @click="drawer = true" />
 
@@ -168,19 +182,25 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
 
       <div class="vcharts">
         <div class="right-top">
-          <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="getAssetsUrl(userAvatar[u as keyof typeof userAvatar])"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
+          <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u,more:users.length >= 6}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="`${baseurl}/meeting/img/${meetingid}/${userAvatar[u as keyof typeof userAvatar]}`" onerror="this.classList.add('error');"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
         </div>
-        <Vchart :opt="tb(meetingid,sections)" :height="500" :width="900" />
+        Heart Individual Synchrony
+        <Vchart :opt="tb(individualr)" :height="400" :width="900" />
 
         Heart Synchrony
         <Vchart :opt="rppg_sync(meetingid,sections)" :height="300" :width="900" />
         Heart Signal
         <Vchart :opt="rppg_signal(meetingid,sections)" :height="300" :width="900" />
         
+        Emotional Individual Synchrony
+        <Vchart :opt="tb(individualv)" :height="400" :width="900" />
         Emotional Synchrony (Positive or Negative)
         <Vchart :opt="valence_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Emotional Signal (Positive or Negative)
         <Vchart :opt="valence_signal(meetingid,sections)" :height="300" :width="900" />
+
+        Attentiveness Individual Synchrony
+        <Vchart :opt="tb(individuala)" :height="400" :width="900" />
         Attentiveness Synchrony
         <Vchart :opt="arousal_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Attentiveness Signal
@@ -200,6 +220,9 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
 </template>
 
 <style scoped>
+span, strong{
+  white-space:nowrap;
+}
 .spline {
   width: 100%;
   border-bottom: solid 1px #dbdbdb;
@@ -298,6 +321,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
 
 .right-top {
   width: calc(100vw - 500px);
+  min-height: 4.2em;
   background-color: #ffffff;
   position: fixed;
   display: block;
@@ -329,6 +353,13 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
   cursor: pointer;
 }
 
+.avatar.more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.2em;
+  border-radius: 1em;
+}
 .avatar span.selected{
   color: #ffffff!important
 }
@@ -339,9 +370,25 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):Promise<any>[]{
 
 .avatar img{
   width: 3em;
+  height: 3em;
   border-radius: 50%;
   border: solid 1px #00000040;
   overflow: hidden;
+}
+img.error {
+  display: inline-block;
+  transform: scale(1);
+  content: '';
+  color: transparent;
+}
+
+/* // 图片显示错误： 显示缺省图片 */
+img.error::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: #e1e1e1 url(break.svg) no-repeat center / 50% 50%;
 }
 
 .avatar span{

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted, inject, Ref } from 'vue'
+import { ref, onMounted, inject, Ref, watchEffect} from 'vue'
 import * as echarts from 'echarts'
 import { getEmitter } from "./mitt";
 
 let video = ref();
-const startTime = inject<Ref<number>>('startTime',ref(0))
+const startTime = inject<Ref<Date>>('startTime',ref(new Date()))
 
 
 const props = defineProps<{ opt: Object | Function, height?: number, width?: number, type?: string }>()
@@ -26,7 +26,7 @@ onMounted(async () => {
       type: 'time',
       axisLabel: {
         formatter: function (value: number, index: number) {
-          return echarts.time.format(startTime.value + value, '{HH}:{mm}', false);
+          return echarts.time.format(startTime.value.getTime() + value, '{HH}:{mm}', false);
         }
       },
       axisPointer: {
@@ -34,7 +34,7 @@ onMounted(async () => {
         label: {
           show: true,
           formatter: function (params: any) {
-            return echarts.time.format(startTime.value + params.value, '{HH}:{mm}:{ss}', false);
+            return echarts.time.format(startTime.value.getTime() + params.value, '{HH}:{mm}:{ss}', false);
           },
           backgroundColor: '#7581BD',
           margin: 20
@@ -58,7 +58,7 @@ onMounted(async () => {
       type: 'time',
       axisLabel: {
         formatter: function (value: number, index: number) {
-          return echarts.time.format(startTime.value + value, '{HH}:{mm}', false);
+          return echarts.time.format(startTime.value.getTime() + value, '{HH}:{mm}', false);
         }
       },
       axisPointer: {
@@ -66,7 +66,7 @@ onMounted(async () => {
         label: {
           show: true,
           formatter: function (params: any) {
-            return echarts.time.format(startTime.value + params.value, '{HH}:{mm}:{ss}', false);
+            return echarts.time.format(startTime.value.getTime() + params.value, '{HH}:{mm}:{ss}', false);
           },
           backgroundColor: '#7581BD',
           margin: 20
@@ -85,6 +85,28 @@ onMounted(async () => {
     myChart.resize();
   };
 
+  watchEffect(()=>{
+    if (props.type === 'gantt') myChart.setOption({
+      xAxis: {
+        type: 'time',
+        axisLabel: {
+          formatter: function (value: number, index: number) {
+            return echarts.time.format(startTime.value.getTime() + value, '{HH}:{mm}', false);
+          }
+        },
+      }
+    });
+    else if (props.type != 'ellipse') myChart.setOption({
+      xAxis: {
+        type: 'time',
+        axisLabel: {
+          formatter: function (value: number, index: number) {
+            return echarts.time.format(startTime.value.getTime() + value, '{HH}:{mm}', false);
+          }
+        },
+      }
+    });
+  })
   if (props.type == 'gantt') {
       let ev = ['click','dblclick','mousedown','mousemove','mouseup','mouseover','mouseout','globalout','contextmenu','highlight','downplay','selectchanged','axisareaselected',];
       myChart.on('highlight', async function (params:any) {
@@ -150,6 +172,7 @@ onMounted(async () => {
   })
 
 });
+
 function echartsUpdata(value: number) {
   myChart.setOption({
     xAxis: {

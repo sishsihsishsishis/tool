@@ -3,6 +3,8 @@ import { ref, provide } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import axios from "axios";
 import { ElMessage } from "element-plus";
+let baseurl = import.meta.env.VITE_API_URL
+
 const props = defineProps({ file: String, img: String, meetingId:Number })
 const router = useRouter()
 const route = useRoute()
@@ -27,7 +29,7 @@ function getAssetsUrls(u:string) {
       <span class="filename">{{ file }}</span>
     </template>
     <template v-else>
-      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${getAssetsUrls(img!)}`}"></div>
+      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${baseurl}/meeting/img/${meetingId}/${img})`}"></div>
       <span class="del" @click="See(file)">see</span><span class="filename">{{ file }}</span><span class="del" @click="Delete(file)">del</span>
     </template>
     
