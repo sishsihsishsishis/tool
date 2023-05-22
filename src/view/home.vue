@@ -1,75 +1,69 @@
 <script setup lang="ts">
-import { ref, provide, onMounted } from "vue";
+import { ref, provide, onMounted, watchEffect } from "vue";
 import { UploadFilled } from '@element-plus/icons-vue'
 
 import Card from "./card.vue";
 import axios from "axios";
 import { ElMessage } from "element-plus";
 let list = ref([])
-
+let teamID = ref('999')
 onMounted(async () => {
-  try{
-    list.value = (await axios.get('/meeting/video')).data.data
-  } catch(e){
-    
+  try {
+    // teamID.value = '999';
+    // list.value = (await axios.get(`/meeting/video/${teamID.value}`)).data.data
+  } catch (e) {
+
   }
+})
+watchEffect(async () => {
+  list.value = (await axios.get(`/meeting/video/${teamID.value}?currentPage=${1}&pageCount=${10}`)).data.data.list
 })
 async function successfun() {
   ElMessage.success('success')
-  setTimeout(()=>location.reload(),1000)
+  setTimeout(() => location.reload(), 1000)
 }
 </script>
 
 <template>
   <div class="top">
-      <div style="display: flex;">
+    <div style="display: flex;">
       <img src="@/assets/Logo-white.svg" class="logo" alt="logo" />
-        <strong>Syneurgy Team Performance Report</strong></div>
-  </div>
-  <div class="upload-con">
-    <el-upload
-    class="upload"
-    drag
-    action="/api/upload"
-    :on-success="successfun"
-  >
-    <el-icon class="el-icon--upload"><upload-filled /></el-icon>
-    <div class="el-upload__text">
-      Drop you meeting video file here or <em>click to upload</em>
+      <strong>Syneurgy Team Performance Report</strong>
     </div>
-    <template #tip>
-      <div class="el-upload__tip">
-        mp4/mov files 
-      </div>
-    </template>
-  </el-upload>
   </div>
-  
-  <div class="content">
-    <template v-for="item in list" :key="item.meeting_id">
-      <Card :file="(item as any).video_url" :img="(item as any).img_url" :meeting-id="(item as any).meeting_id"/>
-    </template>
-    <Card :file="'demo.mp4'"/>
+  <div id="con">
+    <div class="topinput">
+      <el-input size="large" v-model="teamID" placeholder="TeamID">
+        <template #prepend>Team ID:</template>
+      </el-input>
+
+    </div>
+
+    <div class="content">
+      <template v-for="item in list" :key="item.meeting_id">
+        <Card :meeting="item" />
+      </template>
+      <!-- <Card :file="'demo.mp4'" :meeting-id="1"/> -->
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.upload-con{
-  margin-top: 2em;
-  padding: 1em;
+#con {
+  padding-top: 5em;
+  background-color: #1B202E;
+  min-height: 100vh;
 }
-.upload{
-  min-width: 10em;
-  max-width: 40em ;
-  margin: auto;
-}
+
 .content {
   display: grid;
-  padding: 4em 8em;
-  gap: 4em;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
+  padding: 4em 2em;
+  gap: 3em;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
 }
+
 .top {
   /* font-size: 28px; */
   height: 4em;
@@ -80,12 +74,20 @@ async function successfun() {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  background-color: #D39D5E;
+  background-color: #222a40;
   color: white;
   z-index: 999;
+
   .logo {
     height: 2em;
     margin: 0.75em 1em 0.75em 0;
   }
 }
-</style>
+
+.topinput {
+
+  overflow: hidden;
+  margin-top: 10em;
+  max-width: 60%;
+  margin: 0em auto;
+}</style>

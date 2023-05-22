@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { ref, onMounted } from 'vue'
 import { getEmitter } from "./mitt";
-
+import v from '../data/data-David/assets/demo.mp4'
 let video = ref<HTMLVideoElement>();
 const props = defineProps({file:String,cache:Boolean})
 const loading = ref(true)
@@ -60,7 +60,8 @@ function blob_load (src:string){
   element-loading-custom-class="loading_color"
   >
     <video ref="video" id="video" height="270" width="470" controls="true" preload="Auto" autoplay muted>
-    <source v-if="!props.cache" :src="baseurl+file" type="video/mp4">
+      <!-- <source v-if="!props.cache" :src="baseurl+file" type="video/mp4"> -->
+      <source :src="v" type="video/mp4">
   </video>
   </div>
 </template>

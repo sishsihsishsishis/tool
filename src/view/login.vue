@@ -8,7 +8,7 @@
         <el-input placeholder="username" v-model="username"></el-input>
         <label>Password</label>
         <el-input type="password" placeholder="password" v-model="password"></el-input>
-        <el-button type="primary" @click="login()" style="width: 100%;">登录</el-button>
+        <el-button type="info" @click="login()" style="width: 100%;">登录</el-button>
       </el-col>
     </el-row>
   </div>
@@ -59,7 +59,7 @@ function login() {
 <style scoped lang="scss">
 .login-bg {
   height: 100vh;
-  background: linear-gradient(to bottom right,#4293F0,#1d4a7e);
+  background: linear-gradient(to bottom right,#1d4a7e,#1B202E);
 }
 
 .login {

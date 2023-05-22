@@ -34,7 +34,7 @@ const router = createRouter({
       
     },
     {
-      path: '/home/:meetingid',
+      path: '/home/:teamid/:meetingid',
       component: () => import('@/Studio.vue'),
       meta: { title: 'Studio' },
       props:true

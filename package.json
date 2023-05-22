@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "gen": "data_shell/transform.sh",
-    "gen:D": "rm -r data && cp -r data-David data && data_shell/transform-d.sh",
-    "gen:O": "rm -r data && cp -r data-O data && data_shell/transform-o.sh"
+    "deploy": "./.deployment.sh"
   },
   "dependencies": {
     "axios": "^1.2.5",

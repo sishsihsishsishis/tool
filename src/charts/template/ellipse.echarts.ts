@@ -2,91 +2,76 @@ import axios from 'axios';
 import { EChartsOption } from 'echarts'
 import color from "./color";
 
-function renderItem(params: any, api: any) {
-  let v = api.value(0) * 6;
-  let a = api.value(1) * 6;
-  let r_v = api.value(2);
-  let r_a = api.value(3);
-  let [x, y] = api.coord([v, a]);
-  let r = api.size([1, 1])[1] * 6;
-  return {
-    type: 'group',
-    children: [
-      {
-        type: 'circle',
-        // x: x,
-        // y: y,
-        shape: {
-          cx: x,
-          cy: y,
-          r: r * 0.01
+function Render(opacity = 1) {
+  return function (params: any, api: any) {
+    let v = api.value(0) * 6;
+    let a = api.value(1) * 6;
+    let r_v = api.value(2) == 'null' ? 0 : api.value(2);
+    let r_a = api.value(3) == 'null' ? 0 : api.value(3);
+    let [x, y] = api.coord([v, a]);
+    let r = api.size([1, 1])[1] * 6;
+    if (isNaN(v) || isNaN(a)) return null;
+    return {
+      type: 'group',
+      children: [
+        {
+          type: 'circle',
+          x: x,
+          y: y,
+          scaleX: r_v,
+          scaleY: r_a,
+          shape: {
+            cx: 0,
+            cy: 0,
+            r: r //* 2
+          },
+          transition: 'all',
+          style: {
+            fill: api.visual('color'),
+            opacity: 0.5 * opacity
+          }
         },
-        // style: api.style()
-        style: {
-          fill: api.visual("color")
+        {
+          type: 'circle',
+          x: x,
+          y: y,
+          shape: {
+            cx: 0,
+            cy: 0,
+            r: r * 0.008
+          },
+          transition: 'all',
+          style: {
+            fill: api.visual('color'),
+            opacity: 1 * opacity
+          }
         }
-        // style: {
-        //   fill: '#A0BD80'
-        // }
-      }
-    ]
+      ]
+    };
   };
 }
-function TeamRenderItem(params: any, api: any) {
-  let v = api.value(0) * 6;
-  let a = api.value(1) * 6;
-  let r_v = api.value(2) == "null" ? 0 : api.value(2);
-  let r_a = api.value(3) == "null" ? 0 : api.value(3);
-  let [x, y] = api.coord([v, a]);
-  let [x0, y0] = api.coord([1, 1]);
-  let [x00, y00] = api.coord([-1, -1]);
-  let r = api.size([1, 1])[1] * 6;
-  return {
-    type: 'group',
-    children: [
-      {
-        type: 'circle',
-        x: x,
-        y: y,
-        scaleX: r_v,
-        scaleY: r_a,
-        originX: 0,
-        originY: 0,
-        shape: {
-          // cx:  x,
-          // cy:  y ,
-          r: r //* 2
-        },
-        style: {
-          fill: api.visual("color") + '75'
-        }
-      },
-      {
-        type: 'circle',
-        // x: x,
-        // y: y,
-        shape: {
-          cx: x,
-          cy: y,
-          r: r * 0.005
-        },
-        // style: api.style()
-        style: {
-          fill: api.visual("color")
-        }
-      },
-    ]
-  };
-}
+
+
 export default async function (meetingId: string) {
   let {timeline,userList,data} = (await axios.get(`/csv/va?meetingID=${meetingId}`)).data.data
+
+  let Data:Array<any> = [];
+  for (let i = 0; i < data.length; i++) {
+    Data[i] = [data[i]];
+    for (let j = 1; j < 8; j++) {
+      if (i - j >= 0) Data[i].push(data[i - j]);
+    }
+  }
+
+
   let user = ['Team', ...userList]
 
   return {
     timeline: {
       type: 'number',
       data: timeline,
-      show: false
+      show: false,
+      replaceMerge: 'series'
     },
     xAxis: {
       name: 'x',
@@ -119,38 +104,75 @@ export default async function (meetingId: string) {
       data: user,
       show: true
     },
-    options: timeline.map((m: any, index: number) => {
-      let Umarks = data[index]
+    animationDuration:1000,
+    animationDurationUpdate:1000,
+    // animationEasing:'linear',
+    // animationEasingUpdate:'linear',
+    // options: timeline.map((m: any, index: number) => {
+    //   let Umarks = data[index]
+    //   return {
+    //     series: [...Umarks.map((um: any, index: number) => {
+    //       return {
+    //         id:'elli'+index,
+    //         name: user[index],
+    //         type: 'custom',
+    //         universalTransition: true,
+    //         renderItem: index == 0 ? TeamRenderItem : renderItem,
+    //         coordinateSystem: 'cartesian2d',
+    //         itemStyle: {
+    //           opacity: 0.8,
+    //           color: color[user[index]],
+    //           fill: color[user[index]]
+    //         },
+    //         encode: {
+    //           x: 0,
+    //           y: 1,
+    //           // itemGroupId: index
+    //         },
+    //         dataGroupId:index,
+    //         data: [
+    //           um
+    //         ],
+    //         animation: false
+    //       }
+    //     }), {
+    //       name: 'displayTxt',
+    //       type: 'custom',
+    //       renderItem: displayTxt,
+    //       data: [[]]
+    //     }]
+    //   }
+    // }),
+    options: timeline.map((m: any, i: number) => {
       return {
-        series: [...Umarks.map((um: any, index: number) => {
-          return {
-            name: user[index],
+        series: [
+          ...Data[i].reduce((p:any[], d:any[], pi:number) => {
+            let r = d.map((um: any, index: number) => {
+              return {
+                id: pi == 0 ? 'elli' + index:null,
+                name: user[index],
+                type: 'custom',
+                renderItem: Render(1 * 0.75**pi),
+                coordinateSystem: 'cartesian2d',
+                itemStyle: {
+                  color: color[user[index]]
+                },
+                data: [um],
+                animation: pi == 0 
+              };
+            });
+            p.push(...r);
+            return p;
+          }, []),
+          {
+            name: 'displayTxt',
             type: 'custom',
-            renderItem: index == 0 ? TeamRenderItem : renderItem,
-            coordinateSystem: 'cartesian2d',
-            itemStyle: {
-              opacity: 0.8,
-              color: color[user[index]],
-              fill: color[user[index]]
-            },
-            encode: {
-              x: 0,
-              y: 1
-            },
-
-            data: [
-              um
-            ],
-            animation: false
+            renderItem: displayTxt,
+            data: [[]]
           }
-        }), {
-          name: 'displayTxt',
-          type: 'custom',
-          renderItem: displayTxt,
-          data: [[]]
-        }]
-      }
-    }),
+        ]
+      };
+    })
   } as EChartsOption;
 
   function displayTxt(params: any, api: any) {

@@ -26,6 +26,7 @@ import {
   userAvatar as userAvatarD
 } from '../data/raw/json_outputs.json'
 import { tb } from "./charts/threebody";
+import ra from "./charts/ra";
 let baseurl = import.meta.env.VITE_API_URL
 
 const props = defineProps({meetingid:{type:String,default:'0'}})
@@ -198,13 +199,14 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
         <Vchart :opt="valence_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Emotional Signal (Positive or Negative)
         <Vchart :opt="valence_signal(meetingid,sections)" :height="300" :width="900" />
-
         Attentiveness Individual Synchrony
         <Vchart :opt="tb(individuala)" :height="400" :width="900" />
         Attentiveness Synchrony
         <Vchart :opt="arousal_signal_syn(meetingid,sections)" :height="300" :width="900" />
         Attentiveness Signal
         <Vchart :opt="arousal_signal(meetingid,sections)" :height="300" :width="900" />
+        
+        <Vchart :opt="ra(individuala)" :height="700" :width="900" :type="'ellipse'"/>
 
         <Vchart :opt="e(meetingid)" :height="700" :width="900" :type="'ellipse'"/>
         

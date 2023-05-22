@@ -5,38 +5,26 @@ import axios from "axios";
 import { ElMessage } from "element-plus";
 let baseurl = import.meta.env.VITE_API_URL
 
-const props = defineProps({ file: String, img: String, meetingId:Number })
+const props = defineProps<{meeting:any}>()
 const router = useRouter()
 const route = useRoute()
 function handleClick() {
-  let l = props.file?.split('/') ?? ''
-  router.push(`/home/${props.meetingId??'0'}/`)
-}
-let Delete = async (file:string|undefined)=>axios.delete('/delete/'+file).then(()=>ElMessage.success('success')).then(()=>location.reload())
-let See = async (file:string|undefined)=>axios.get('/download/'+file).then((e)=>alert(e.data))
-function getAssetsUrl(u:string) {
-    return new URL(`/data/assets/${u}`, import.meta.url).href;
-}
-function getAssetsUrls(u:string) {
-  return import.meta.env.VITE_API_URL+u
+  router.push(`/home/${props.meeting.team_id??'0'}/${props.meeting.meeting_id??'0'}/`)
 }
 </script>
 
 <template>
   <div class="con">
-    <template v-if="file=='demo.mp4'">
-      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${getAssetsUrl('demo.png')})`}"></div>
-      <span class="filename">{{ file }}</span>
-    </template>
-    <template v-else>
-      <div class="card" @click="handleClick" :style="{backgroundImage:`url(${baseurl}/meeting/img/${meetingId}/${img})`}"></div>
-      <span class="del" @click="See(file)">see</span><span class="filename">{{ file }}</span><span class="del" @click="Delete(file)">del</span>
-    </template>
-    
+    <div class="card" @click="handleClick" :style="{backgroundImage:`url(${meeting.thumbnail})`}"></div>
+    <div class="cardtxt">meeting ID: {{ meeting.meeting_id }}</div >
   </div>
 </template>
 
 <style scoped>
+.cardtxt{
+  margin-top: 0.5em;
+  color: rgb(209, 214, 237);
+}
 .con {
   font-size: large;
   /* font-weight: bold; */
@@ -63,26 +51,26 @@ function getAssetsUrls(u:string) {
 }
 
 .card {
-  height: 6em;
-  width: 12em;
-  background-color: #ffffff;
+  height: 10em;
+  /* width: 12em; */
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
   border-radius: 1rem;
   color: white;
   font-weight: bolder;
   font-size: large;
-  box-shadow: 0 0 10px 2px #e9e9e9;
+  box-shadow: 0 0 10px 2px #00000043;
   transition: all 0.3s;
   box-sizing: content-box;
-  border: solid 2px rgba(73, 73, 73, 0.277);
-  /* background-image: url('@/assets/default_topo.png'); */
-  background-size: 95%;
+  border: solid 2px rgba(255, 255, 255, 0);
+  background-size: 110%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .card:hover {
-  border: solid 2px rgb(85, 140, 199);
-  box-shadow: 0 0 10px 5px #e9e9e9;
+  /* border: solid 2px rgba(52, 143, 228, 0.835); */
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.469);
   cursor: pointer;
   transition: all 0.3s;
 }

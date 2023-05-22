@@ -14,6 +14,9 @@ let options = props.opt instanceof Function ? props.opt() : ((async () => props.
 let myChart: any;
 onMounted(async () => {
   myChart = echarts.init(chartDiv.value!, undefined, { height: props.height!, width: props.width! });
+  myChart.setOption({
+    animationDuration:0,
+  })
   try {
     myChart.setOption(await options);
   } catch (e) { console.log(e) }
@@ -81,6 +84,7 @@ onMounted(async () => {
       }
     }
   });
+
   window.onresize = function () {
     myChart.resize();
   };
@@ -119,6 +123,9 @@ onMounted(async () => {
             getEmitter().emit('chart_time_update', (t1) / 1000)
           }
       })
+      getEmitter().on('video_time_update', (i: number) => {
+        echartsUpdata(i)
+      })
   } else if (props.type == 'ellipse') {
     getEmitter().on('video_time_update', async (time: number) => {
       myChart.dispatchAction({
@@ -136,11 +143,12 @@ onMounted(async () => {
         getEmitter().emit('chart_time_update', (t) / 1000)
       }
     })
+    getEmitter().on('video_time_update', (i: number) => {
+      echartsUpdata(i)
+    })
   }
 
-  getEmitter().on('video_time_update', (i: number) => {
-    echartsUpdata(i)
-  })
+ 
 
   myChart.on('legendselectchanged', async (params: any) => {
     // console.log(params)
