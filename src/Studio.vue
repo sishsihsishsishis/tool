@@ -27,9 +27,10 @@ import {
 } from '../data/raw/json_outputs.json'
 import { tb } from "./charts/threebody";
 import ra from "./charts/ra";
+import Match from "./Match.vue"
 let baseurl = import.meta.env.VITE_API_URL
 
-const props = defineProps({meetingid:{type:String,default:'0'}})
+const props = defineProps({teamid:{type:String,default:'0'},meetingid:{type:String,default:'0'}})
 const router = useRouter();
 
 let meetingStartTime = ref<Date>(new Date())
@@ -38,6 +39,7 @@ let meetingStartTimeString = computed(()=>{
 })
 provide('startTime', meetingStartTime)
 let drawer = ref(false)
+let match_drawer = ref(false)
 let videoCache = ref<boolean>(false)
 let Duration = ref<number>(0)
 
@@ -73,7 +75,12 @@ let scores = toRefs(reactive({
 }))
 let userAvatar = ref<{[key :string]:string}>()
 let users = computed(()=>Object.keys(userAvatar.value??{}).sort())
-onMounted(async ()=>{
+const meetingInfo = (async()=>{
+  return ((await axios.get(`/meeting/video/${props.teamid}?currentPage=${1}&pageCount=${10}`)).data.data.list as Array<any>).find((e:any)=>e.meeting_id == props.meetingid)
+})();
+provide('meetingInfo', meetingInfo)
+
+onMounted(async ()=>{  
   let {duration,body_score,behavior_score,total_score,meetingStartTime:meeting_start_time } = (await axios.get(`/csv/score?meetingID=${props.meetingid}`)).data.data
   scores.body.value = body_score
   scores.behavior.value = behavior_score
@@ -141,6 +148,9 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
     </div>
     
   </el-drawer>
+
+  <Match v-model="match_drawer" :meeting_id="props.meetingid"/>
+  
   <div class="top">
       <div style="display: flex;">
       <img src="./assets/Logo-white.svg" class="logo" alt="logo" @click="router.push('/home')" />
@@ -164,7 +174,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
       <div class="left">
         <!-- <img src="./assets/team_members.jpg" alt="" style="margin-top:0em;width: 400px;"> -->
         <!-- <Video :file="getAssetsUrl(meetingid!)"></Video> -->
-        <Video :file="`/s3/video?meetingID=${meetingid!}`" :cache="videoCache" :key="videoCache+''"></Video>
+        <Video :cache="videoCache" :key="videoCache+''"></Video>
         <div class="left-echarts">
           <div style="height: 5000px; padding-top: 1em;">
             <div class="tips">
@@ -184,6 +194,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
       <div class="vcharts">
         <div class="right-top">
           <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u,more:users.length >= 6}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="`${baseurl}/meeting/img/${meetingid}/${userAvatar[u as keyof typeof userAvatar]}`" onerror="this.classList.add('error');"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
+          <button @click="match_drawer = true" >match</button>
         </div>
         Heart Individual Synchrony
         <Vchart :opt="tb(individualr)" :height="400" :width="900" />

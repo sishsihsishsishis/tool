@@ -8,9 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "gen": "data_shell/transform.sh",
-    "deploy": "./.deployment.sh"
+    "deploy": "yarn build && ./.deployment.sh"
   },
   "dependencies": {
+    "@vueuse/core": "^10.1.2",
     "axios": "^1.2.5",
     "deepmerge": "^4.2.2",
     "echarts": "^5.4.1",

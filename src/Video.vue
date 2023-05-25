@@ -1,18 +1,22 @@
 <script setup lang="ts">
 import axios from 'axios';
-import { ref, onMounted } from 'vue'
+import { ref, Ref, onMounted, inject } from 'vue'
 import { getEmitter } from "./mitt";
 import v from '../data/data-David/assets/demo.mp4'
 let video = ref<HTMLVideoElement>();
-const props = defineProps({file:String,cache:Boolean})
+const props = defineProps({cache:Boolean})
+const meetingInfo = inject<Promise<{video_url:string}>>('meetingInfo',Promise.resolve({video_url:""}))
+
 const loading = ref(true)
-let baseurl = import.meta.env.VITE_API_URL
+let url = ref()
+// let baseurl = import.meta.env.VITE_API_URL
 onMounted(async () => {
-  if(props.cache) blob_load(props.file!).then((e:any)=>{
+  if(props.cache) blob_load((await meetingInfo).video_url).then((e:any)=>{
     video.value!.src = e as string
-    loading.value = false
   })
-  else loading.value = false
+  else video.value!.src = (await meetingInfo).video_url
+  
+  loading.value = false
 
   let last = 0
   video.value!.ontimeupdate = (event: any) => {
@@ -40,12 +44,9 @@ getEmitter().on('chart_time_update', async (i: number) => {
 
 function blob_load (src:string){
   return new Promise(reslove=>{
-    axios.get(src,{
-      responseType: 'blob'
-    }).then((res:any)=>{
-      reslove(window.URL.createObjectURL(new Blob([res.data], { type: 
+    fetch(src).then(res=>res.blob()).then((res:any)=>{
+      reslove(window.URL.createObjectURL(new Blob([res], { type: 
         'video/mpeg4'
-        // res.headers['content-type'] 
       })))
     })
   })
@@ -60,8 +61,7 @@ function blob_load (src:string){
   element-loading-custom-class="loading_color"
   >
     <video ref="video" id="video" height="270" width="470" controls="true" preload="Auto" autoplay muted>
-      <!-- <source v-if="!props.cache" :src="baseurl+file" type="video/mp4"> -->
-      <source :src="v" type="video/mp4">
+      <source v-if="!props.cache" type="video/mp4">
   </video>
   </div>
 </template>
