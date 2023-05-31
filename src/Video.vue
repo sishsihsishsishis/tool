@@ -9,6 +9,7 @@ const meetingInfo = inject<Promise<{video_url:string}>>('meetingInfo',Promise.re
 
 const loading = ref(true)
 let url = ref()
+let vpdone = Promise.resolve();
 // let baseurl = import.meta.env.VITE_API_URL
 onMounted(async () => {
   if(props.cache) blob_load((await meetingInfo).video_url).then((e:any)=>{
@@ -29,18 +30,26 @@ onMounted(async () => {
   }
 })
 getEmitter().on('chart_time_update', async (i: number) => {
-  let done;
   if (video.value!.paused) {
     video.value!.currentTime = i
   }
   else {
-    await done;
+    await vpdone;
     video.value!.pause()
     video.value!.currentTime = i
-    done = video.value!.play()
+    vpdone = video.value!.play()
   }
 })
 
+getEmitter().on('video_pause', async () => {
+  await vpdone;
+  video.value!.pause()
+})
+
+getEmitter().on('video_play', async () => {
+  await vpdone;
+  vpdone = video.value!.play()
+})
 
 function blob_load (src:string){
   return new Promise(reslove=>{

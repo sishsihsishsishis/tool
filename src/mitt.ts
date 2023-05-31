@@ -7,6 +7,8 @@ type Events = {
     legendUnSelect: string|string[];
     legendInverseSelect: string;
     legendHighlight: string;
+    video_pause:string,
+    video_play:string,
 };
 
 let emitter:Emitter<Events> = mitt<Events>();
