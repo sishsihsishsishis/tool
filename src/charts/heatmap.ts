@@ -9,8 +9,7 @@ let L = 300;
 
 // let data = img.map(e=>[e[0],L-e[1],e[2]])
 export default async (img: Promise<any[]>): Promise<EChartsOption> => {
-  let data = (await img).map(e => [e[0], L - e[1], e[2]])
-
+  let data = (await img).map(e => [e[1], L - e[0], e[2]])
   let xData: any[] = [], yData: any[] = [];
   for (let j = 0; j <= L; j++) {
     xData.push(j - L / 2);
