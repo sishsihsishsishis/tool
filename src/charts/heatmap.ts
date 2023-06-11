@@ -91,9 +91,6 @@ export default async (img: Promise<any[]>): Promise<EChartsOption> => {
       },
       {
         type: 'custom',
-        itemStyle: {
-          color: ['#ffffff'],
-        },
         renderItem: function (params: any, api: any) {
           let l = 200
           const coord = api.coord([L / 2, L / 2])

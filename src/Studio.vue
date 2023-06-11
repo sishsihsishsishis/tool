@@ -16,6 +16,7 @@ import Echarts from './Echart.vue'
 import Ring from './Ring.vue'
 import raddar from './charts/raddar'
 import heatMap from './charts/heatmap'
+import heatMapGeo from './charts/heatmap-geo'
 import { pieEmotions, pieActs, pieSpeakers ,stackedBarEmotions, stackedBarSpeakers} from './charts/pie'
 import colors from './charts/template/color'
 
@@ -187,6 +188,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
             </div>
             <Echarts class="echarts" :opt="raddar(radar)"  style="width:600px; height: 600px;" />
             <Echarts class="echarts" :opt="heatMap(heatmap)" style="width:600px; height: 600px;" />
+            <Echarts class="echarts" :opt="heatMapGeo(meetingid)" style="width:600px; height: 600px;" />
             <Echarts class="echarts" :opt="pieEmotions(pie_emotions)" style="width:600px; height: 600px;" />
             <Echarts class="echarts" :opt="pieActs(pie_acts)" style="width:600px; height: 600px;" />
             <Echarts class="echarts" :opt="pieSpeakers(pie_speakers)" style="width:600px; height: 600px;" />
