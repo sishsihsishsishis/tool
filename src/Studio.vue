@@ -29,6 +29,7 @@ import {
 import { tb } from "./charts/threebody";
 import ra from "./charts/ra";
 import Match from "./Match.vue"
+import Merge from "./Merge.vue"
 let baseurl = import.meta.env.VITE_API_URL
 
 const props = defineProps({teamid:{type:String,default:'0'},meetingid:{type:String,default:'0'}})
@@ -41,11 +42,18 @@ let meetingStartTimeString = computed(()=>{
 provide('startTime', meetingStartTime)
 let drawer = ref(false)
 let match_drawer = ref(false)
+let merge_drawer = ref(false)
 
 function open_match_drawer(){
   match_drawer.value = true
   getEmitter().emit('video_pause',``)
 }
+
+function open_merge_drawer(){
+  merge_drawer.value = true
+  getEmitter().emit('video_pause',``)
+}
+
 let videoCache = ref<boolean>(false)
 let Duration = ref<number>(0)
 
@@ -156,6 +164,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
   </el-drawer>
 
   <Match v-model="match_drawer" :meeting_id="props.meetingid"/>
+  <Merge v-model="merge_drawer" :meeting_id="props.meetingid"/>
   
   <div class="top">
       <div style="display: flex;">
@@ -202,6 +211,7 @@ function fetchDepath(api:Promise<AxiosResponse>,keys:string[]):{[key :string]:Pr
         <div class="right-top">
           <div v-for="u in users" :key="u" class="avatar" :class="{unselected:userSelected!=u,more:users.length >= 6}" :style="{backgroundColor:colors[u]}" @click="select(u)"><img :src="`${baseurl}/meeting/img/${meetingid}/${userAvatar[u as keyof typeof userAvatar]}`" onerror="this.classList.add('error');"><span :class="{selected:userSelected==u}" :style="{color:colors[u]}">{{u}}</span></div>
           <button @click="open_match_drawer" >match</button>
+          <button @click="open_merge_drawer" >merge</button>
         </div>
         Heart Individual Synchrony
         <Vchart :opt="tb(individualr)" :height="400" :width="900" />
