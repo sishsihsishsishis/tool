@@ -15,7 +15,7 @@
     "axios": "^1.2.5",
     "deepmerge": "^4.2.2",
     "echarts": "^5.4.1",
-    "element-plus": "^2.2.28",
+    "element-plus": "^2.3.7",
     "lyric-parser": "^1.0.1",
     "mitt": "^3.0.0",
     "mockjs": "^1.1.0",

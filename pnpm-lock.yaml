@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.4.1
     version: 5.4.2
   element-plus:
-    specifier: ^2.2.28
-    version: 2.3.5(vue@3.3.4)
+    specifier: ^2.3.7
+    version: 2.3.7(vue@3.3.4)
   lyric-parser:
     specifier: ^1.0.1
     version: 1.0.1
@@ -853,8 +853,8 @@ packages:
     resolution: {integrity: sha512-RRuCvP6ekngVh2SAJaOKT/hxqc9JAsK+Pe0hP5tGQIfonU2Zy9gMGdJ+mBdyl/vNucMG6gkXYtuM4H/1giws5w==}
     dev: true
 
-  /element-plus@2.3.5(vue@3.3.4):
-    resolution: {integrity: sha512-g27DHm2C5/tPwte9H6Juu+JOdzT9z1ALHTIvia6MwnBdCrI4kd77o6KcYdodU15/tYiPBoCEmobhl/7GUDb+1Q==}
+  /element-plus@2.3.7(vue@3.3.4):
+    resolution: {integrity: sha512-h6TxclbaLUJxg/Bv5j/ZKsK+K5yadQliw5+R30HWyE69pXlqXTX24oYx+yw3pA4Dy+lqEDi5501FQ0CORk3OSA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
