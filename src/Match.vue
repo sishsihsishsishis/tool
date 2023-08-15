@@ -16,7 +16,7 @@ const speakerUsers = ref<Array<{ user_name: string, speaker_name: string[] }>>([
 const speakerNames = ref<{ [key: string]: boolean }>({})
 const lyricStr = ref<string>()
 
-function Nlp2Lrc(nlpstr:string) {
+function Nlp2LrcO(nlpstr:string) {
   let lines = nlpstr.split('\n')
   const Idx = lines.shift()!.split('\t').map(e => e.trim())
   let nlp = lines.map(e => Object.fromEntries(e.split('\t').map((e, index) => [Idx[index], e.trim()])))
@@ -35,8 +35,30 @@ function Nlp2Lrc(nlpstr:string) {
   }).join('\n')
   return lrc
 }
+
+function Nlp2Lrc(nlp:Array<{
+      speaker: string,
+      starts: number,
+      ends: number,
+      sentence: string
+}>) {
+  function TimeTran(secstr:string) {
+    let [secs, ms] = secstr.split('.')
+    let sec = parseInt(secs)
+    let h = (sec) / 3600
+    let m = ((sec) % 3600) / 60
+    let s = (sec) % 60
+    return (h > 1 ? Math.floor(h).toString().padStart(2, '0') + ':' : '') + `${Math.floor(m).toString()}:${Math.floor(s).toString()}.${ms}`
+  }
+  let lrc = nlp.map((e, index) => {
+    return `[${TimeTran(e.starts.toFixed(2).toString())}]${e.speaker}: ${e.sentence}`
+  }).join('\n')
+  return lrc
+}
+
 async function fetchData() {
-  const nlpStr =  axios.get(`/s3/downloads/${props.meeting_id}/nlp_result.txt`)
+  // const nlpStr =  axios.get(`/s3/downloads/${props.meeting_id}/nlp_result.txt`)
+  const nlpCon =  (await axios.get(`/nlp/${props.meeting_id}`)).data.data
 
   const response = await axios.get(`/speaker-users?meeting_id=${props.meeting_id}`)
   const match_result = await (await axios.get(`/match-result/${props.meeting_id}`)).data.data.match_result
@@ -48,7 +70,8 @@ async function fetchData() {
       speakerNames.value[i] = true;
     })
   }
-  lyricStr.value = Nlp2Lrc((await nlpStr).data)
+  lyricStr.value = Nlp2Lrc(nlpCon)
+  console.log(lyricStr.value)
 }
 async function updateSpeakerNames() {
   const updateData = {
