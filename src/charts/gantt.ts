@@ -11,6 +11,7 @@ export let emotionTypes: {
   'Positive': '#70A861',//'#2B9529'
   'Negative': '#6088B6',//'#226BA9'
 }
+emotionTypes = Object.fromEntries(Object.entries(emotionTypes).map(e=>[e[0].toLowerCase(),e[1]]))
 
 
 
@@ -47,11 +48,12 @@ export let ActTypes: {
   'Wh-Question': '#eba60a',
   'Others': '#529E3E',
 }
+ActTypes = Object.fromEntries(Object.entries(ActTypes).map(e=>[e[0].toLowerCase(),e[1]]))
 
 export const dialog = async function ({ speakers,DialogueAct,data }:{speakers:Promise<{ [T: string]: string }>,DialogueAct:Promise<any>,data:Promise<any>}) {
   // let { speakers,Emotion,DialogueAct,data }  = (await axios.get(`/csv/nlp?meetingID=${meetingId}`)).data.data
   let pie = await speakers;
-  return GanttChart(await data,'dialogue',await DialogueAct, ActTypes, Object.keys(await speakers).sort().reverse(), {
+  return GanttChart(await data,'dialogue',(await DialogueAct), ActTypes, Object.keys(await speakers).sort().reverse(), {
     legend: {
       left: '10%',
       right: '10%'

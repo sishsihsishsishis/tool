@@ -34,7 +34,7 @@ export function GanttChart(data:any,type:string,legend:string[],colors:{[T:strin
           return {
             name: k,
             itemStyle: {
-              color: colors[k]
+              color: colors[k.toLowerCase()]
             }
           }
         }),
@@ -75,7 +75,7 @@ export function GanttChart(data:any,type:string,legend:string[],colors:{[T:strin
                 transition: ['shape'],
                 shape: rectShape,
                 style: {
-                  fill: colors[e[type]]
+                  fill: colors[e[type].toLowerCase()]
                 }
               }
             );
