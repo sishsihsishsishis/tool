@@ -34,6 +34,11 @@ const router = createRouter({
       
     },
     {
+      path: '/panel',
+      component: () => import('@/view/panel.vue'),
+      meta: { title: 'Panel' },
+    },
+    {
       path: '/home/:teamid/:meetingid',
       component: () => import('@/Studio.vue'),
       meta: { title: 'Studio' },

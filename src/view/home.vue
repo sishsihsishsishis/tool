@@ -1,14 +1,22 @@
 <script setup lang="ts">
 import { ref, provide, onMounted, watchEffect } from "vue";
 import { UploadFilled } from '@element-plus/icons-vue'
-
+import { useRouter, useRoute } from "vue-router";
 import Card from "./card.vue";
 import axios from "axios";
 import { ElMessage } from "element-plus";
 let list = ref([])
+let Rlist = ref([])
+let Alist = ref([])
+let teamIDSet = ref(new Set())
 let teamID = ref('999')
+let handle_filter = ref(false)
+const router = useRouter()
+const route = useRoute()
 onMounted(async () => {
   try {
+    Alist.value = (await axios.get(`/meeting/video/`)).data.data
+    Alist.value.forEach(e=>teamIDSet.value.add(e.team_id)) 
     // teamID.value = '999';
     // list.value = (await axios.get(`/meeting/video/${teamID.value}`)).data.data
   } catch (e) {
@@ -16,11 +24,25 @@ onMounted(async () => {
   }
 })
 watchEffect(async () => {
-  list.value = (await axios.get(`/meeting/video/${teamID.value}?currentPage=${1}&pageCount=${10}`)).data.data.list
+  if(teamID.value=='')
+    Rlist.value = (await axios.get(`/meeting/video/`)).data.data
+  else
+    Rlist.value = (await axios.get(`/meeting/video/${teamID.value}?currentPage=${1}&pageCount=${10}`)).data.data?.list
+  fil()
 })
+
+function fil(){
+  list.value = Rlist.value.filter((e:any)=>handle_filter.value?e.is_handle!==1:true)
+}
+
+
 async function successfun() {
   ElMessage.success('success')
   setTimeout(() => location.reload(), 1000)
+}
+
+function handleClick() {
+  router.push(`/panel/`)
 }
 </script>
 
@@ -33,10 +55,24 @@ async function successfun() {
   </div>
   <div id="con">
     <div class="topinput">
-      <el-input size="large" v-model="teamID" placeholder="TeamID">
+      <div class="flex flex-row">
+      <el-input class="basis-3/4" size="large" v-model="teamID" placeholder="TeamID">
         <template #prepend>Team ID:</template>
+        <template #append>
+          no handle filiter:
+          <el-switch
+            @change="fil"
+            v-model="handle_filter"
+            class="ml-2"
+            style="--el-switch-on-color: #13ce66;"
+          />
+        </template>
       </el-input>
-
+      <div class="w-1/4">
+        <button @click="handleClick">Parameter Panel</button>
+      </div>
+    </div>
+      <div style="color: aliceblue;margin-top: 1em;">Teams: {{ Array.from(teamIDSet).join(', ') }}</div>
     </div>
 
     <div class="content">

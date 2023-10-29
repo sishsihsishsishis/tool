@@ -16,7 +16,9 @@ function handleClick() {
 <template>
   <div class="con">
     <div class="card" @click="handleClick" :style="{backgroundImage:`url(${meeting.thumbnail})`}"></div>
-    <div class="cardtxt">meeting ID: {{ meeting.meeting_id }}</div >
+    <div class="cardtxt"> {{ meeting.meeting_name }}</div >
+    <div class="cardtxt"><span>{{meeting.is_handle==1 ? '✅':'❔'}} </span> Team ID: {{ meeting.team_id }} meeting ID: {{ meeting.meeting_id }}</div >
+    <div class="cardtxt"><span>CV {{meeting.cv_handle==1 ? '☑︎':'◎'}}</span> | <span>NLP {{meeting.nlp_handle==1 ? '☑︎':'◎'}}</span></div >
   </div>
 </template>
 
@@ -51,7 +53,7 @@ function handleClick() {
 }
 
 .card {
-  height: 10em;
+  width: 100%;
   /* width: 12em; */
   aspect-ratio: 16 / 9;
   background-color: #000000;

@@ -10,7 +10,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     //.env.development
     process.env.BROWSER = 'Google Chrome'
     process.env.VITE_API_URL='/apiv1'
-    process.env.BACKEND_API_URL='http://47.102.118.168:8080'
+    process.env.BACKEND_API_URL='http://18.144.11.243:8080'
   }
   return {
     server: {
