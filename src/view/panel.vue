@@ -10,6 +10,7 @@ let loading = ref(false);
 let Fscores = ref([]);
 const router = useRouter();
 const route = useRoute();
+let sc = ref<null | {init: () => void}>(null);
 onMounted(async () => {
   try {
     findScoreList();
@@ -17,12 +18,19 @@ onMounted(async () => {
   } catch (e) {}
 });
 
-watchEffect(async () => {
+// watchEffect(async () => {
+//   if (teamID.value !== ""){
+//     findScoreList()
+//     sc.value?.init()
+//   }
+// });
+async function scupdate() {
   if (teamID.value !== ""){
+    loading.value = true
     findScoreList()
+    sc.value?.init()
   }
-});
-
+}
 async function findScoreList() {
   const response = await axios.get('/score', {
     params: {
@@ -49,9 +57,11 @@ async function findScoreList() {
           size="large"
           v-model="teamID"
           placeholder="TeamID"
+          @change="scupdate"
         >
           <template #prepend>Team ID:</template>
           <template #append>
+            <el-button @click="scupdate">GO</el-button>
             <!-- no handle filiter:
             <el-switch
               @change="fil"
@@ -70,7 +80,7 @@ async function findScoreList() {
     </div>
     <div class="mx-16">
       <div>
-        <Score @loading="loading = true" @update="findScoreList()" :teamid="teamID" ></Score>
+        <Score ref="sc" @loading="loading = true" @update="findScoreList()" :teamid="teamID" ></Score>
       </div>
       <div class="my-10">
         <el-table

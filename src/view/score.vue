@@ -12,9 +12,7 @@ const router = useRouter();
 const route = useRoute();
 function handleClick() {}
 
-
-onMounted(() => {
-  console.log(props.teamid);
+function init(){
   axios.get("/score/parameter/" + props.teamid).then((response) => {
     console.log(response.data.data);
     let {
@@ -30,18 +28,25 @@ onMounted(() => {
       weight_nlp_equal_participation,
       weight_nlp_speak_time,
     } = response.data.data;
-    parameters.value.brain.value = coefficient_brain;
-    parameters.value.brain.weight = weight_brain;
-    parameters.value.body.value = coefficient_body;
-    parameters.value.body.weight = weight_body;
-    parameters.value.behavior.value = coefficient_behaviour;
-    parameters.value.behavior.weight = weight_behaviour;
-    parameters.value.nlpSpeakingTime.weight = weight_nlp_speak_time;
+    parameters.value.brain.value = coefficient_brain ?? 50;
+    parameters.value.brain.weight = weight_brain ?? 0.2;
+    parameters.value.body.value = coefficient_body ?? 50;
+    parameters.value.body.weight = weight_body ?? 0.2;
+    parameters.value.behavior.value = coefficient_behaviour ?? 50;
+    parameters.value.behavior.weight = weight_behaviour ?? 0.2;
+    parameters.value.nlpSpeakingTime.weight = weight_nlp_speak_time ?? 0.2;
     parameters.value.nlpEqualParticipation.weight =
-      weight_nlp_equal_participation;
-    parameters.value.total.value = coefficient_total;
+      weight_nlp_equal_participation ?? 0.4;
+    parameters.value.total.value = coefficient_total ?? 50;
     // parameters.value.total.weight = 1;
   });
+}
+defineExpose({
+  init
+})
+onMounted(() => {
+  console.log(props.teamid);
+  init()
 });
 const parameters = ref<{
   brain: { id: string; label: string; value: number; weight: number; min: number; max: number; minWeight: number; maxWeight: number; editableParam: boolean; editableWeight: boolean; };
