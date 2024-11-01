@@ -71,6 +71,41 @@ const parameters = ref<{
 //     - parameters.value.find(p => p.id === 'nlpSpeakingTime').weight
 // })
 
+async function SubmitAll() {  
+  for (team_id of teamIDSet.value) {
+    try {
+        emit('loading', true)
+        const teamScoreDTO = {
+          coefficientBody: parameters.value.body.value,
+          coefficientBehaviour: parameters.value.behavior.value,
+          coefficientTotal: parameters.value.total.value,
+          weightBody: parameters.value.body.weight,
+          weightBehaviour: parameters.value.behavior.weight,
+          weighNlpTime: parameters.value.nlpSpeakingTime.weight,
+          weightEqualParticipation: parameters.value.nlpEqualParticipation.weight
+        };
+        // alert(JSON.stringify(teamScoreDTO))
+
+        const response = await axios.post('/score/team/' + team_id, teamScoreDTO);
+
+        if (response.data && response.data.success) {
+          // 这里处理成功的逻辑，比如提示用户提交成功
+          console.log("Submission successful:", response.data);
+          // setTimeout(()=>{
+            emit('update', true)
+          // },3000)
+
+        } else {
+          // 这里处理失败的逻辑，比如提示用户提交失败
+          console.error("Submission failed:", response.data);
+        }
+      } catch (error) {
+        // 这里处理网络错误或其他未预期的错误
+        console.error("An error occurred during submission:", error);
+      }
+  }
+}
+
 async function submit(){
   try {
         emit('loading', true)
@@ -133,6 +168,7 @@ async function submit(){
           </td>
           <td v-else>
             <el-button type="success" @click="submit()" style="background-color: #7EC050;">Submit</el-button>
+            <el-button type="success" @click="submitall()" style="background-color: #7EC050;">SubmitAll</el-button>
             <!-- {{ parameter.weight.toFixed(2) }} -->
           </td>
         </tr>

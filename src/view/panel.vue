@@ -30,8 +30,22 @@ async function scupdate() {
     findScoreList()
     sc.value?.init()
   }
+
 }
 async function findScoreList() {
+  // if (teamID.value == 'all'){
+  //   for (let teamId of teamIDSet.value){
+  //     const response = await axios.get('/score', {
+  //       params: {
+  //         teamId: teamId
+  //       }
+  //     });
+  //     Fscores.value = Fscores.value.concat(response.data.data.sort((a: any, b: any) => a.meetingId - b.meetingId));
+  //   }
+  //   loading.value = false
+  //   return
+  // }
+
   const response = await axios.get('/score', {
     params: {
       teamId: teamID.value
