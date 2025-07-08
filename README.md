@@ -2,7 +2,7 @@
 
 ## How to run
 
-1. yarn install # 安装依赖包
-2. yarn dev # 启动服务
-3. yarn build  # 打包项目
+1. yarn install # Install dependencies
+2. yarn dev # Start the development server
+3. yarn build  # Build the project for production
 
