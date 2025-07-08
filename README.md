@@ -1,4 +1,4 @@
-# ZooM Meeting Analysis Report
+# ZooM Meeting Analysis Tool
 
 ## How to run
 
